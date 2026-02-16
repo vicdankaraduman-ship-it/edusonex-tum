@@ -106,11 +106,11 @@ const Index = () => {
                   <Badge className="bg-green-500/10 text-green-600 border-green-500/20">✅ Aktif</Badge>
                 </div>
                 <CardTitle className="text-xl mb-1">ÖdevGPT</CardTitle>
-                <div className="text-xs text-muted-foreground mb-2 font-mono">odev.edusonex.com.tr</div>
+                <div className="text-xs text-muted-foreground mb-2 font-mono">odev-sigma.vercel.app</div>
                 <CardDescription>Sokratik yapay zeka ile kişiselleştirilmiş ödev asistanı.</CardDescription>
               </CardHeader>
               <CardContent>
-                <a href="https://odev.edusonex.com.tr" target="_blank" rel="noopener noreferrer">
+                <a href="https://odev-sigma.vercel.app/" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" className="w-full border-green-500/20 hover:bg-green-500/10 hover:text-green-600 group-hover:border-green-500/40">
                     Projeye Git <ExternalLink className="ml-2 h-4 w-4" />
                   </Button>
