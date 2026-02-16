@@ -42,6 +42,8 @@ const App = () => (
             <Route path="/hem-ai" element={<HemAI />} />
             <Route path="/hakkimizda" element={<About />} />
             <Route path="/iletisim" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/features" element={<Products />} />
             <Route path="/gizlilik" element={<Privacy />} />
             <Route path="/kullanim-sartlari" element={<Terms />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
