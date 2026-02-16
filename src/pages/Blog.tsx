@@ -12,7 +12,7 @@ const posts = [
         excerpt: "Her öğrencinin öğrenme hızı ve stili farklıdır. Yapay zeka teknolojileri ile bu farkı avantaja çeviriyoruz.",
         category: "Eğitim Teknolojileri",
         author: "Dr. Ahmet Yılmaz",
-        date: "15 Ekim 2023",
+        date: "15 Şubat 2026",
         readTime: "5 dk",
         image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop",
         slug: "yapay-zeka-egitim"
@@ -23,7 +23,7 @@ const posts = [
         excerpt: "Büyük veri analitiği sayesinde okul yöneticileri artık daha stratejik ve isabetli kararlar alabiliyor.",
         category: "Yönetim",
         author: "Zeynep Demir",
-        date: "22 Ekim 2023",
+        date: "8 Şubat 2026",
         readTime: "7 dk",
         image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
         slug: "veri-odakli-yonetim"
@@ -34,7 +34,7 @@ const posts = [
         excerpt: "Öğrencileri tarih öncesi çağlara veya uzayın derinliklerine götüren sürükleyici eğitim deneyimleri.",
         category: "İnovasyon",
         author: "Mehmet Kaya",
-        date: "05 Kasım 2023",
+        date: "2 Şubat 2026",
         readTime: "4 dk",
         image: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=2078&auto=format&fit=crop",
         slug: "sanal-gerceklik-egitim"
@@ -45,7 +45,7 @@ const posts = [
         excerpt: "21. yüzyılın eğitimcisi olmak için sahip olunması gereken temel dijital beceriler ve araçlar.",
         category: "Akademi",
         author: "Elif Şahin",
-        date: "12 Kasım 2023",
+        date: "28 Ocak 2026",
         readTime: "6 dk",
         image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop",
         slug: "ogretmen-dijital-yetkinlik"
@@ -56,7 +56,7 @@ const posts = [
         excerpt: "Dersleri daha eğlenceli ve rekabetçi hale getirerek öğrenci katılımını maksimize etmenin yolları.",
         category: "Metodoloji",
         author: "Burak Çelik",
-        date: "19 Kasım 2023",
+        date: "20 Ocak 2026",
         readTime: "5 dk",
         image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071&auto=format&fit=crop",
         slug: "oyunlastirma-motivasyon"
@@ -67,7 +67,7 @@ const posts = [
         excerpt: "Fiziksel ve dijital öğrenme ortamlarının en iyi yönlerini birleştiren esnek eğitim yapıları.",
         category: "Vizyon",
         author: "Ayşe Yurt",
-        date: "26 Kasım 2023",
+        date: "15 Ocak 2026",
         readTime: "8 dk",
         image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2070&auto=format&fit=crop",
         slug: "hibrit-egitim-gelecek"

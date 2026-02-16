@@ -93,12 +93,8 @@ const References = () => {
                     </p>
 
                     <div className="flex justify-center gap-6">
-                        <div className="bg-white p-4 rounded-xl shadow-lg flex items-center gap-3 transform hover:scale-105 transition-transform duration-300">
-                            <img src="https://www.kommo.com/images/partners/partner-badge-blue.svg" alt="Kommo Partner" className="h-12 w-auto" />
-                            <div className="text-left">
-                                <div className="text-xs text-gray-500 font-bold uppercase tracking-wider">Official</div>
-                                <div className="text-lg font-bold text-blue-900 leading-none">Partner</div>
-                            </div>
+                        <div className="bg-white p-4 rounded-xl shadow-lg flex items-center justify-center transform hover:scale-105 transition-transform duration-300">
+                            <img src="/images/kommo-partner1.png" alt="Kommo Partner" className="h-20 w-auto" />
                         </div>
                     </div>
                 </div>
