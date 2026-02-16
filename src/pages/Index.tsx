@@ -28,13 +28,13 @@ const Index = () => {
               Yönetimden eğitime, ölçmeden iletişime kadar her şey burada.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in [animation-delay:600ms]">
-              <Link to="/contact">
+              <Link to="/iletisim">
                 <Button size="lg" className="h-12 px-8 text-lg group">
                   Hemen Başlayın
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </Link>
-              <Link to="/features">
+              <Link to="/urunler">
                 <Button size="lg" variant="outline" className="h-12 px-8 text-lg">
                   Özellikleri Keşfet
                 </Button>
@@ -319,7 +319,7 @@ const Index = () => {
             Edusonex teknolojileriyle okulunuzu yapay zeka çağına hazırlayın.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact">
+            <Link to="/iletisim">
               <Button size="lg" variant="secondary" className="w-full sm:w-auto text-primary font-semibold hover:bg-white/90">
                 Bizimle İletişime Geçin <ExternalLink className="ml-2 h-4 w-4" />
               </Button>
