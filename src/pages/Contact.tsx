@@ -23,11 +23,16 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission logic will be added later
+
+    const mailtoLink = `mailto:info@edusonex.com?subject=Edusonex İletişim Formu: ${formData.subject}&body=Ad Soyad: ${formData.name}%0D%0AE-posta: ${formData.email}%0D%0ATelefon: ${formData.phone}%0D%0A%0D%0AMesaj:%0D%0A${formData.message}`;
+
+    window.location.href = mailtoLink;
+
     toast({
-      title: "Mesajınız alındı",
-      description: "En kısa sürede sizinle iletişime geçeceğiz.",
+      title: "E-posta istemciniz açılıyor...",
+      description: "Mesajınızı göndermek için açılan pencereden ilerleyebilirsiniz.",
     });
+
     setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
   };
 
