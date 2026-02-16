@@ -13,6 +13,9 @@ import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 
+import Universe from "./pages/Universe";
+import ProjectDetail from "./pages/ProjectDetail";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -23,6 +26,8 @@ const App = () => (
       <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/universe" element={<Universe />} />
+          <Route path="/universe/:projectId" element={<ProjectDetail />} />
           <Route path="/urunler" element={<Products />} />
           <Route path="/cozumler" element={<Solutions />} />
           <Route path="/hem-ai" element={<HemAI />} />

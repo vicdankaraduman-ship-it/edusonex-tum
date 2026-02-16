@@ -4,11 +4,10 @@ import { Menu, X, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navigation = [
-  { name: "Ekosistem", href: "/" },
-  { name: "Ürünler", href: "/urunler" },
-  { name: "Çözümler", href: "/cozumler" },
-  { name: "HEM AI", href: "/hem-ai" },
   { name: "Hakkımızda", href: "/hakkimizda" },
+  { name: "Evren", href: "/universe" },
+  { name: "Referanslar", href: "/referanslar" },
+  { name: "Blog", href: "/blog" },
   { name: "İletişim", href: "/iletisim" },
 ];
 
@@ -32,11 +31,10 @@ const Header = () => {
             <Link
               key={item.name}
               to={item.href}
-              className={`px-4 py-2 text-sm font-medium transition-colors rounded-md hover:bg-muted ${
-                location.pathname === item.href
+              className={`px-4 py-2 text-sm font-medium transition-colors rounded-md hover:bg-muted ${location.pathname === item.href
                   ? "text-primary bg-muted"
                   : "text-muted-foreground hover:text-foreground"
-              }`}
+                }`}
             >
               {item.name}
             </Link>
@@ -82,11 +80,10 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.href}
-                className={`block px-4 py-3 text-base font-medium rounded-md transition-colors ${
-                  location.pathname === item.href
+                className={`block px-4 py-3 text-base font-medium rounded-md transition-colors ${location.pathname === item.href
                     ? "text-primary bg-muted"
                     : "text-muted-foreground hover:text-foreground hover:bg-muted"
-                }`}
+                  }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}
