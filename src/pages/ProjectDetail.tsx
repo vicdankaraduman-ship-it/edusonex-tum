@@ -66,7 +66,7 @@ const projects = {
             "Takım Görevleri",
             "Sanal Ödüller"
         ],
-        videoUrl: "",
+        videoUrl: "https://www.youtube.com/embed/hxtcxpU8pEk",
         gradient: "from-green-500/20 to-emerald-500/20",
         accentColor: "text-green-400",
         buttonColor: "bg-green-600 hover:bg-green-700",
@@ -192,14 +192,26 @@ const ProjectDetail = () => {
                             </p>
 
                             <div className="relative aspect-video bg-black/50 rounded-xl overflow-hidden shadow-2xl group-hover:shadow-3xl transition-all border border-white/5">
-                                {/* Video Placeholder */}
-                                <div className="absolute inset-0 flex items-center justify-center">
-                                    <div className={`w-16 h-16 rounded-full ${project.buttonColor} flex items-center justify-center shadow-2xl cursor-pointer hover:scale-110 transition-transform`}>
-                                        <Play className="h-6 w-6 text-white fill-white ml-1" />
-                                    </div>
-                                </div>
-                                {/* Background Pattern for Video */}
-                                <div className="absolute inset-0 opacity-20 pointer-events-none bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center" />
+                                {project.videoUrl ? (
+                                    <iframe
+                                        className="w-full h-full"
+                                        src={project.videoUrl}
+                                        title={project.title}
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowFullScreen
+                                    ></iframe>
+                                ) : (
+                                    <>
+                                        {/* Video Placeholder */}
+                                        <div className="absolute inset-0 flex items-center justify-center">
+                                            <div className={`w-16 h-16 rounded-full ${project.buttonColor} flex items-center justify-center shadow-2xl cursor-pointer hover:scale-110 transition-transform`}>
+                                                <Play className="h-6 w-6 text-white fill-white ml-1" />
+                                            </div>
+                                        </div>
+                                        {/* Background Pattern for Video */}
+                                        <div className="absolute inset-0 opacity-20 pointer-events-none bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center" />
+                                    </>
+                                )}
                             </div>
                         </div>
 
