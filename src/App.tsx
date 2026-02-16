@@ -15,6 +15,7 @@ import NotFound from "./pages/NotFound";
 
 import Universe from "./pages/Universe";
 import ProjectDetail from "./pages/ProjectDetail";
+import References from "./pages/References";
 
 import { ThemeProvider } from "@/components/theme-provider";
 
@@ -31,6 +32,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/universe" element={<Universe />} />
             <Route path="/universe/:projectId" element={<ProjectDetail />} />
+            <Route path="/referanslar" element={<References />} />
             <Route path="/urunler" element={<Products />} />
             <Route path="/cozumler" element={<Solutions />} />
             <Route path="/hem-ai" element={<HemAI />} />
