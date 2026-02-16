@@ -96,7 +96,7 @@ const tiers = [
         subtitle: "Kemalât / Kolej",
         description: "Ölçme, değerlendirme ve mükemmellik. Sınav sistemleri ve başarı standartlarının belirlendiği zirve.",
         icon: Layers,
-        href: "https://sinav.edusonex.com.tr",
+        href: "/universe/layer-7-paradigm",
         active: true,
         color: "text-amber-500",
         bg: "bg-amber-500/10",

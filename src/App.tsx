@@ -18,6 +18,7 @@ import ProjectDetail from "./pages/ProjectDetail";
 import References from "./pages/References";
 import Blog from "./pages/Blog";
 import Kommo from "./pages/Kommo";
+import Paradigm from "./pages/Paradigm";
 
 import { ThemeProvider } from "@/components/theme-provider";
 
@@ -33,6 +34,7 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/universe" element={<Universe />} />
+            <Route path="/universe/layer-7-paradigm" element={<Paradigm />} />
             <Route path="/universe/:projectId" element={<ProjectDetail />} />
             <Route path="/kommo" element={<Kommo />} />
             <Route path="/referanslar" element={<References />} />
