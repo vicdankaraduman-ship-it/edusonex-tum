@@ -202,10 +202,12 @@ const Paradigm = () => {
                             <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
                                 Dijital ikiziniz hazır olduğunda, okulunuz artık zaman ve mekandan bağımsız — her an, her yerde, sınırsız.
                             </p>
-                            <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-12 h-14 text-lg font-bold rounded-full group">
-                                <Sparkles className="mr-2 h-5 w-5" />
-                                Kemalât — Mükemmelliğin Dijital Formu
-                            </Button>
+                            <a href="https://wa.me/905320674063" target="_blank" rel="noopener noreferrer">
+                                <Button size="lg" className="bg-amber-600 hover:bg-amber-700 text-white px-12 h-14 text-lg font-bold rounded-full group">
+                                    <Sparkles className="mr-2 h-5 w-5" />
+                                    Kemalât — Mükemmelliğin Dijital Formu
+                                </Button>
+                            </a>
                         </div>
                     </div>
 

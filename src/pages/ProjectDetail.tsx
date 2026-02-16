@@ -160,12 +160,11 @@ const ProjectDetail = () => {
 
                         {/* Action Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4 mb-20">
-                            <Button size="lg" className={`${project.buttonColor} text-white px-8 h-12 text-lg font-medium shadow-lg hover:shadow-xl transition-all hover:scale-105`}>
-                                <Play className="mr-2 h-5 w-5 fill-current" /> Demo Talep Et
-                            </Button>
-                            <Button size="lg" variant="outline" className="border-white/20 bg-white/5 hover:bg-white/10 text-white px-8 h-12 text-lg font-medium">
-                                Örnek Rapor
-                            </Button>
+                            <a href="https://wa.me/905320674063" target="_blank" rel="noopener noreferrer" className="block w-full sm:w-auto">
+                                <Button size="lg" className={`${project.buttonColor} text-white px-8 h-12 text-lg font-medium shadow-lg hover:shadow-xl transition-all hover:scale-105 w-full`}>
+                                    <Play className="mr-2 h-5 w-5 fill-current" /> Demo Talep Et
+                                </Button>
+                            </a>
                         </div>
 
                         {/* Stats Grid */}
