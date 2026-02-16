@@ -12,7 +12,7 @@ const tiers = [
         subtitle: "Suret / Edubot",
         description: "Kullanıcı ile yapay zeka arasındaki ilk temas noktası. Sokratik diyalog ve kişiselleştirilmiş asistan deneyimi.",
         icon: Brain,
-        href: "https://odev.edusonex.com.tr",
+        href: "https://odev-sigma.vercel.app/",
         active: true,
         color: "text-blue-400",
         bg: "bg-blue-500/10",
