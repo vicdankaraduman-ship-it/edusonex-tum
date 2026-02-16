@@ -3,79 +3,87 @@ import Layout from "@/components/Layout";
 const Privacy = () => {
   return (
     <Layout>
-      {/* Hero */}
-      <section className="py-16 lg:py-24 bg-corporate">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary-foreground leading-tight">
-              Gizlilik Politikası
-            </h1>
-            <p className="mt-6 text-lg text-primary-foreground/80 leading-relaxed">
-              Son güncelleme: Ocak 2025
+      <div className="container mx-auto px-4 py-16 md:py-24 max-w-4xl">
+        <h1 className="text-4xl font-bold mb-4">Gizlilik Politikası</h1>
+        <p className="text-muted-foreground mb-12">Son Güncelleme: 1 Ocak 2026</p>
+
+        <div className="prose prose-blue dark:prose-invert max-w-none space-y-8">
+          <section>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">1. Giriş</h2>
+            <p className="leading-relaxed">
+              Edusonex Eğitim Teknolojileri ("Edusonex", "Biz", "Şirket"), okullara özel yapay zeka destekli dijital altyapılar sunan bir teknoloji şirketidir.
+              Kullanıcılarımızın (Okul yöneticileri, öğretmenler, öğrenciler ve veliler) gizliliği bizim için en öncelikli konudur.
+              Bu Gizlilik Politikası, Edusonex platformu, uygulamaları ve hizmetleri ("Hizmetler") kullanılırken kişisel verilerin nasıl toplandığını,
+              işlendiğini ve korunduğunu açıklar.
             </p>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      {/* Content */}
-      <section className="py-16 lg:py-24">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-3xl mx-auto prose prose-lg">
-            <div className="space-y-8 text-muted-foreground">
-              <div>
-                <h2 className="text-xl font-semibold text-foreground mb-4">1. Genel Bilgiler</h2>
-                <p className="leading-relaxed">
-                  Edusonex olarak, kişisel verilerinizin korunmasına önem veriyoruz. Bu gizlilik politikası, web sitemizi ziyaret ettiğinizde ve hizmetlerimizi kullandığınızda toplanan bilgilerin nasıl işlendiğini açıklamaktadır.
-                </p>
-              </div>
+          <section>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">2. Toplanan Veriler</h2>
+            <p className="mb-4">Hizmetlerimizi sağlarken aşağıdaki veri türlerini toplayabiliriz:</p>
+            <ul className="list-disc pl-6 space-y-2 marker:text-primary">
+              <li><strong>Kimlik Bilgileri:</strong> Ad, soyad, T.C. kimlik numarası (gerekli hallerde), okul numarası.</li>
+              <li><strong>İletişim Bilgileri:</strong> E-posta adresi, telefon numarası, adres.</li>
+              <li><strong>Eğitim Verileri:</strong> Sınav sonuçları, ödev performansları, devam-devamsızlık bilgileri, öğrenme analitikleri.</li>
+              <li><strong>Sistem Kullanım Verileri:</strong> IP adresi, cihaz bilgileri, oturum süreleri, tıklama analizleri.</li>
+              <li><strong>Yapay Zeka Etkileşimleri:</strong> ÖdevGPT, Sınav Fabrikası gibi modüllerle yapılan etkileşimler ve oluşturulan içerikler.</li>
+            </ul>
+          </section>
 
-              <div>
-                <h2 className="text-xl font-semibold text-foreground mb-4">2. Toplanan Bilgiler</h2>
-                <p className="leading-relaxed">
-                  İletişim formları aracılığıyla gönderdiğiniz ad, e-posta adresi ve telefon numarası gibi bilgiler toplanabilir. Bu bilgiler yalnızca sizinle iletişim kurmak amacıyla kullanılır.
-                </p>
-              </div>
+          <section>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">3. Verilerin Kullanım Amacı</h2>
+            <p className="mb-4">Toplanan veriler şu amaçlarla kullanılır:</p>
+            <ul className="list-disc pl-6 space-y-2 marker:text-primary">
+              <li><strong>Eğitim Hizmetlerinin Sunulması:</strong> Okul yönetim süreçlerinin dijitalleştirilmesi, öğrenci takibi ve raporlama.</li>
+              <li><strong>Yapay Zeka Destekli Analiz:</strong> HumanOS modülü ile öğrenci yetenek haritalarının çıkarılması ve kişiselleştirilmiş öğrenme önerilerinin sunulması.</li>
+              <li><strong>İletişim:</strong> Veli bilgilendirme mesajları, sistem bildirimleri ve güncellemeler.</li>
+              <li><strong>Hizmet İyileştirme:</strong> Sistem performansının analizi ve kullanıcı deneyiminin geliştirilmesi.</li>
+              <li><strong>Yasal Yükümlülükler:</strong> MEB ve diğer resmi kurumların mevzuatlarına uyum.</li>
+            </ul>
+          </section>
 
-              <div>
-                <h2 className="text-xl font-semibold text-foreground mb-4">3. Bilgilerin Kullanımı</h2>
-                <p className="leading-relaxed">
-                  Topladığımız bilgiler, taleplerinize yanıt vermek, hizmetlerimiz hakkında bilgi sağlamak ve yasal yükümlülüklerimizi yerine getirmek amacıyla kullanılır.
-                </p>
-              </div>
+          <section>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">4. Veri Güvenliği ve Altyapı</h2>
+            <p className="leading-relaxed">
+              Edusonex, verilerinizi korumak için endüstri standardı güvenlik önlemleri uygular. Verileriniz, SSL/TLS şifreleme ile korunur ve
+              yetkisiz erişimlere karşı sürekli izlenen güvenli sunucularda saklanır. Yapay zeka modellerimiz, veri anonimleştirme prensiplerine uygun olarak çalışır.
+              Her okulun verisi kendi özel alanında (tenant) izole edilir ve diğer kurumlarla paylaşılmaz.
+            </p>
+          </section>
 
-              <div>
-                <h2 className="text-xl font-semibold text-foreground mb-4">4. Bilgi Güvenliği</h2>
-                <p className="leading-relaxed">
-                  Kişisel verilerinizi korumak için uygun teknik ve organizasyonel önlemler alıyoruz. Verileriniz üçüncü taraflarla paylaşılmaz, satılmaz veya kiralanmaz.
-                </p>
-              </div>
+          <section>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">5. Üçüncü Taraflarla Paylaşım</h2>
+            <p className="leading-relaxed">
+              Kişisel verileriniz, yasal zorunluluklar haricinde ve hizmetin ifası için gerekli olan (örn. SMS sağlayıcıları, bulut altyapı sağlayıcıları)
+              iş ortaklarımız dışında üçüncü şahıslarla paylaşılmaz, satılmaz veya kiralanmaz.
+            </p>
+          </section>
 
-              <div>
-                <h2 className="text-xl font-semibold text-foreground mb-4">5. Çerezler</h2>
-                <p className="leading-relaxed">
-                  Web sitemiz, kullanıcı deneyimini iyileştirmek için çerezler kullanabilir. Tarayıcı ayarlarınızdan çerezleri devre dışı bırakabilirsiniz.
-                </p>
-              </div>
+          <section>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">6. Haklarınız</h2>
+            <p className="mb-4">KVKK ve ilgili mevzuat uyarınca aşağıdaki haklara sahipsiniz:</p>
+            <ul className="list-disc pl-6 space-y-2 marker:text-primary">
+              <li>Verilerinizin işlenip işlenmediğini öğrenme,</li>
+              <li>İşlenen verilerinizle ilgili bilgi talep etme,</li>
+              <li>Verilerin eksik veya yanlış işlenmesi halinde düzeltilmesini isteme,</li>
+              <li>Verilerinizin silinmesini veya yok edilmesini talep etme.</li>
+            </ul>
+          </section>
 
-              <div>
-                <h2 className="text-xl font-semibold text-foreground mb-4">6. Haklarınız</h2>
-                <p className="leading-relaxed">
-                  6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında, kişisel verilerinize erişim, düzeltme ve silme haklarına sahipsiniz. Bu haklarınızı kullanmak için info@edusonex.com adresinden bizimle iletişime geçebilirsiniz.
-                </p>
-              </div>
-
-              <div>
-                <h2 className="text-xl font-semibold text-foreground mb-4">7. İletişim</h2>
-                <p className="leading-relaxed">
-                  Gizlilik politikamız hakkında sorularınız için:<br />
-                  E-posta: info@edusonex.com<br />
-                  Adres: Çakır Mah. Fevzipaşa Cad. No: 248, 03500 Sandıklı – Afyonkarahisar / Türkiye
-                </p>
-              </div>
+          <section>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">7. İletişim</h2>
+            <p className="leading-relaxed">
+              Gizlilik politikamız veya veri işleme süreçlerimizle ilgili sorularınız için aşağıdaki kanallardan bize ulaşabilirsiniz:
+            </p>
+            <div className="mt-4 p-6 bg-muted rounded-lg border border-border/50">
+              <p><strong>Edusonex Eğitim Teknolojileri</strong></p>
+              <p>Adres: Çakır Mah. Fevzipaşa Cad. No: 248, 03500 Sandıklı – Afyonkarahisar / Türkiye</p>
+              <p>Telefon: +90 532 067 40 63</p>
+              <p>E-posta: info@edusonex.com</p>
             </div>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
     </Layout>
   );
 };
