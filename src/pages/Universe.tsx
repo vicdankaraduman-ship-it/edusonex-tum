@@ -12,7 +12,7 @@ const tiers = [
         subtitle: "Suret / Edubot",
         description: "Kullanıcı ile yapay zeka arasındaki ilk temas noktası. Sokratik diyalog ve kişiselleştirilmiş asistan deneyimi.",
         icon: Brain,
-        href: "https://odev-sigma.vercel.app/",
+        href: "/kommo",
         active: true,
         color: "text-blue-400",
         bg: "bg-blue-500/10",
@@ -162,12 +162,21 @@ const Universe = () => {
                                 {/* Footer / Action */}
                                 <div className="mt-auto">
                                     {tier.active ? (
-                                        <a href={tier.href} target="_blank" rel="noopener noreferrer" className="block w-full">
-                                            <Button variant="ghost" className={`w-full justify-between hover:bg-white/5 ${tier.color} group-hover:pl-4 transition-all`}>
-                                                <span className="text-sm font-medium">Platforma Git</span>
-                                                <ArrowRight className="h-4 w-4" />
-                                            </Button>
-                                        </a>
+                                        tier.href.startsWith("http") ? (
+                                            <a href={tier.href} target="_blank" rel="noopener noreferrer" className="block w-full">
+                                                <Button variant="ghost" className={`w-full justify-between hover:bg-white/5 ${tier.color} group-hover:pl-4 transition-all`}>
+                                                    <span className="text-sm font-medium">Platforma Git</span>
+                                                    <ArrowRight className="h-4 w-4" />
+                                                </Button>
+                                            </a>
+                                        ) : (
+                                            <Link to={tier.href} className="block w-full">
+                                                <Button variant="ghost" className={`w-full justify-between hover:bg-white/5 ${tier.color} group-hover:pl-4 transition-all`}>
+                                                    <span className="text-sm font-medium">Platforma Git</span>
+                                                    <ArrowRight className="h-4 w-4" />
+                                                </Button>
+                                            </Link>
+                                        )
                                     ) : (
                                         <Link to={tier.href} className="block w-full">
                                             <Button variant="ghost" className="w-full justify-between hover:bg-white/5 text-gray-400 group-hover:text-white group-hover:pl-4 transition-all">

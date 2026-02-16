@@ -17,6 +17,7 @@ import Universe from "./pages/Universe";
 import ProjectDetail from "./pages/ProjectDetail";
 import References from "./pages/References";
 import Blog from "./pages/Blog";
+import Kommo from "./pages/Kommo";
 
 import { ThemeProvider } from "@/components/theme-provider";
 
@@ -33,6 +34,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/universe" element={<Universe />} />
             <Route path="/universe/:projectId" element={<ProjectDetail />} />
+            <Route path="/kommo" element={<Kommo />} />
             <Route path="/referanslar" element={<References />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/urunler" element={<Products />} />

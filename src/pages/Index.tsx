@@ -179,17 +179,25 @@ const Index = () => {
             </Card>
 
             {/* 5. CRM */}
-            <Card className="border-border/50 hover:border-primary/30 transition-colors group">
+            <Card className="border-blue-500/30 hover:border-blue-500/50 transition-all hover:shadow-lg hover:shadow-blue-500/10 bg-gradient-to-br from-card to-blue-500/5 group">
               <CardHeader>
                 <div className="flex items-start justify-between mb-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Users className="h-6 w-6 text-primary" />
+                  <div className="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Users className="h-6 w-6 text-blue-600" />
                   </div>
-                  <Badge variant="outline">Planlanıyor</Badge>
+                  <Badge className="bg-blue-500/10 text-blue-600 border-blue-500/20">✅ Aktif</Badge>
                 </div>
                 <CardTitle className="text-xl mb-1">Edusonex CRM</CardTitle>
+                <div className="text-xs text-muted-foreground mb-2 font-mono">edusonex.com/kommo</div>
                 <CardDescription>Kommo tabanlı öğrenci ve veli ilişkileri yönetimi.</CardDescription>
               </CardHeader>
+              <CardContent>
+                <Link to="/kommo">
+                  <Button variant="outline" className="w-full border-blue-500/20 hover:bg-blue-500/10 hover:text-blue-600 group-hover:border-blue-500/40">
+                    Projeye Git <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+              </CardContent>
             </Card>
 
             {/* 6. HumanOS */}
