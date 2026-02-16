@@ -110,7 +110,7 @@ const projects = {
             "Forumlar",
             "Haberleşme Ağı"
         ],
-        videoUrl: "",
+        videoUrl: "https://www.youtube.com/embed/zvbWO9-AnlI",
         gradient: "from-cyan-500/20 to-blue-500/20",
         accentColor: "text-cyan-400",
         buttonColor: "bg-cyan-600 hover:bg-cyan-700",
