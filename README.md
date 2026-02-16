@@ -1,73 +1,75 @@
-# Welcome to your Lovable project
+# Edusonex - AI Destekli Eğitim Teknolojileri Ekosistemi
 
-## Project info
+Türkiye'nin ilk bütünleşik yapay zeka destekli eğitim işletim sistemi.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🌟 Vizyon
 
-## How can I edit this code?
+Okullar için özel dijital üretim sistemleri. Her okul kendi markasıyla, yapay zekâ destekli altyapılarla büyür.
 
-There are several ways of editing your application.
+## 🚀 Aktif Projeler
 
-**Use Lovable**
+| Proje | Subdomain | Durum | Teknoloji |
+|-------|-----------|-------|-----------|
+| **Edusonex Ana Platform** | `edusonex.com.tr` | 🟢 Aktif | React + Vite + TypeScript |
+| **ÖdevGPT** | `odev.edusonex.com.tr` | 🟢 Aktif (%95) | Groq Llama 3.3 + Supabase |
+| **HEM AI** | `hem.edusonex.com.tr` | 🟢 Aktif (%90) | React + Supabase |
+| **Anket Sistemi** | `anket.edusonex.com.tr` | 🟢 Aktif (%80) | WebSocket + Realtime |
+| **Sınav Fabrikası** | `sinav.edusonex.com.tr` | 🟡 Beta (%60) | FastAPI + LangChain |
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🏗️ Teknoloji Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend**: React 18, TypeScript, Vite, Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Backend**: Supabase (Auth, DB, Storage)
+- **AI Engine**: Groq, Claude, GPT-4
+- **Deployment**: Cloudflare Pages, Vercel
+- **DNS**: Cloudflare
 
-**Use your preferred IDE**
+## 📦 Kurulum
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+```bash
+# Bağımlılıkları yükle
+npm install
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Geliştirme sunucusunu başlat
 npm run dev
+
+# Production build
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+## 🌐 Deployment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Cloudflare Pages (Ana Platform)
+- **Domain**: `edusonex.com.tr`
+- **Build Command**: `npm run build`
+- **Build Output**: `dist`
+- **Node Version**: 18+
 
-**Use GitHub Codespaces**
+### Vercel (Subdomain Projeleri)
+- **ÖdevGPT**: `odev.edusonex.com.tr`
+- **HEM**: `hem.edusonex.com.tr`
+- **Anket**: `anket.edusonex.com.tr`
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🎯 Özellikler
 
-## What technologies are used for this project?
+### Kurumsal
+- ✅ **Edusonex CRM**: Kommo altyapılı okul yönetim sistemi
+- ✅ **DokumanOS**: Öğretmen doküman ve içerik üretim sistemi
 
-This project is built with:
+### Hibrit (AI + İnsan)
+- ✅ **Sınav Fabrikası**: Sınırsız deneme sınavı üretimi
+- ✅ **ÖdevGPT**: Sokratik AI ödev asistanı
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### AI / Creator
+- ✅ **Studio**: Video içerik üretim platformu
+- ✅ **HEM AI**: Sektörel yapay zeka eğitimleri
+- ✅ **Gamer**: Oyunlaştırılmış öğrenme deneyimleri
 
-## How can I deploy this project?
+## 📄 Lisans
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+© 2026 Edusonex. Tüm hakları saklıdır.
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+**Bismillahirrahmanirrahim** 🌟
