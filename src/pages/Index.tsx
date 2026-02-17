@@ -106,11 +106,11 @@ const Index = () => {
                   <Badge className="bg-green-500/10 text-green-600 border-green-500/20">✅ Aktif</Badge>
                 </div>
                 <CardTitle className="text-xl mb-1">ÖdevGPT</CardTitle>
-                <div className="text-xs text-muted-foreground mb-2 font-mono">odev.edusonex.com.tr</div>
+                <div className="text-xs text-muted-foreground mb-2 font-mono">odev.isikdamper.online</div>
                 <CardDescription>Sokratik yapay zeka ile kişiselleştirilmiş ödev asistanı.</CardDescription>
               </CardHeader>
               <CardContent>
-                <a href="https://odev.edusonex.com.tr/" target="_blank" rel="noopener noreferrer">
+                <a href="https://odev.isikdamper.online/" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" className="w-full border-green-500/20 hover:bg-green-500/10 hover:text-green-600 group-hover:border-green-500/40">
                     Projeye Git <ExternalLink className="ml-2 h-4 w-4" />
                   </Button>
@@ -118,7 +118,29 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* 2. HEM */}
+            {/* 2. DokumanOS */}
+            <Card className="border-blue-600/30 hover:border-blue-600/50 transition-all hover:shadow-lg hover:shadow-blue-600/10 bg-gradient-to-br from-card to-blue-600/5 group">
+              <CardHeader>
+                <div className="flex items-start justify-between mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-blue-600/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Files className="h-6 w-6 text-blue-700" />
+                  </div>
+                  <Badge className="bg-blue-600/10 text-blue-700 border-blue-600/20">✅ Aktif</Badge>
+                </div>
+                <CardTitle className="text-xl mb-1">DokumanOS</CardTitle>
+                <div className="text-xs text-muted-foreground mb-2 font-mono">evrak.isikdamper.online</div>
+                <CardDescription>Kurumsal hafıza ve doküman yönetim sistemi.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <a href="https://evrak.isikdamper.online/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" className="w-full border-blue-600/20 hover:bg-blue-600/10 hover:text-blue-700 group-hover:border-blue-600/40">
+                    Projeye Git <ExternalLink className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
+              </CardContent>
+            </Card>
+
+            {/* 3. HEM */}
             <Card className="border-blue-500/30 hover:border-blue-500/50 transition-all hover:shadow-lg hover:shadow-blue-500/10 bg-gradient-to-br from-card to-blue-500/5 group">
               <CardHeader>
                 <div className="flex items-start justify-between mb-4">
@@ -138,7 +160,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* 3. Anket */}
+            {/* 4. Anket */}
             <Card className="border-purple-500/30 hover:border-purple-500/50 transition-all hover:shadow-lg hover:shadow-purple-500/10 bg-gradient-to-br from-card to-purple-500/5 group">
               <CardHeader>
                 <div className="flex items-start justify-between mb-4">
@@ -158,7 +180,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* 4. Sınav (Nebula) */}
+            {/* 5. Sınav (Nebula) */}
             <Card className="border-orange-500/30 hover:border-orange-500/50 transition-all hover:shadow-lg hover:shadow-orange-500/10 bg-gradient-to-br from-card to-orange-500/5 group">
               <CardHeader>
                 <div className="flex items-start justify-between mb-4">
@@ -178,7 +200,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* 5. CRM */}
+            {/* 6. CRM */}
             <Card className="border-blue-500/30 hover:border-blue-500/50 transition-all hover:shadow-lg hover:shadow-blue-500/10 bg-gradient-to-br from-card to-blue-500/5 group">
               <CardHeader>
                 <div className="flex items-start justify-between mb-4">
@@ -200,7 +222,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* 6. HumanOS */}
+            {/* 7. HumanOS */}
             <Card className="border-border/50 hover:border-primary/30 transition-colors group">
               <CardHeader>
                 <div className="flex items-start justify-between mb-4">
@@ -214,7 +236,7 @@ const Index = () => {
               </CardHeader>
             </Card>
 
-            {/* 7. Studio */}
+            {/* 8. Studio */}
             <Card className="border-border/50 hover:border-primary/30 transition-colors group">
               <CardHeader>
                 <div className="flex items-start justify-between mb-4">
@@ -228,7 +250,7 @@ const Index = () => {
               </CardHeader>
             </Card>
 
-            {/* 8. Gamer */}
+            {/* 9. Gamer */}
             <Card className="border-border/50 hover:border-primary/30 transition-colors group">
               <CardHeader>
                 <div className="flex items-start justify-between mb-4">
@@ -242,7 +264,7 @@ const Index = () => {
               </CardHeader>
             </Card>
 
-            {/* 9. Akademi */}
+            {/* 10. Akademi */}
             <Card className="border-border/50 hover:border-primary/30 transition-colors group">
               <CardHeader>
                 <div className="flex items-start justify-between mb-4">
@@ -256,7 +278,7 @@ const Index = () => {
               </CardHeader>
             </Card>
 
-            {/* 10. Network */}
+            {/* 11. Network */}
             <Card className="border-border/50 hover:border-primary/30 transition-colors group">
               <CardHeader>
                 <div className="flex items-start justify-between mb-4">
@@ -270,7 +292,7 @@ const Index = () => {
               </CardHeader>
             </Card>
 
-            {/* 11. Metaverse */}
+            {/* 12. Metaverse */}
             <Card className="border-border/50 hover:border-primary/30 transition-colors group">
               <CardHeader>
                 <div className="flex items-start justify-between mb-4">
@@ -284,19 +306,6 @@ const Index = () => {
               </CardHeader>
             </Card>
 
-            {/* 12. DokumanOS */}
-            <Card className="border-border/50 hover:border-primary/30 transition-colors group">
-              <CardHeader>
-                <div className="flex items-start justify-between mb-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Files className="h-6 w-6 text-primary" />
-                  </div>
-                  <Badge variant="outline">Planlanıyor</Badge>
-                </div>
-                <CardTitle className="text-xl mb-1">DokumanOS</CardTitle>
-                <CardDescription>Kurumsal hafıza ve doküman yönetim sistemi.</CardDescription>
-              </CardHeader>
-            </Card>
 
           </div>
 
