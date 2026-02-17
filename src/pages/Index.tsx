@@ -106,11 +106,11 @@ const Index = () => {
                   <Badge className="bg-green-500/10 text-green-600 border-green-500/20">✅ Aktif</Badge>
                 </div>
                 <CardTitle className="text-xl mb-1">ÖdevGPT</CardTitle>
-                <div className="text-xs text-muted-foreground mb-2 font-mono">odev.isikdamper.online</div>
+                <div className="text-xs text-muted-foreground mb-2 font-mono">odev.</div>
                 <CardDescription>Sokratik yapay zeka ile kişiselleştirilmiş ödev asistanı.</CardDescription>
               </CardHeader>
               <CardContent>
-                <a href="https://odev.isikdamper.online/" target="_blank" rel="noopener noreferrer">
+                <a href="https://odev.edusonex.com.tr/" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" className="w-full border-green-500/20 hover:bg-green-500/10 hover:text-green-600 group-hover:border-green-500/40">
                     Projeye Git <ExternalLink className="ml-2 h-4 w-4" />
                   </Button>
@@ -128,11 +128,11 @@ const Index = () => {
                   <Badge className="bg-blue-600/10 text-blue-700 border-blue-600/20">✅ Aktif</Badge>
                 </div>
                 <CardTitle className="text-xl mb-1">DokumanOS</CardTitle>
-                <div className="text-xs text-muted-foreground mb-2 font-mono">evrak.isikdamper.online</div>
+                <div className="text-xs text-muted-foreground mb-2 font-mono">evrak.edusonex.com.tr</div>
                 <CardDescription>Kurumsal hafıza ve doküman yönetim sistemi.</CardDescription>
               </CardHeader>
               <CardContent>
-                <a href="https://evrak.isikdamper.online/" target="_blank" rel="noopener noreferrer">
+                <a href="https://evrak.edusonex.com.tr/" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" className="w-full border-blue-600/20 hover:bg-blue-600/10 hover:text-blue-700 group-hover:border-blue-600/40">
                     Projeye Git <ExternalLink className="ml-2 h-4 w-4" />
                   </Button>

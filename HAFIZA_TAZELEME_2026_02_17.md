@@ -5,16 +5,16 @@ Sisteme giriş yapan AI (ben veya bir başkası) için en önemli kural: **Farze
 Herhangi bir hata alındığında veya yeni bir işlem yapılacağında mutlaka kanıta dayalı analiz yapılmalı ve **Hata Çözüm Protokolü** (@.agent/workflows/hata_cozum_protokolu.md) işletilmelidir.
 
 ## ✅ TAMAMLANANLAR 
-1. **Veli Paneli:** Tamamen çalışır duruma getirildi. "0" istatistik sorunu çözüldü, veriler senkronize edildi.
-2. **Öğrenci Paneli:** Sahte verilerden arındırıldı, gerçek "Seviye İlerlemesi" gösteriliyor.
-3. **Veritabanı Sağlığı:** Eski ve hatalı triggerlar (`notify_parent...`) kökten temizlendi ve %100 çalışan kodlarla değiştirildi.
-4. **Altyapı:** Multi-tenant (White-Label) mimarisi kuruldu.
-5. **Canlı Yayın:** `odev.isikdamper.online` aktif ve çalışır durumda.
-6. **DokumanOS:** Canlıya alındı ve sisteme eklendi.
+1. **Veli & Öğrenci Panelleri:** Data senkronizasyonu ve UI hataları giderildi.
+2. **DokumanOS White-Labeling:** Hostname tabanlı dinamik marka yönetimi (IŞIK Akademi) kuruldu.
+3. **Canlı Yayınlar:** `odev.isikdamper.online` ve `evrak.isikdamper.online` %100 aktif.
+4. **CTO Sihri:** IŞIK Akademi için endüstriyel tema, direktör mesajı ve özel metrikler eklendi.
+5. **Temizlik:** Lovable izleri silindi, favicon build hatası giderildi.
+6. **Git/Vercel Sync:** Tüm repolar güncel ve deploy edilmiş durumda.
 
 ## 🚀 KALINDIĞI YER
-- **Öğretmen Paneli:** Geliştirme veya test süreci devam edecek.
-- **Testler:** Sistemin genel stabilite testleri yapılacak.
+- **Öğretmen Paneli:** Evrak üretim süreçlerinin markalı testleri.
+- **Dinamik Şablonlar:** Tenant bazlı özelleştirilmiş evrak taslakları.
 
 ## 🛠️ HATA ÇÖZÜM DİSİPLİNİ
 Artık hata aldığımızda otomatik devreye giren bir **Hata Çözüm Protokolümüz** var. Bu protokol işletilmeden "tahmini" çözüm uygulanmamalıdır.
