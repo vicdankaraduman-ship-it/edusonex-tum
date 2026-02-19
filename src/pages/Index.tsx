@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Building2, FileText, GraduationCap, Sparkles, Brain, Gamepad2, Globe, Layers, Users, TrendingUp, ExternalLink, Shield, Archive, BarChart3, FileCheck, Fingerprint, Video, Network, Glasses, Files } from "lucide-react";
+import { ArrowRight, Building2, FileText, GraduationCap, Sparkles, Brain, Gamepad2, Globe, Layers, Users, TrendingUp, ExternalLink, Shield, Archive, BarChart3, FileCheck, Fingerprint, Video, Network, Glasses, Files, FlaskConical } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -140,7 +140,29 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* 3. HEM */}
+            {/* 3. LAB */}
+            <Card className="border-indigo-500/30 hover:border-indigo-500/50 transition-all hover:shadow-lg hover:shadow-indigo-500/10 bg-gradient-to-br from-card to-indigo-500/5 group">
+              <CardHeader>
+                <div className="flex items-start justify-between mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-indigo-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <FlaskConical className="h-6 w-6 text-indigo-600" />
+                  </div>
+                  <Badge className="bg-indigo-500/10 text-indigo-600 border-indigo-500/20">🚀 Yeni</Badge>
+                </div>
+                <CardTitle className="text-xl mb-1">Edusonex LAB</CardTitle>
+                <div className="text-xs text-muted-foreground mb-2 font-mono">lab.edusonex.com.tr</div>
+                <CardDescription>Yapay zeka Ar-Ge ve deneysel eğitim teknolojileri.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <a href="https://lab.edusonex.com.tr/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" className="w-full border-indigo-500/20 hover:bg-indigo-500/10 hover:text-indigo-600 group-hover:border-indigo-500/40">
+                    Projeye Git <ExternalLink className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
+              </CardContent>
+            </Card>
+
+            {/* 4. HEM */}
             <Card className="border-blue-500/30 hover:border-blue-500/50 transition-all hover:shadow-lg hover:shadow-blue-500/10 bg-gradient-to-br from-card to-blue-500/5 group">
               <CardHeader>
                 <div className="flex items-start justify-between mb-4">
