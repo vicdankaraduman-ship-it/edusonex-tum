@@ -259,17 +259,25 @@ const Index = () => {
             </Card>
 
             {/* 8. Studio */}
-            <Card className="border-border/50 hover:border-primary/30 transition-colors group">
+            <Card className="border-pink-500/30 hover:border-pink-500/50 transition-all hover:shadow-lg hover:shadow-pink-500/10 bg-gradient-to-br from-card to-pink-500/5 group">
               <CardHeader>
                 <div className="flex items-start justify-between mb-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Video className="h-6 w-6 text-primary" />
+                  <div className="w-12 h-12 rounded-lg bg-pink-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Video className="h-6 w-6 text-pink-600" />
                   </div>
-                  <Badge variant="outline">Planlanıyor</Badge>
+                  <Badge className="bg-pink-500/10 text-pink-600 border-pink-500/20">✅ Aktif</Badge>
                 </div>
                 <CardTitle className="text-xl mb-1">Edusonex Studio</CardTitle>
+                <div className="text-xs text-muted-foreground mb-2 font-mono">studio.edusonex.com.tr</div>
                 <CardDescription>AI destekli video ve eğitim içeriği üretim stüdyosu.</CardDescription>
               </CardHeader>
+              <CardContent>
+                <a href="https://edusonexstudio.lovable.app/tr" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" className="w-full border-pink-500/20 hover:bg-pink-500/10 hover:text-pink-600 group-hover:border-pink-500/40">
+                    Projeye Git <ExternalLink className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
+              </CardContent>
             </Card>
 
             {/* 9. Gamer */}

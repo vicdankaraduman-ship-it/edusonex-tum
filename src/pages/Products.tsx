@@ -1,4 +1,5 @@
-import { Building2, FileText, GraduationCap, Sparkles, Brain, Gamepad2 } from "lucide-react";
+import { Building2, FileText, GraduationCap, Sparkles, Brain, Gamepad2, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Layout from "@/components/Layout";
@@ -31,6 +32,7 @@ const aiProducts = [
     icon: Sparkles,
     name: "Edusonex Studio",
     description: "Yaratıcı içerik üretimi için yapay zekâ destekli stüdyo ortamı.",
+    url: "https://edusonexstudio.lovable.app/tr",
   },
   {
     icon: Brain,
@@ -159,6 +161,15 @@ const Products = () => {
                     {product.description}
                   </CardDescription>
                 </CardHeader>
+                {product.url && (
+                  <CardContent className="pt-0">
+                    <a href={product.url} target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline" size="sm" className="w-full border-secondary/20 hover:bg-secondary/10 hover:text-secondary group-hover:border-secondary/40">
+                        Projeye Git <ExternalLink className="ml-2 h-4 w-4" />
+                      </Button>
+                    </a>
+                  </CardContent>
+                )}
               </Card>
             ))}
           </div>
