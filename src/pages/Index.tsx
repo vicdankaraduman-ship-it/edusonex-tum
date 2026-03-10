@@ -182,6 +182,28 @@ const Index = () => {
               </CardContent>
             </Card>
 
+            {/* HO - Hızlı Okuma */}
+            <Card className="border-amber-500/30 hover:border-amber-500/50 transition-all hover:shadow-lg hover:shadow-amber-500/10 bg-gradient-to-br from-card to-amber-500/5 group">
+              <CardHeader>
+                <div className="flex items-start justify-between mb-4">
+                  <div className="w-12 h-12 rounded-lg bg-amber-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <TrendingUp className="h-6 w-6 text-amber-600" />
+                  </div>
+                  <Badge className="bg-amber-500/10 text-amber-600 border-amber-500/20">✅ Aktif</Badge>
+                </div>
+                <CardTitle className="text-xl mb-1">Hızlı Okuma</CardTitle>
+                <div className="text-xs text-muted-foreground mb-2 font-mono">ho.edusonex.com.tr</div>
+                <CardDescription>Adaptif hızlı okuma ve göz egzersizi platformu. RSVP, AI quiz ve oyunlaştırma sistemiyle okuma hızını bilimsel yöntemlerle artırır.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <a href="https://ho.edusonex.com.tr/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" className="w-full border-amber-500/20 hover:bg-amber-500/10 hover:text-amber-600 group-hover:border-amber-500/40">
+                    Projeye Git <ExternalLink className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
+              </CardContent>
+            </Card>
+
             {/* 4. Anket */}
             <Card className="border-purple-500/30 hover:border-purple-500/50 transition-all hover:shadow-lg hover:shadow-purple-500/10 bg-gradient-to-br from-card to-purple-500/5 group">
               <CardHeader>
