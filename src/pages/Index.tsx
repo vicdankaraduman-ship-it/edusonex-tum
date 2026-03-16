@@ -13,32 +13,32 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="text-center max-w-4xl mx-auto">
             <Badge variant="outline" className="mb-6 py-2 px-4 text-sm bg-background/50 backdrop-blur-sm border-primary/20 text-primary animate-fade-in">
-              ✨ Geleceğin Eğitim Teknolojisi
+              🏆 Türkiye'nin AI Okul Kayıt Motoru
             </Badge>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground mb-6 animate-fade-in [animation-delay:200ms]">
-              Okulunuz İçin <br />
+              Reklama Değil, <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-purple-500 to-secondary">
-                Yapay Zeka Destekli
+                Sisteme Yatırım Yapın
               </span>
-              <br />
-              Dijital Dönüşüm
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto animate-fade-in [animation-delay:400ms]">
-              Edusonex, okulların ihtiyaç duyduğu tüm dijital araçları tek bir platformda birleştirir.
-              Yönetimden eğitime, ölçmeden iletişime kadar her şey burada.
+            <p className="text-xl md:text-2xl text-muted-foreground mb-4 max-w-2xl mx-auto animate-fade-in [animation-delay:400ms]">
+              Kendi markanızla çalışan yapay zeka altyapısıyla aday öğrencileri bulun, sıcak veli datası toplayın ve kayıtlarınızı artırın.
+            </p>
+            <p className="text-base text-primary font-semibold mb-10 animate-fade-in [animation-delay:500ms]">
+              ✅ Sadece 1-2 yeni öğrenci kaydı, tüm yıllık yatırımı amorti eder.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in [animation-delay:600ms]">
               <Link to="/iletisim">
                 <Button size="lg" className="h-12 px-8 text-lg group">
-                  Hemen Başlayın
+                  VIP Demo Talep Et
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </Link>
-              <Link to="/urunler">
+              <a href="#nasil-calisir">
                 <Button size="lg" variant="outline" className="h-12 px-8 text-lg">
-                  Özellikleri Keşfet
+                  ▶ Nasıl Çalışır? (1 Dk İzle)
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>
@@ -74,6 +74,34 @@ const Index = () => {
               </div>
               <h3 className="font-semibold text-foreground">Okul Markası Güçlenir</h3>
               <p className="mt-2 text-sm text-muted-foreground">Okul markası ve alan adıyla çalışan sistemler ile dijital kimlik oluşur.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Video Section */}
+      <section id="nasil-calisir" className="py-16 lg:py-24 bg-background">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center mb-10">
+            <Badge className="mb-4 bg-primary/10 text-primary border-primary/20 hover:bg-primary/10">
+              ▶ Sistemi Canlı İzleyin
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              1 Dakikada Her Şeyi Anlayın
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+              Edusonex'in okullara nasıl yeni öğrenci, prestij ve kâr kazandırdığını izleyin.
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl border border-border/50 bg-black">
+              <iframe
+                src="https://www.youtube.com/embed/c3l_dFLqwD4"
+                title="Edusonex - Sistemi Nasıl Çalışır?"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+              />
             </div>
           </div>
         </div>
@@ -378,19 +406,77 @@ const Index = () => {
         </div>
       </section>
 
+      {/* SSS Section */}
+      <section className="py-16 lg:py-24 bg-muted/30">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center mb-12">
+            <Badge className="mb-4 bg-primary/10 text-primary border-primary/20 hover:bg-primary/10">
+              💬 Sık Sorulan Sorular
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              Kurucuların En Çok Sorduğu Sorular
+            </h2>
+          </div>
+          <div className="max-w-3xl mx-auto space-y-4">
+            {[
+              {
+                q: "Edusonex nedir ve kurumumuza nasıl bir avantaj sağlar?",
+                a: "Edusonex, özel okullar ve kurs merkezleri için geliştirilmiş, kendi logonuzla kullanabileceğiniz bir \"Yapay Zeka Destekli Öğrenci Kayıt Motoru\"dur. Geleneksel reklam ve bursluluk sınavlarının aksine, okulunuza aday öğrencileri otomatik olarak çeker ve sıcak veli datası üretir."
+              },
+              {
+                q: "Veliler testi çözerken Edusonex adını görecek mi?",
+                a: "Hayır. Edusonex \"White-Label\" (beyaz etiket) bir altyapıdır. Veliler ve öğrenciler tüm süreci sizin okulunuzun kendi logosu ve markası altında deneyimler. Dışarıdan yazılım kiraladığınız belli olmaz."
+              },
+              {
+                q: "Sistem üzerinden potansiyel velilere nasıl ulaşıyoruz?",
+                a: "Çevrenizdeki potansiyel öğrencilere kendi markanızla bir \"Ücretsiz Akademik Potansiyel Analizi\" linki gönderirsiniz. Öğrenci testi tamamladığında veli, raporu almak için iletişim bilgisini bırakır. O an, kayıt-kabul ekranınıza \"Sıcak Müşteri (Hot Lead)\" olarak düşer."
+              },
+              {
+                q: "Yatırım geri dönüşü (ROI) ne kadar sürede gerçekleşir?",
+                a: "Kanca sistemi sayesinde ulaştığınız yüzlerce aday arasından sadece 1-2 yeni öğrenci kaydı aldığınızda, Edusonex'in 1 yıllık kiralama maliyeti anında amorti edilir. Bu sayının üzerindeki tüm kayıtlar kurumunuzun doğrudan net kârıdır."
+              },
+              {
+                q: "Öğrenci başına ödeme yapıyor muyuz?",
+                a: "Hayır. Öğrenci sayısından bağımsız olarak sabit bir yıllık kiralama bedeli ödenir. Okulunuz büyüdükçe yazılım faturanız artmaz. Bu \"Edu-RaaS\" modelinin en büyük avantajıdır."
+              },
+              {
+                q: "Teknik altyapı kurmamız gerekiyor mu?",
+                a: "Hayır. Sunucu kurulumu, barındırma ve API güncellemeleri tarafımızdan yönetilir. IT ekibine ihtiyaç duymadan, anahtar teslim olarak sistemi hemen kullanmaya başlarsınız."
+              }
+            ].map((item, i) => (
+              <div key={i} className="bg-card border border-border/50 rounded-xl p-6 hover:border-primary/20 hover:shadow-md transition-all">
+                <h3 className="font-semibold text-foreground mb-3 flex items-start gap-2">
+                  <span className="text-primary font-bold text-lg leading-none mt-0.5">Q</span>
+                  {item.q}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed pl-5">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 lg:py-24 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Eğitimin Geleceğini Bugünden İnşa Edin
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Okulunuz İçin Ücretsiz Büyüme Analizi
           </h2>
-          <p className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-8">
-            Edusonex teknolojileriyle okulunuzu yapay zeka çağına hazırlayın.
+          <p className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto mb-3">
+            30 dakikalık strateji görüşmesinde, Edusonex'in okulunuza kaç yeni kayıt getirebileceğini birlikte hesaplayalım.
+          </p>
+          <p className="text-sm text-primary-foreground/70 mb-10">
+            🏆 İlk başvuran okullara özel kurulum avantajı geçerlidir.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/iletisim">
               <Button size="lg" variant="secondary" className="w-full sm:w-auto text-primary font-semibold hover:bg-white/90">
-                Bizimle İletişime Geçin <ExternalLink className="ml-2 h-4 w-4" />
+                VIP Demo Talep Et <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
+            <Link to="/referanslar">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto border-white/30 text-white hover:bg-white/10">
+                Başarı Hikayelerini Gör <ExternalLink className="ml-2 h-4 w-4" />
               </Button>
             </Link>
           </div>
