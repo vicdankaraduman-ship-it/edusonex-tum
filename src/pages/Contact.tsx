@@ -9,7 +9,6 @@ import { Badge } from "@/components/ui/badge";
 import Layout from "@/components/Layout";
 
 // Web3Forms access key — ücretsiz, Cloudflare Pages uyumlu
-const WEB3FORMS_KEY = "YOUR_WEB3FORMS_KEY"; // → https://web3forms.com üzerinden ücretsiz alın
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -19,7 +18,6 @@ const Contact = () => {
     institution: "",
     role: "",
     studentCount: "",
-    package: "",
     message: "",
   });
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
@@ -35,29 +33,16 @@ const Contact = () => {
     setStatus("sending");
 
     try {
-      const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("/api/contact", {
         method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({
-          access_key: WEB3FORMS_KEY,
-          subject: `[Edusonex Demo Talebi] ${formData.institution} – ${formData.package || "Paket Belirsiz"}`,
-          from_name: formData.name,
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          institution: formData.institution,
-          role: formData.role,
-          studentCount: formData.studentCount,
-          package: formData.package,
-          message: formData.message,
-          botcheck: "",
-        }),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
       });
 
       const result = await response.json();
       if (result.success) {
         setStatus("success");
-        setFormData({ name: "", email: "", phone: "", institution: "", role: "", studentCount: "", package: "", message: "" });
+        setFormData({ name: "", email: "", phone: "", institution: "", role: "", studentCount: "", message: "" });
       } else {
         setStatus("error");
       }
