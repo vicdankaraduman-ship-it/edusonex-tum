@@ -141,7 +141,7 @@ const Index = () => {
                   "'Okulumuzun AI Asistanı' → Kendi markanızla White-Label",
                   "Sıcak veli datası → Çocuğun güçlü/zayıf yönlerini biliyorsunuz",
                   "Satış değil, çözüm konuşması → Dönüşüm 3-4x artar",
-                  "Sabit yıllık kiralama → Öğrenci sayısı arttıkça fatura artmaz",
+                  "Kapasite bazlı sabit paket → Öğrenci sayısı 2x artsa fatura 2x artmaz",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm text-foreground">
                     <CheckCircle className="h-4 w-4 text-primary shrink-0 mt-0.5" />
@@ -577,7 +577,7 @@ const Index = () => {
               },
               {
                 q: "Öğrenci başına ödeme yapıyor muyuz?",
-                a: "Hayır. Öğrenci sayısından bağımsız olarak sabit bir yıllık kiralama bedeli ödenir. Okulunuz büyüdükçe yazılım faturanız artmaz. Bu \"Edu-RaaS\" modelinin en büyük avantajıdır."
+                a: "Hayır, öğrenci başına ücret alınmaz. Kapasite bazlı 3 paket vardır: Starter (250 öğrenciye kadar), Growth (750'ye kadar), Enterprise (1.000'e kadar). Klasik SaaS'ın aksine öğrenci sayınız 2 katına çıksa bile ödemeniz 2 kat artmaz — Growth'tan Enterprise'a geçiş yalnızca %26 artış demektir."
               },
               {
                 q: "Teknik altyapı kurmamız gerekiyor mu?",
