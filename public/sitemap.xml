@@ -4,7 +4,7 @@
 
   <!-- Ana Sayfa -->
   <url>
-    <loc>https://edusonex.com/</loc>
+    <loc>https://edusonex.com.tr/</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -12,7 +12,7 @@
 
   <!-- Çözümler / Ürünler -->
   <url>
-    <loc>https://edusonex.com/urunler</loc>
+    <loc>https://edusonex.com.tr/urunler</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -20,7 +20,7 @@
 
   <!-- İletişim / Demo -->
   <url>
-    <loc>https://edusonex.com/iletisim</loc>
+    <loc>https://edusonex.com.tr/iletisim</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -28,7 +28,7 @@
 
   <!-- Referanslar -->
   <url>
-    <loc>https://edusonex.com/referanslar</loc>
+    <loc>https://edusonex.com.tr/referanslar</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -36,7 +36,7 @@
 
   <!-- Blog -->
   <url>
-    <loc>https://edusonex.com/blog</loc>
+    <loc>https://edusonex.com.tr/blog</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -44,7 +44,7 @@
 
   <!-- Hakkımızda -->
   <url>
-    <loc>https://edusonex.com/hakkimizda</loc>
+    <loc>https://edusonex.com.tr/hakkimizda</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -52,7 +52,7 @@
 
   <!-- Platform Mimarisi -->
   <url>
-    <loc>https://edusonex.com/universe</loc>
+    <loc>https://edusonex.com.tr/universe</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -60,7 +60,7 @@
 
   <!-- Kommo CRM -->
   <url>
-    <loc>https://edusonex.com/kommo</loc>
+    <loc>https://edusonex.com.tr/kommo</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -68,7 +68,7 @@
 
   <!-- Gizlilik Politikası -->
   <url>
-    <loc>https://edusonex.com/gizlilik</loc>
+    <loc>https://edusonex.com.tr/gizlilik</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
@@ -76,7 +76,7 @@
 
   <!-- Kullanım Şartları -->
   <url>
-    <loc>https://edusonex.com/kullanim-sartlari</loc>
+    <loc>https://edusonex.com.tr/kullanim-sartlari</loc>
     <lastmod>2026-03-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>

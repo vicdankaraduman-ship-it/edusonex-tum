@@ -1,5 +1,5 @@
 # Edusonex robots.txt
-# https://edusonex.com
+# https://edusonex.com.tr
 
 # ─── Arama Motorları ───────────────────────────────────────
 User-agent: Googlebot
@@ -87,5 +87,5 @@ Allow: /
 Disallow: /api/
 
 # ─── Sitemap & LLMs ────────────────────────────────────────
-Sitemap: https://edusonex.com/sitemap.xml
-LLMs: https://edusonex.com/llms.txt
+Sitemap: https://edusonex.com.tr/sitemap.xml
+LLMs: https://edusonex.com.tr/llms.txt
