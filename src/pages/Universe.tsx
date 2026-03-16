@@ -26,6 +26,7 @@ const tiers = [
         subtitle: "Cevher / NöroBil",
         description: "Öğrencinin dijital ikizi. Performans analizi, yetenek haritası ve biyolojik verilerin işlendiği merkezi işletim sistemi.",
         icon: Cpu,
+        href: "https://norobil.edusonex.com.tr/",
         active: true,
         color: "text-indigo-400",
         bg: "bg-indigo-500/10",
