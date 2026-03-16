@@ -32,7 +32,7 @@ const aiProducts = [
     icon: Sparkles,
     name: "Edusonex Studio",
     description: "Yaratıcı içerik üretimi için yapay zekâ destekli stüdyo ortamı.",
-    url: "https://edusonexstudio.lovable.app/tr",
+    url: "https://studio.edusonex.com.tr/",
   },
   {
     icon: Brain,

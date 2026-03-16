@@ -302,7 +302,7 @@ const Index = () => {
                 <CardDescription>AI destekli video ve eğitim içeriği üretim stüdyosu.</CardDescription>
               </CardHeader>
               <CardContent>
-                <a href="https://edusonexstudio.lovable.app/tr" target="_blank" rel="noopener noreferrer">
+                <a href="https://studio.edusonex.com.tr/" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" className="w-full border-pink-500/20 hover:bg-pink-500/10 hover:text-pink-600 group-hover:border-pink-500/40">
                     Projeye Git <ExternalLink className="ml-2 h-4 w-4" />
                   </Button>
