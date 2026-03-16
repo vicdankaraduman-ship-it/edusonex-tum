@@ -10,8 +10,8 @@ const Footer = () => {
           <div className="space-y-4">
             <span className="text-2xl font-bold tracking-tight text-white">EDUSONEX</span>
             <p className="text-sm text-primary-foreground/80 leading-relaxed max-w-xs font-light">
-              Okullara özel yapay zekâ destekli
-              eğitim teknolojileri altyapıları.
+              Okullara AI destekli öğrenci kazanım
+              altyapısı. White-label, kapasite bazlı fiyat.
             </p>
           </div>
 
@@ -20,18 +20,23 @@ const Footer = () => {
             <h3 className="font-semibold mb-6 text-white text-lg">Hızlı Bağlantılar</h3>
             <ul className="space-y-3 text-sm text-primary-foreground/80">
               <li>
-                <Link to="/hakkimizda" className="hover:text-white transition-colors hover:translate-x-1 inline-block duration-200">
-                  Hakkımızda
+                <Link to="/urunler" className="hover:text-white transition-colors hover:translate-x-1 inline-block duration-200">
+                  Çözümler
                 </Link>
               </li>
               <li>
-                <Link to="/universe" className="hover:text-white transition-colors hover:translate-x-1 inline-block duration-200">
-                  Evren
+                <Link to="/urunler#fiyatlandirma" className="hover:text-white transition-colors hover:translate-x-1 inline-block duration-200">
+                  Fiyatlandırma
                 </Link>
               </li>
               <li>
                 <Link to="/referanslar" className="hover:text-white transition-colors hover:translate-x-1 inline-block duration-200">
-                  Referanslar
+                  Başarı Hikayeleri
+                </Link>
+              </li>
+              <li>
+                <Link to="/hakkimizda" className="hover:text-white transition-colors hover:translate-x-1 inline-block duration-200">
+                  Hakkımızda
                 </Link>
               </li>
               <li>
@@ -41,7 +46,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/iletisim" className="hover:text-white transition-colors hover:translate-x-1 inline-block duration-200">
-                  İletişim
+                  Demo Talep Et
                 </Link>
               </li>
             </ul>

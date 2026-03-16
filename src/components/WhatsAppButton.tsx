@@ -3,7 +3,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 
 const WhatsAppButton = () => {
     const phoneNumber = "905320674063";
-    const message = "Merhaba, Edusonex hakkında bilgi almak istiyorum.";
+    const message = "Merhaba, Edusonex VIP Demo talep ediyorum. Okulumuz için büyüme analizi görüşmesi yapmak istiyorum.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     return (

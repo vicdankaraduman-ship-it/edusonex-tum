@@ -8,69 +8,69 @@ import { Link } from "react-router-dom";
 const posts = [
     {
         id: 1,
-        title: "Yapay Zeka Destekli Eğitimde Yeni Dönem: Kişiselleştirilmiş Öğrenme",
-        excerpt: "Her öğrencinin öğrenme hızı ve stili farklıdır. Yapay zeka teknolojileri ile bu farkı avantaja çeviriyoruz.",
-        category: "Eğitim Teknolojileri",
-        author: "Dr. Ahmet Yılmaz",
-        date: "15 Şubat 2026",
-        readTime: "5 dk",
-        image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2070&auto=format&fit=crop",
-        slug: "yapay-zeka-egitim"
+        title: "Bir Özel Okul Öğrencisini Kayıt Ettirmenin Gerçek Maliyeti: 15.000 TL mi, 2.000 TL mi?",
+        excerpt: "Billboard, sosyal medya reklamı ve açık kapı gününün toplam maliyetini hesapladığınızda, her yeni kayıt için ödediğiniz tutar sizi şaşırtacak. AI kanca sistemi bu denklemi nasıl değiştiriyor?",
+        category: "Okul Yönetimi",
+        author: "Edusonex Ekibi",
+        date: "10 Mart 2026",
+        readTime: "6 dk",
+        image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2011&auto=format&fit=crop",
+        slug: "ogrenci-kayit-maliyeti"
     },
     {
         id: 2,
-        title: "Okul Yönetiminde Veri Odaklı Karar Alma Süreçleri",
-        excerpt: "Büyük veri analitiği sayesinde okul yöneticileri artık daha stratejik ve isabetli kararlar alabiliyor.",
-        category: "Yönetim",
-        author: "Zeynep Demir",
-        date: "8 Şubat 2026",
-        readTime: "7 dk",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-        slug: "veri-odakli-yonetim"
+        title: "Veliler Neden Billboard'a Körleşti? 2026'da Özel Okul Pazarlaması",
+        excerpt: "Geleneksel reklam yöntemleri artık eskisi kadar işe yaramıyor. Velilerin okulları nasıl seçtiği değişti — buna göre kayıt stratejinizi güncellemenin zamanı geldi.",
+        category: "Pazarlama",
+        author: "Edusonex Ekibi",
+        date: "5 Mart 2026",
+        readTime: "5 dk",
+        image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074&auto=format&fit=crop",
+        slug: "veli-reklam-korlesmesi"
     },
     {
         id: 3,
-        title: "Sanal Gerçeklik (VR) ile Sınıf Duvarlarını Aşmak",
-        excerpt: "Öğrencileri tarih öncesi çağlara veya uzayın derinliklerine götüren sürükleyici eğitim deneyimleri.",
-        category: "İnovasyon",
-        author: "Mehmet Kaya",
-        date: "2 Şubat 2026",
+        title: "White-Label AI: \"Kendi Yazılımımız\" Demenin Okula Getirdiği Prestij Avantajı",
+        excerpt: "Veliler sistemi sizin kurumunuza ait sanırsa güven 3 kata çıkıyor. White-label modelin kayıt dönüşüm oranını nasıl etkilediğini açıkladık.",
+        category: "Strateji",
+        author: "Edusonex Ekibi",
+        date: "28 Şubat 2026",
         readTime: "4 dk",
-        image: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=2078&auto=format&fit=crop",
-        slug: "sanal-gerceklik-egitim"
+        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop",
+        slug: "white-label-prestij"
     },
     {
         id: 4,
-        title: "Öğretmenler İçin Dijital Yetkinlik Rehberi",
-        excerpt: "21. yüzyılın eğitimcisi olmak için sahip olunması gereken temel dijital beceriler ve araçlar.",
-        category: "Akademi",
-        author: "Elif Şahin",
-        date: "28 Ocak 2026",
-        readTime: "6 dk",
-        image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop",
-        slug: "ogretmen-dijital-yetkinlik"
+        title: "Okul Kurucusu Rehberi: AI Sisteminiz PDR Zümresini Neden Karşısına Almamalı?",
+        excerpt: "\"Psikolojik analiz\" kavramı Türkiye'de güçlü bir lobiyle karşı karşıya. Sistemin dilini \"Akademik Potansiyel Haritası\" olarak değiştirerek bu riski nasıl sıfırlarsınız?",
+        category: "Hukuki & Etik",
+        author: "Edusonex Ekibi",
+        date: "20 Şubat 2026",
+        readTime: "7 dk",
+        image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop",
+        slug: "pdr-riski-yonetimi"
     },
     {
         id: 5,
-        title: "Oyunlaştırma (Gamification) ile Motivasyonu Artırmak",
-        excerpt: "Dersleri daha eğlenceli ve rekabetçi hale getirerek öğrenci katılımını maksimize etmenin yolları.",
-        category: "Metodoloji",
-        author: "Burak Çelik",
-        date: "20 Ocak 2026",
-        readTime: "5 dk",
-        image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=2071&auto=format&fit=crop",
-        slug: "oyunlastirma-motivasyon"
+        title: "Zincir Okul Anlaşması: Tek İmzayla 20 Kampüsü Nasıl Kazanırsınız?",
+        excerpt: "Türkiye'de Bahçeşehir, Doğa, Uğur gibi zincirlerin karar mekanizması nasıl işliyor? Genel müdürü ikna etmenin 3 adımı.",
+        category: "Satış Stratejisi",
+        author: "Edusonex Ekibi",
+        date: "15 Şubat 2026",
+        readTime: "8 dk",
+        image: "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?q=80&w=2074&auto=format&fit=crop",
+        slug: "zincir-okul-anlasma"
     },
     {
         id: 6,
-        title: "Hibrit Eğitim Modelleri ve Geleceğin Okulu",
-        excerpt: "Fiziksel ve dijital öğrenme ortamlarının en iyi yönlerini birleştiren esnek eğitim yapıları.",
-        category: "Vizyon",
-        author: "Ayşe Yurt",
-        date: "15 Ocak 2026",
-        readTime: "8 dk",
-        image: "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2070&auto=format&fit=crop",
-        slug: "hibrit-egitim-gelecek"
+        title: "ROI Analizi: 49.750 TL/ay Harcama Kaç Yeni Kayıtla Geri Döner?",
+        excerpt: "Gerçek bir hesaplama: Enterprise paketi alan bir okul, yıllık kaç öğrenci kaydında tüm yatırımını amorti eder? Farklı kayıt ücretlerine göre kırılım barları.",
+        category: "Finans & ROI",
+        author: "Edusonex Ekibi",
+        date: "8 Şubat 2026",
+        readTime: "5 dk",
+        image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2070&auto=format&fit=crop",
+        slug: "roi-analizi"
     }
 ];
 
@@ -83,14 +83,14 @@ const Blog = () => {
                     {/* Header */}
                     <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
                         <Badge variant="secondary" className="mb-4 text-primary bg-primary/10 hover:bg-primary/20 border-primary/20 px-4 py-1.5 rounded-full text-sm font-medium">
-                            Blog & Görüşler
+                            Okul Kurucu Blogu
                         </Badge>
                         <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-6">
-                            Eğitim Teknolojilerindeki <br />
-                            <span className="text-primary">Son Gelişmeler</span>
+                            Okul Yöneticilerine Özel <br />
+                            <span className="text-primary">Kayıt & Pazarlama Rehberleri</span>
                         </h1>
                         <p className="text-lg text-muted-foreground leading-relaxed">
-                            Yapay zeka, dijital dönüşüm ve modern eğitim metodolojileri üzerine uzman görüşleri, rehberler ve başarı hikayeleri.
+                            Reklam harcamalarınızı azaltırken kayıt oranlarınızı artırmak isteyen okul kurucusu ve yöneticilerine özel stratejik içerikler.
                         </p>
                     </div>
 
