@@ -577,7 +577,7 @@ const Index = () => {
               },
               {
                 q: "Öğrenci başına ödeme yapıyor muyuz?",
-                a: "Hayır, öğrenci başına ücret alınmaz. Kapasite bazlı 3 paket vardır: Starter (250 öğrenciye kadar), Growth (750'ye kadar), Enterprise (1.000'e kadar). Klasik SaaS'ın aksine öğrenci sayınız 2 katına çıksa bile ödemeniz 2 kat artmaz — Growth'tan Enterprise'a geçiş yalnızca %26 artış demektir."
+                a: "Hayır, öğrenci başına ücret alınmaz. 3 aylık kapasite paketi vardır: Starter (100 öğrenciye kadar, 29.000 TL/ay), Growth (500'e kadar, 39.500 TL/ay), Enterprise (1.000'e kadar, 49.750 TL/ay). Klasik SaaS'ın aksine öğrenci sayınız 5 katına çıksa bile ödemeniz %71 artış gösterir, 5x değil."
               },
               {
                 q: "Teknik altyapı kurmamız gerekiyor mu?",
