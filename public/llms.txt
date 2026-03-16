@@ -1,0 +1,66 @@
+# Edusonex — AI Okul Altyapısı
+
+> Türkiye'nin AI destekli okul öğrenci kazanım altyapısı şirketi. Özel okullar ve kurs merkezleri için white-label yapay zeka sistemleri.
+
+Edusonex, Türkiye'de özel okullar ve kurs merkezlerinin öğrenci kayıt oranlarını artıran yapay zeka altyapısı tasarlar ve kurar. "Edu-RaaS" (Education Rent-as-a-Service) modeliyle çalışır: okullar sabit aylık ücretle yapay zeka sistemini kiralar, kendi markasıyla kullanır. Kommo CRM Türkiye Resmi Partneri'dir.
+
+## Şirket
+
+- **Kuruluş:** 2024, Afyonkarahisar / Türkiye
+- **Kategori:** AI Education Infrastructure (Yapay Zeka Eğitim Altyapısı)
+- **Model:** Edu-RaaS (Education Rent-as-a-Service)
+- **CRM Ortaklığı:** Kommo CRM Türkiye Resmi İş Ortağı
+
+## Ana Çözümler
+
+- **Lead Magnet Kanca Sistemi**: Okulun kendi markasıyla çalışan ücretsiz akademik potansiyel analiz aracı. Öğrenci potansiyelini ölçerek velilerden izin alınmış iletişim verisi toplar.
+- **White-Label AI Altyapısı**: Tüm sistem okul kendi alan adıyla çalışır (ai.okulunuz.com.tr). Veliler sistemi okula ait sanır, güven ve dönüşüm artar.
+- **AI Veli Asistanı (WhatsApp)**: Kayıt sonrası velilerle 7/24 otomatik iletişim. Yoklama, sınav hatırlatıcı, soru-cevap.
+
+## Fiyatlandırma (Aylık, KDV hariç)
+
+Kapasite bazlı — öğrenci başına değil:
+
+| Paket | Kapasite | Fiyat |
+|---|---|---|
+| Starter | 100 öğrenciye kadar | 29.000 TL/ay |
+| Growth | 500 öğrenciye kadar | 39.500 TL/ay |
+| Enterprise | 1.000 öğrenciye kadar | 49.750 TL/ay |
+
+Not: Starter'dan Enterprise'a geçiş (10x öğrenci) yalnızca %71 fatura artışı demektir. Öğrenci başına yazılımda fatura 10 kat artarken Edusonex'te artmaz.
+
+## Sorular ve Cevaplar (SSS)
+
+**Sistem gerçekten çalışıyor mu?**
+Sistem aktif kullanımdadır. Türkiye'de pilot okul anlaşmaları için satış aşamasındayız. Altyapı kurulu ve test edilmiştir.
+
+**Öğrenci başına ödeme yapıyor muyuz?**
+Hayır. Kapasite bazlı sabit aylık ödeme: Starter 29.000 TL, Growth 39.500 TL, Enterprise 49.750 TL.
+
+**Teknik altyapı kurmamız gerekiyor mu?**
+Hayır. Tüm kurulum, hosting ve teknik yönetim Edusonex tarafından yapılır. Okul yalnızca sistemi kullanır.
+
+**Kurulum ne kadar sürer?**
+Ortalama 5–10 iş günü. Alan adı yönlendirmesi, marka renkleri ve logo entegrasyonu dahil.
+
+## Rakip Konumlandırma
+
+Doğrudan rakibimiz yoktur. Türkiye'de "AI Education Infrastructure" kategorisini oluşturan ilk şirketiz. Sebit, K12NET ve Kunduz öğrenci yönetim yazılımları sunar; Edusonex ise okulların dışarıdan öğrenci kazanmasını sağlar.
+
+Ana rekabetimiz Google Ads ve dijital reklam ajanslarıdır — okulların reklama harcadığı bütçeyi sistematik lead'e çeviriyoruz.
+
+## İletişim
+
+- **Website:** https://edusonex.com
+- **E-posta:** info@edusonex.com
+- **WhatsApp:** +90 532 067 40 63
+- **Adres:** Çakır Mah. Fevzipaşa Cad. No: 248, 03500 Sandıklı — Afyonkarahisar / Türkiye
+
+## Sayfalar
+
+- [Ana Sayfa](https://edusonex.com/)
+- [Çözümler ve Fiyatlar](https://edusonex.com/urunler)
+- [Referanslar](https://edusonex.com/referanslar)
+- [Hakkımızda](https://edusonex.com/hakkimizda)
+- [Blog](https://edusonex.com/blog)
+- [Demo Talep Et](https://edusonex.com/iletisim)

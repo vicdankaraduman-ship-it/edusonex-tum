@@ -32,5 +32,238 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- ═══════════════════════════════════════════════
+         JSON-LD Structured Data — Google & AI Modeller
+         ═══════════════════════════════════════════════ -->
+
+    <!-- 1. Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://edusonex.com/#organization",
+      "name": "Edusonex",
+      "alternateName": "Edusonex Eğitim Teknolojileri",
+      "url": "https://edusonex.com",
+      "logo": "https://edusonex.com/favicon.svg",
+      "description": "Türkiye'de özel okullar ve kurs merkezleri için AI destekli öğrenci kazanım altyapısı. White-label yapay zeka sistemleriyle okulların kendi markasıyla öğrenci kayıt oranlarını artırır.",
+      "foundingDate": "2024",
+      "foundingLocation": "Afyonkarahisar, Türkiye",
+      "areaServed": "TR",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+90-532-067-40-63",
+          "contactType": "sales",
+          "availableLanguage": "Turkish",
+          "contactOption": "TollFree"
+        },
+        {
+          "@type": "ContactPoint",
+          "email": "info@edusonex.com",
+          "contactType": "customer support"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Çakır Mah. Fevzipaşa Cad. No: 248",
+        "addressLocality": "Sandıklı",
+        "addressRegion": "Afyonkarahisar",
+        "postalCode": "03500",
+        "addressCountry": "TR"
+      },
+      "sameAs": [
+        "https://www.kommo.com/tr/partnerler/bir-partner-bulun/edusonex-egitim-teknolojileri/"
+      ],
+      "knowsAbout": [
+        "AI Education Technology",
+        "School Marketing Automation",
+        "White-Label EdTech",
+        "CRM for Schools",
+        "Student Acquisition Systems",
+        "Edu-RaaS"
+      ]
+    }
+    </script>
+
+    <!-- 2. WebSite Schema (Sitelinks Search Box) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://edusonex.com/#website",
+      "url": "https://edusonex.com",
+      "name": "Edusonex",
+      "description": "Okullara AI Destekli Öğrenci Kazanım Motoru",
+      "inLanguage": "tr-TR",
+      "publisher": {
+        "@id": "https://edusonex.com/#organization"
+      }
+    }
+    </script>
+
+    <!-- 3. SoftwareApplication Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Edusonex AI Okul Platformu",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "url": "https://edusonex.com",
+      "description": "Özel okullar ve kurs merkezleri için white-label AI öğrenci kazanım ve veli yönetim platformu. Akademik potansiyel analizi, lead toplama ve WhatsApp veli asistanı içerir.",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Starter Paketi",
+          "description": "100 öğrenciye kadar kapasite",
+          "price": "29000",
+          "priceCurrency": "TRY",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "29000",
+            "priceCurrency": "TRY",
+            "unitCode": "MON"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Growth Paketi",
+          "description": "500 öğrenciye kadar kapasite",
+          "price": "39500",
+          "priceCurrency": "TRY",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "39500",
+            "priceCurrency": "TRY",
+            "unitCode": "MON"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Enterprise Paketi",
+          "description": "1.000 öğrenciye kadar kapasite",
+          "price": "49750",
+          "priceCurrency": "TRY",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "49750",
+            "priceCurrency": "TRY",
+            "unitCode": "MON"
+          }
+        }
+      ],
+      "provider": {
+        "@id": "https://edusonex.com/#organization"
+      }
+    }
+    </script>
+
+    <!-- 4. Service Schemas -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Edusonex Çözümleri",
+      "description": "Okullara yönelik AI hizmetleri",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Service",
+            "name": "AI Lead Magnet Kanca Sistemi",
+            "description": "Okulun kendi markasıyla çalışan ücretsiz akademik potansiyel analiz aracı. Velilerin iletişim bilgilerini yasal yollarla toplar ve kayıt hunisine sokar.",
+            "provider": { "@id": "https://edusonex.com/#organization" },
+            "areaServed": "TR",
+            "serviceType": "AI Lead Generation"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Service",
+            "name": "White-Label AI Eğitim Altyapısı",
+            "description": "Okul kendi alan adı ve markasıyla çalışan yapay zeka platformu. Tüm kurulum, hosting ve teknik yönetim Edusonex tarafından yapılır.",
+            "provider": { "@id": "https://edusonex.com/#organization" },
+            "areaServed": "TR",
+            "serviceType": "White-Label EdTech Infrastructure"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Service",
+            "name": "AI Veli Asistanı (WhatsApp)",
+            "description": "Kayıt sonrası velilerle 7/24 otomatik WhatsApp iletişimi. Yoklama bildirimi, sınav hatırlatıcı, soru-cevap — personel maliyeti olmadan.",
+            "provider": { "@id": "https://edusonex.com/#organization" },
+            "areaServed": "TR",
+            "serviceType": "AI Parent Communication"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- 5. FAQPage Schema (Öne Çıkan Snippet) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Edusonex ne işe yarar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Edusonex, Türkiye'deki özel okullar ve kurs merkezlerinin öğrenci kayıt oranlarını artıran AI altyapısı sunar. Okulun kendi markasıyla çalışan yapay zeka sistemi, velilerden iletişim bilgisi toplar (lead), bu lead'leri kayıt hunisine sokar ve WhatsApp üzerinden veli ilişkisini yönetir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Öğrenci başına ödeme yapıyor muyuz?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır. Edusonex kapasite bazlı sabit aylık fiyat uygular: Starter (100 öğrenciye kadar) 29.000 TL/ay, Growth (500'e kadar) 39.500 TL/ay, Enterprise (1.000'e kadar) 49.750 TL/ay. Öğrenci sayısı 10 katına çıksa bile fatura yalnızca %71 artar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Teknik altyapı kurmamız gerekiyor mu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hayır. Tüm kurulum, hosting, alan adı yapılandırması ve teknik yönetim Edusonex tarafından yapılır. Okul yalnızca sistemi kullanır. Ortalama kurulum süresi 5–10 iş günüdür."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "White-label ne demek?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "White-label, sistemin okulun kendi markası ve alan adıyla çalışması demektir. Örneğin ai.okulunuz.com.tr adresinde, okul logosu ve renklerinde çalışan bir yapay zeka asistanı. Veliler sistemi okula ait sanır, güven artar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Edusonex kimler için uygundur?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Özel K-12 okulları, dershaneler, kurs merkezleri ve eğitim kurumları için uygundur. Özellikle kayıt sezonunda öğrenci bulmakta zorlanan, reklam bütçesini verimli kullanamayan ve sistematik lead yönetimi isteyen okul kurucuları ve yöneticileri ideyal hedef kitledir."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- ═══════════════════════════════════════════
+         Google Search Console Doğrulama
+         Kodu GSC'den alıp aşağıya yapıştırın:
+         Site → Ayarlar → Sahiplik Doğrulama → HTML Etiketi
+         ═══════════════════════════════════════════ -->
+    <!-- <meta name="google-site-verification" content="BURAYA_GSC_KODUNU_YAPIŞTIRIN" /> -->
+
   </body>
 </html>

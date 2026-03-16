@@ -1,14 +1,91 @@
+# Edusonex robots.txt
+# https://edusonex.com
+
+# ─── Arama Motorları ───────────────────────────────────────
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
+User-agent: Yandex
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# ─── Sosyal Medya ──────────────────────────────────────────
 User-agent: Twitterbot
 Allow: /
 
 User-agent: facebookexternalhit
 Allow: /
 
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# ─── AI / LLM Crawler'ları (GEO) ──────────────────────────
+# ChatGPT / OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Bing AI / Copilot
+User-agent: bingbot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic / Claude
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# Common Crawl (AI eğitim veri seti)
+User-agent: CCBot
+Allow: /
+
+# Google AI (Gemini vb.)
+User-agent: Google-Extended
+Allow: /
+
+# Meta AI
+User-agent: meta-externalagent
+Allow: /
+
+# Amazon Alexa
+User-agent: ia_archiver
+Allow: /
+
+# ─── İzin Verilmeyen ────────────────────────────────────────
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+# ─── Genel ─────────────────────────────────────────────────
 User-agent: *
 Allow: /
+Disallow: /api/
+
+# ─── Sitemap & LLMs ────────────────────────────────────────
+Sitemap: https://edusonex.com/sitemap.xml
+LLMs: https://edusonex.com/llms.txt
