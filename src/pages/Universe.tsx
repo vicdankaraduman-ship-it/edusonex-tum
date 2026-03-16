@@ -23,15 +23,14 @@ const tiers = [
         layer: "LAYER II",
         category: "ÇEKİRDEK",
         title: "Core",
-        subtitle: "Cevher / HumanOS",
+        subtitle: "Cevher / NöroBil",
         description: "Öğrencinin dijital ikizi. Performans analizi, yetenek haritası ve biyolojik verilerin işlendiği merkezi işletim sistemi.",
         icon: Cpu,
-        href: "/universe/layer-2-core",
-        active: false,
-        color: "text-red-400",
-        bg: "bg-red-500/10",
-        border: "border-red-500/20",
-        badge: "bg-red-500/20 text-red-300"
+        active: true,
+        color: "text-indigo-400",
+        bg: "bg-indigo-500/10",
+        border: "border-indigo-500/20",
+        badge: "bg-indigo-500/20 text-indigo-300"
     },
     {
         layer: "LAYER III",

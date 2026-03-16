@@ -266,18 +266,26 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* 7. HumanOS */}
-            <Card className="border-border/50 hover:border-primary/30 transition-colors group">
+            {/* 7. NöroBil */}
+            <Card className="border-indigo-600/30 hover:border-indigo-600/50 transition-all hover:shadow-lg hover:shadow-indigo-600/10 bg-gradient-to-br from-card to-indigo-600/5 group">
               <CardHeader>
                 <div className="flex items-start justify-between mb-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Fingerprint className="h-6 w-6 text-primary" />
+                  <div className="w-12 h-12 rounded-lg bg-indigo-600/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <Fingerprint className="h-6 w-6 text-indigo-700" />
                   </div>
-                  <Badge variant="outline">Planlanıyor</Badge>
+                  <Badge className="bg-indigo-600/10 text-indigo-700 border-indigo-600/20">✅ Aktif</Badge>
                 </div>
-                <CardTitle className="text-xl mb-1">HumanOS</CardTitle>
-                <CardDescription>İnsan kaynakları ve performans yönetim sistemi.</CardDescription>
+                <CardTitle className="text-xl mb-1">NöroBil</CardTitle>
+                <div className="text-xs text-muted-foreground mb-2 font-mono">norobil.edusonex.com.tr</div>
+                <CardDescription>İnsan ve İlişki İşletim Sistemi. Psikolojik analiz ve gelişim platformu.</CardDescription>
               </CardHeader>
+              <CardContent>
+                <a href="https://norobil.edusonex.com.tr/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" className="w-full border-indigo-600/20 hover:bg-indigo-600/10 hover:text-indigo-700 group-hover:border-indigo-600/40">
+                    Projeye Git <ExternalLink className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
+              </CardContent>
             </Card>
 
             {/* 8. Studio */}

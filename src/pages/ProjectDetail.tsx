@@ -9,7 +9,7 @@ const projects = {
     "layer-2-core": {
         badge: "layer2.hero.badge",
         title: "CORE",
-        subtitle: "Cevher / HumanOS",
+        subtitle: "Cevher / NöroBil",
         description: "Teknolojinin kalbindeki biyolojik cevher. Öğrencinin öğrenme profilini çıkaran, güçlü ve zayıf yönlerini gösteren, karar alırken güvenebileceğiniz öğrenme analitiği platformu.",
         stats: [
             { icon: Clock, value: "3 dk", label: "Analiz Süresi" },
@@ -187,7 +187,7 @@ const ProjectDetail = () => {
 
                             <h3 className="text-2xl font-bold mb-2">School Operating System</h3>
                             <p className="text-gray-400 text-sm mb-8">
-                                {project.subtitle} vizyonunu ve okul işletim sistemi konseptini anlatan kısa tanıtım.
+                                {project.subtitle} vizyonunu ve insan işletim sistemi konseptini anlatan kısa tanıtım.
                             </p>
 
                             <div className="relative aspect-video bg-black/50 rounded-xl overflow-hidden shadow-2xl group-hover:shadow-3xl transition-all border border-white/5">

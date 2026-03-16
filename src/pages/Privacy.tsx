@@ -26,7 +26,7 @@ const Privacy = () => {
               <li><strong>İletişim Bilgileri:</strong> E-posta adresi, telefon numarası, adres.</li>
               <li><strong>Eğitim Verileri:</strong> Sınav sonuçları, ödev performansları, devam-devamsızlık bilgileri, öğrenme analitikleri.</li>
               <li><strong>Sistem Kullanım Verileri:</strong> IP adresi, cihaz bilgileri, oturum süreleri, tıklama analizleri.</li>
-              <li><strong>Yapay Zeka Etkileşimleri:</strong> ÖdevGPT, Sınav Fabrikası gibi modüllerle yapılan etkileşimler ve oluşturulan içerikler.</li>
+              <li><strong>Yapay Zeka Etkileşimleri:</strong> ÖdevGPT, NöroBil, Sınav Fabrikası gibi modüllerle yapılan etkileşimler ve oluşturulan içerikler.</li>
             </ul>
           </section>
 
@@ -35,7 +35,7 @@ const Privacy = () => {
             <p className="mb-4">Toplanan veriler şu amaçlarla kullanılır:</p>
             <ul className="list-disc pl-6 space-y-2 marker:text-primary">
               <li><strong>Eğitim Hizmetlerinin Sunulması:</strong> Okul yönetim süreçlerinin dijitalleştirilmesi, öğrenci takibi ve raporlama.</li>
-              <li><strong>Yapay Zeka Destekli Analiz:</strong> HumanOS modülü ile öğrenci yetenek haritalarının çıkarılması ve kişiselleştirilmiş öğrenme önerilerinin sunulması.</li>
+              <li><strong>Yapay Zeka Destekli Analiz:</strong> NöroBil modülü ile öğrenci yetenek haritalarının çıkarılması ve kişiselleştirilmiş öğrenme önerilerinin sunulması.</li>
               <li><strong>İletişim:</strong> Veli bilgilendirme mesajları, sistem bildirimleri ve güncellemeler.</li>
               <li><strong>Hizmet İyileştirme:</strong> Sistem performansının analizi ve kullanıcı deneyiminin geliştirilmesi.</li>
               <li><strong>Yasal Yükümlülükler:</strong> MEB ve diğer resmi kurumların mevzuatlarına uyum.</li>
