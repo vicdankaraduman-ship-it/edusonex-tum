@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import WhatsAppButton from "./WhatsAppButton";
+import ExitIntentPopup from "./ExitIntentPopup";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -13,6 +14,7 @@ const Layout = ({ children }: LayoutProps) => {
       <main className="flex-1">{children}</main>
       <Footer />
       <WhatsAppButton />
+      <ExitIntentPopup />
     </div>
   );
 };
