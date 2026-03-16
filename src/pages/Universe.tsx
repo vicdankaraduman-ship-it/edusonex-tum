@@ -7,10 +7,10 @@ import { Button } from "@/components/ui/button";
 const tiers = [
     {
         layer: "LAYER I",
-        category: "ETKİLEŞİM",
+        category: "LEAD GEN",
         title: "Interface",
-        subtitle: "Suret / Edubot",
-        description: "Kullanıcı ile yapay zeka arasındaki ilk temas noktası. Sokratik diyalog ve kişiselleştirilmiş asistan deneyimi.",
+        subtitle: "AI Asistan & Veli Kanca Sistemi",
+        description: "Okulun kendi markasıyla çalışan AI asistanı, 7/24 akademik potansiyel analizi yaparak velilerin telefon numarasını ve e-postasını toplar. Reklamdan değil, değer vererek lead.",
         icon: Brain,
         href: "/kommo",
         active: true,
@@ -21,10 +21,10 @@ const tiers = [
     },
     {
         layer: "LAYER II",
-        category: "ÇEKİRDEK",
+        category: "ANALİZ",
         title: "Core",
-        subtitle: "Cevher / NöroBil",
-        description: "Öğrencinin dijital ikizi. Performans analizi, yetenek haritası ve biyolojik verilerin işlendiği merkezi işletim sistemi.",
+        subtitle: "Akademik Potansiyel Haritası",
+        description: "Öğrencinin güçlü ve zayıf alanlarını ölçen yapay zeka motoru. Veliye kişisel rapor — \"Çocuğunuz Fen'de %78 üst banda yakın\" — satın alma güdüsünü tetikler.",
         icon: Cpu,
         href: "https://norobil.edusonex.com.tr/",
         active: true,
@@ -35,13 +35,13 @@ const tiers = [
     },
     {
         layer: "LAYER III",
-        category: "SENTEZ",
+        category: "MARKA",
         title: "Architecture",
-        subtitle: "Tasavvur / Studio",
-        description: "Yaratıcı zekanın merkezi. Multimedya içerik üretimi, video sentezi ve sanatsal ifade alanı.",
+        subtitle: "White-Label Altyapı & Alan Adı",
+        description: "Tüm sistem okulun kendi markası ve alan adıyla çalışır (ai.okulunuz.com.tr). Veli sistemi okula ait sanır — güven 3 kata, dönüşüm oranı 2 kata çıkar.",
         icon: Sparkles,
-        href: "/universe/layer-3-architecture",
-        active: false,
+        href: "/urunler",
+        active: true,
         color: "text-purple-400",
         bg: "bg-purple-500/10",
         border: "border-purple-500/20",
@@ -49,13 +49,13 @@ const tiers = [
     },
     {
         layer: "LAYER IV",
-        category: "AKIŞ",
+        category: "CRM",
         title: "Dynamics",
-        subtitle: "Vecd / Gamer",
-        description: "Oyunlaştırma ve motivasyon katmanı. Öğrenme sürecini rekabetçi ve eğlenceli hale getiren dinamik yapı.",
+        subtitle: "Aday Öğrenci Lead Paneli",
+        description: "Kommo CRM entegrasyonuyla sistem, toplanan tüm lead'leri otomatik kayıt satış hunisine sokar. Kim nerede, kim sıcak, kim soğuk — tek ekranda.",
         icon: Gamepad2,
-        href: "/universe/layer-4-dynamics",
-        active: false,
+        href: "/referanslar",
+        active: true,
         color: "text-green-400",
         bg: "bg-green-500/10",
         border: "border-green-500/20",
@@ -63,13 +63,13 @@ const tiers = [
     },
     {
         layer: "LAYER V",
-        category: "İRFAN",
+        category: "İLETİŞİM",
         title: "Intelligence",
-        subtitle: "Hikmet / Akademi",
-        description: "Derin öğrenme ve akademik gelişim. Öğretmenler ve veliler için sürekli eğitim ve sertifikasyon merkezi.",
+        subtitle: "WhatsApp Veli AI Asistanı",
+        description: "Kayıt sonrası velilerle birebir iletişim kuran otomatik WhatsApp asistanı. Sorulara anında cevap, yoklama bildirimi, sınav hatırlatıcısı — personel maliyeti olmadan.",
         icon: GraduationCap,
-        href: "/universe/layer-5-intelligence",
-        active: false,
+        href: "/urunler",
+        active: true,
         color: "text-yellow-400",
         bg: "bg-yellow-500/10",
         border: "border-yellow-500/20",
@@ -77,12 +77,12 @@ const tiers = [
     },
     {
         layer: "LAYER VI",
-        category: "EKOSİSTEM",
+        category: "ANALİTİK",
         title: "Network",
-        subtitle: "Ülfet / Guild",
-        description: "Sosyal işbirliği ağı. Okullar, öğretmenler ve öğrenciler arasındaki etkileşim ve paylaşım platformu.",
+        subtitle: "PDR & Yönetim Dashboard",
+        description: "Okul yöneticileri için gerçek zamanlı kayıt hunisi, lead kaynağı ve dönüşüm analitiği. Hangi kanal kaç öğrenci getiriyor — reklam bütçesi kararlarını veriye dayandırın.",
         icon: Globe,
-        href: "/universe/layer-6-network",
+        href: "/urunler",
         active: false,
         color: "text-cyan-400",
         bg: "bg-cyan-500/10",
@@ -91,12 +91,12 @@ const tiers = [
     },
     {
         layer: "LAYER VII",
-        category: "NİHAİ MODEL",
+        category: "ÖLÇEK",
         title: "Paradigm",
-        subtitle: "Kemalât / Kolej",
-        description: "Ölçme, değerlendirme ve mükemmellik. Sınav sistemleri ve başarı standartlarının belirlendiği zirve.",
+        subtitle: "Edu-RaaS Büyüme Modeli",
+        description: "Kapasite bazlı fiyat modeli: öğrenci 10'a katlanırsa fatura %71 artar, 10 kat değil. Okulun büyümesi sistemin büyümesi demek — sabit maliyet, sınırsız ölçek.",
         icon: Layers,
-        href: "/universe/layer-7-paradigm",
+        href: "/urunler#fiyatlandirma",
         active: true,
         color: "text-amber-500",
         bg: "bg-amber-500/10",
@@ -117,12 +117,13 @@ const Universe = () => {
 
                 <div className="container mx-auto px-4 relative z-10">
                     <div className="text-center max-w-3xl mx-auto mb-20 animate-fade-in">
+                        <p className="text-xs font-bold tracking-widest text-primary/80 mb-4 uppercase">Platform Mimarisi</p>
                         <h1 className="text-4xl md:text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400 mb-6">
-                            Edusonex Evreni
+                            7 Katmanlı AI Okul Altyapısı
                         </h1>
                         <p className="text-xl text-gray-400 leading-relaxed">
-                            Sistemimizin derinliklerinde yatan mimariyi keşfedin.
-                            Her katman, mükemmelliğe giden yolda bir basamak.
+                            Lead toplamaktan kayıt takibine, veli iletişiminden yönetim analitiğine —
+                            her katman okulunuzun büyümesine somut katkı sağlar.
                         </p>
                     </div>
 
@@ -191,6 +192,19 @@ const Universe = () => {
                                 <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-300 bg-gradient-to-br from-${tier.color}/5 to-transparent`} />
                             </div>
                         ))}
+                    </div>
+                </div>
+
+                {/* Bottom CTA */}
+                <div className="mt-24 text-center relative z-10">
+                    <div className="inline-block bg-white/5 border border-white/10 rounded-2xl px-10 py-8 max-w-xl mx-auto">
+                        <p className="text-white font-bold text-xl mb-2">Sistemi Okulunuzda Deneyin</p>
+                        <p className="text-gray-400 text-sm mb-6">Pilot kontenjanlar sınırlıdır. 30 dakikalık görüşmede tüm katmanları birlikte inceleyelim.</p>
+                        <Link to="/iletisim">
+                            <Button className="bg-primary hover:bg-primary/90 text-white px-8">
+                                Ücretsiz Demo Al <ArrowRight className="ml-2 h-4 w-4" />
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </div>
