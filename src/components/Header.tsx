@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 import { useTheme } from "@/components/theme-provider";
 
 const navigation = [
-  { name: "Hakkımızda", href: "/hakkimizda" },
+  { name: "Çözümler", href: "/urunler" },
   { name: "Evren", href: "/universe" },
-  { name: "Referanslar", href: "/referanslar" },
+  { name: "Başarı Hikayeleri", href: "/referanslar" },
   { name: "Blog", href: "/blog" },
   { name: "İletişim", href: "/iletisim" },
 ];
@@ -43,8 +43,14 @@ const Header = () => {
           ))}
         </div>
 
-        {/* Theme Toggle & Official Kommo Partner */}
-        <div className="hidden lg:flex items-center gap-4">
+        {/* Theme Toggle, VIP Demo & Official Kommo Partner */}
+        <div className="hidden lg:flex items-center gap-3">
+          <Link to="/iletisim">
+            <Button size="sm" className="h-9 px-4 text-sm font-semibold">
+              VIP Demo Talep Et
+            </Button>
+          </Link>
+
           <Button
             variant="ghost"
             size="icon"

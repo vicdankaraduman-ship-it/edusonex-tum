@@ -1,11 +1,18 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Building2, FileText, GraduationCap, Sparkles, Brain, Gamepad2, Globe, Layers, Users, TrendingUp, ExternalLink, Shield, Archive, BarChart3, FileCheck, Fingerprint, Video, Network, Glasses, Files, FlaskConical } from "lucide-react";
+import { ArrowRight, Building2, FileText, GraduationCap, Sparkles, Brain, Gamepad2, Globe, Layers, Users, TrendingUp, ExternalLink, Shield, Archive, BarChart3, FileCheck, Fingerprint, Video, Network, Glasses, Files, FlaskConical, CheckCircle, XCircle, Calculator } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Slider } from "@/components/ui/slider";
 import Layout from "@/components/Layout";
 
 const Index = () => {
+  const [roiValue, setRoiValue] = useState([300000]);
+  const annualFee = roiValue[0];
+  const enterpriseCost = 597000; // yıllık Enterprise paketi
+  const studentsNeeded = Math.ceil(enterpriseCost / annualFee * 10) / 10;
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -74,6 +81,139 @@ const Index = () => {
               </div>
               <h3 className="font-semibold text-foreground">Okul Markası Güçlenir</h3>
               <p className="mt-2 text-sm text-muted-foreground">Okul markası ve alan adıyla çalışan sistemler ile dijital kimlik oluşur.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Problem & Çözüm Section */}
+      <section className="py-16 lg:py-24 bg-muted/20">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center mb-12">
+            <Badge className="mb-4 bg-destructive/10 text-destructive border-destructive/20 hover:bg-destructive/10">
+              ⚠️ Geleneksel Yöntemler Neden Çöktü?
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              Kayıt Pazarlamasında Köklü Bir Değişim Zorunlu
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+              Veliler artık geleneksel yöntemlere körleşti. Edusonex bu oyunun kurallarını değiştiriyor.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {/* Geleneksel Yöntemler */}
+            <div className="bg-card border border-destructive/20 rounded-2xl p-8">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 rounded-full bg-destructive/10 flex items-center justify-center">
+                  <XCircle className="h-5 w-5 text-destructive" />
+                </div>
+                <h3 className="text-xl font-bold text-foreground">Geleneksel Yöntemler</h3>
+              </div>
+              <ul className="space-y-4">
+                {[
+                  "Billboard & sosyal medya reklamları → Veliler artık görmüyor",
+                  "Bursluluk sınavları → Her okul aynısını yapıyor, değer kalmadı",
+                  "Açık kapı günleri → Katılım her yıl düşüyor",
+                  "Telefon satışları → 'Kim bu okul?' sorusuyla başlıyorsunuz",
+                  "Öğrenci başına lisans → Okul büyüdükçe fatura katlanıyor",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3 text-sm text-muted-foreground">
+                    <XCircle className="h-4 w-4 text-destructive shrink-0 mt-0.5" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Edusonex Yöntemi */}
+            <div className="bg-card border border-primary/20 rounded-2xl p-8 relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full" />
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                  <CheckCircle className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold text-foreground">Edusonex Yöntemi</h3>
+              </div>
+              <ul className="space-y-4">
+                {[
+                  "Veliler raporu almak için kendi numaralarını bırakır",
+                  "'Okulumuzun AI Asistanı' → Kendi markanızla White-Label",
+                  "Sıcak veli datası → Çocuğun güçlü/zayıf yönlerini biliyorsunuz",
+                  "Satış değil, çözüm konuşması → Dönüşüm 3-4x artar",
+                  "Sabit yıllık kiralama → Öğrenci sayısı arttıkça fatura artmaz",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-3 text-sm text-foreground">
+                    <CheckCircle className="h-4 w-4 text-primary shrink-0 mt-0.5" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ROI Hesaplayıcı */}
+      <section id="roi-hesapla" className="py-16 lg:py-24 bg-background">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center mb-12">
+            <Badge className="mb-4 bg-primary/10 text-primary border-primary/20 hover:bg-primary/10">
+              <Calculator className="h-3 w-3 mr-1 inline" /> Kendini Amorti Eden Yatırım
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
+              ROI Hesaplayıcı
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
+              Okulunuzun ortalama yıllık kayıt ücretini seçin — kaç öğrenci kaydı yatırımı amorti ettiğini görün.
+            </p>
+          </div>
+
+          <div className="max-w-2xl mx-auto bg-card border border-border/50 rounded-2xl p-8 shadow-lg">
+            <div className="mb-8">
+              <div className="flex justify-between items-center mb-4">
+                <label className="text-sm font-semibold text-foreground">
+                  Ortalama Yıllık Kayıt Ücreti
+                </label>
+                <span className="text-xl font-bold text-primary">
+                  {(annualFee / 1000).toFixed(0)}.000 TL
+                </span>
+              </div>
+              <Slider
+                value={roiValue}
+                onValueChange={setRoiValue}
+                min={100000}
+                max={600000}
+                step={25000}
+                className="mb-3"
+              />
+              <div className="flex justify-between text-xs text-muted-foreground">
+                <span>100.000 TL</span>
+                <span>600.000 TL</span>
+              </div>
+            </div>
+
+            {/* Sonuç Kutusu */}
+            <div className="bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20 rounded-xl p-6 text-center">
+              <p className="text-sm text-muted-foreground mb-2">Enterprise Paketi Yıllık Maliyet</p>
+              <p className="text-lg font-bold text-foreground mb-4">597.000 TL / yıl</p>
+              <div className="w-px h-6 bg-border mx-auto mb-4" />
+              <p className="text-sm text-muted-foreground mb-1">Yatırımı amorti etmek için gereken kayıt sayısı</p>
+              <p className="text-5xl font-black text-primary my-3">
+                {studentsNeeded.toFixed(1)}
+              </p>
+              <p className="text-sm font-semibold text-foreground">yeni öğrenci kaydı</p>
+              <p className="text-xs text-muted-foreground mt-4 max-w-sm mx-auto">
+                Bu kaydın üzerindeki <strong>tüm yeni öğrenciler</strong> kurumunuzun doğrudan net kârı olarak yazılır.
+              </p>
+            </div>
+
+            <div className="mt-6 text-center">
+              <Link to="/iletisim">
+                <Button size="lg" className="w-full sm:w-auto px-8">
+                  Ücretsiz Büyüme Analizi Al <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
