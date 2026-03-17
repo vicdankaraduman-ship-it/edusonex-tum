@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Building2, FileText, GraduationCap, Sparkles, Brain, Gamepad2, Globe, Layers, Users, TrendingUp, ExternalLink, Shield, Archive, BarChart3, FileCheck, Fingerprint, Video, Network, Glasses, Files, FlaskConical, CheckCircle, XCircle, Calculator } from "lucide-react";
+import { ArrowRight, Building2, FileText, GraduationCap, Sparkles, Brain, Gamepad2, Globe, Layers, Users, TrendingUp, ExternalLink, Shield, Archive, BarChart3, FileCheck, Fingerprint, Video, Network, Glasses, Files, FlaskConical, CheckCircle, XCircle, Calculator, Zap, Play, ChevronRight, AlertTriangle, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -10,8 +10,34 @@ import Layout from "@/components/Layout";
 const Index = () => {
   const [roiValue, setRoiValue] = useState([300000]);
   const annualFee = roiValue[0];
-  const enterpriseCost = 597000; // yıllık Enterprise paketi
+  const enterpriseCost = 597000;
   const studentsNeeded = Math.ceil(enterpriseCost / annualFee * 10) / 10;
+
+  // Kanca Simülatörü State
+  const [simStep, setSimStep] = useState(0); // 0=giriş, 1=soru, 2=blur, 3=telefon, 4=patlama
+  const [simPhone, setSimPhone] = useState("");
+  const [simAnswers, setSimAnswers] = useState<number[]>([]);
+
+  const simQuestions = [
+    { q: "Okulumuza yıllık kaç yeni öğrenci kayıt etmek istiyorsunuz?", opts: ["10-20", "20-50", "50-100", "100+"] },
+    { q: "Şu an aylık ne kadarlık bir pazarlama bütçesi kullanıyorsunuz?", opts: ["50.000 TL altı", "50-150.000 TL", "150-500.000 TL", "500.000 TL+"] },
+    { q: "Kaç yıldır eğitim sektöründesiniz?", opts: ["1-3 yıl", "3-7 yıl", "7-15 yıl", "15+ yıl"] },
+  ];
+
+  const handleSimAnswer = (ansIdx: number) => {
+    const newAnswers = [...simAnswers, ansIdx];
+    setSimAnswers(newAnswers);
+    if (newAnswers.length >= simQuestions.length) {
+      setSimStep(2); // blur
+    }
+  };
+
+  const handleSimPhone = (e: React.FormEvent) => {
+    e.preventDefault();
+    const msg = encodeURIComponent(`Merhaba! Kanca Simülatöründen geliyorum. Okulumun büyüme raporunu WhatsApp'tan almak istiyorum.\nTelefon: ${simPhone}`);
+    window.open(`https://wa.me/905320674063?text=${msg}`, "_blank");
+    setSimStep(4); // patlama
+  };
 
   return (
     <Layout>
@@ -57,7 +83,23 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Features Grid */}
+      {/* 🔴 ACİLİYET BARI */}
+      <div className="bg-destructive/95 text-destructive-foreground py-2.5 px-4">
+        <div className="container mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 text-center text-sm font-medium">
+          <div className="flex items-center gap-2">
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-white"></span>
+            </span>
+            <strong>Pilot Kontenjanı:</strong> Bu çeyrek için yalnızca <strong className="underline decoration-dotted">1 okul</strong> kabul edilecektir.
+          </div>
+          <span className="hidden sm:inline text-white/40">·</span>
+          <Link to="/iletisim" className="underline font-bold hover:text-white/80 transition-colors">
+            Yerinizi Hemen Ayırtın →
+          </Link>
+        </div>
+      </div>
+
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
@@ -81,6 +123,159 @@ const Index = () => {
               </div>
               <h3 className="font-semibold text-foreground">Okul Markası Güçlenir</h3>
               <p className="mt-2 text-sm text-muted-foreground">Okul markası ve alan adıyla çalışan sistemler ile dijital kimlik oluşur.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 🎯 KANCA SİMÜLATÖRÜ — Sihir Anı */}
+      <section className="py-20 lg:py-28 bg-background border-y border-border/50 relative overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[80px]" />
+          <div className="absolute top-1/2 right-1/4 -translate-y-1/2 w-[300px] h-[300px] bg-secondary/5 rounded-full blur-[80px]" />
+        </div>
+
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
+          <div className="text-center mb-12">
+            <Badge className="mb-4 bg-secondary/10 text-secondary border-secondary/20">
+              <Zap className="h-4 w-4 mr-2 inline" /> Canlı Demo
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Sistemimizin Velileri Nasıl Yakaladığını{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-orange-400">Kendiniz Yaşayın</span>
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Velileriniz bu akışı okulunuzun kendi markası altında yaşayacak. Siz de az sonra deneyimleyeceksiniz.
+            </p>
+          </div>
+
+          <div className="max-w-xl mx-auto">
+            <div className="bg-card border border-border/50 rounded-3xl shadow-2xl overflow-hidden">
+              {/* Tarayıcı Çubuğu Simülasyonu */}
+              <div className="bg-muted/60 px-4 py-3 flex items-center gap-3 border-b border-border/50">
+                <div className="flex gap-1.5">
+                  <div className="w-3 h-3 rounded-full bg-red-400/60" />
+                  <div className="w-3 h-3 rounded-full bg-yellow-400/60" />
+                  <div className="w-3 h-3 rounded-full bg-green-400/60" />
+                </div>
+                <div className="flex-1 bg-background/50 rounded-md px-3 py-1 text-xs text-muted-foreground font-mono">
+                  ai.<span className="text-primary font-semibold">okulunuz</span>.com.tr/kesfet
+                </div>
+                <Lock className="h-3 w-3 text-green-500" />
+              </div>
+
+              <div className="p-8">
+                {/* ADIM 0 — Başlangıç */}
+                {simStep === 0 && (
+                  <div className="text-center">
+                    <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
+                      <Brain className="h-8 w-8 text-primary" />
+                    </div>
+                    <Badge className="mb-3 bg-primary/10 text-primary border-primary/20">Okulunuzun Kendi Sistemi</Badge>
+                    <h3 className="text-xl font-bold text-foreground mb-3">
+                      Ücretsiz Akademik Potansiyel & Öğrenme Stili Analizi
+                    </h3>
+                    <p className="text-muted-foreground text-sm mb-6">
+                      Çocuğunuzun gizli yeteneklerini 3 dakikada keşfedin. Ücretsiz yapay zeka raporunuzu alın.
+                    </p>
+                    <Button className="w-full" size="lg" onClick={() => setSimStep(1)}>
+                      <Play className="h-4 w-4 mr-2" /> Analizi Başlat (Ücretsiz)
+                    </Button>
+                    <p className="text-xs text-muted-foreground mt-3">Kayıt gerekmez · 3 dakika</p>
+                  </div>
+                )}
+
+                {/* ADIM 1 — Sorular */}
+                {simStep === 1 && (() => {
+                  const answeredCount = simAnswers.length;
+                  const currentQ = simQuestions[answeredCount];
+                  if (!currentQ) return null;
+                  return (
+                    <div>
+                      <div className="flex items-center justify-between mb-6">
+                        <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">Soru {answeredCount + 1}/{simQuestions.length}</span>
+                        <div className="flex gap-1">
+                          {simQuestions.map((_, i) => (
+                            <div key={i} className={`h-1.5 w-8 rounded-full transition-colors ${i <= answeredCount ? 'bg-primary' : 'bg-border'}`} />
+                          ))}
+                        </div>
+                      </div>
+                      <p className="font-semibold text-foreground mb-5 leading-snug">{currentQ.q}</p>
+                      <div className="grid grid-cols-2 gap-3">
+                        {currentQ.opts.map((opt, i) => (
+                          <button
+                            key={i}
+                            onClick={() => handleSimAnswer(i)}
+                            className="p-3 text-sm text-left border border-border/60 rounded-xl hover:border-primary/40 hover:bg-primary/5 transition-all text-foreground"
+                          >
+                            {opt}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })()}
+
+                {/* ADIM 2 — Bulanık Rapor (Kırılma Noktası) */}
+                {simStep === 2 && (
+                  <div>
+                    <p className="text-xs font-bold text-primary uppercase tracking-widest mb-4 text-center">Analiziniz Hazır!</p>
+                    <div className="relative mb-6">
+                      <div className="space-y-3 blur-sm select-none pointer-events-none">
+                        {["Analitik Zeka: %78 (Üst Bant)", "Odaklanma Süresi: 22 dk (Geliştirilebilir)", "Görsel Öğrenme Baskın", "Sınav Kaygısı: Orta Seviye"].map((item, i) => (
+                          <div key={i} className="flex items-center gap-3 p-3 bg-muted/50 rounded-xl">
+                            <div className={`w-2 h-2 rounded-full ${i === 0 ? 'bg-green-500' : i === 2 ? 'bg-primary' : 'bg-yellow-500'}`} />
+                            <span className="text-sm">{item}</span>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="absolute inset-0 flex flex-col items-center justify-center bg-background/80 backdrop-blur-sm rounded-xl">
+                        <Lock className="h-8 w-8 text-primary mb-3" />
+                        <p className="text-sm font-bold text-foreground text-center">15 Sayfalık Tam Raporu Almak İçin<br />Telefon Numaranızı Girin</p>
+                      </div>
+                    </div>
+                    <form onSubmit={handleSimPhone} className="space-y-3">
+                      <input
+                        type="tel"
+                        placeholder="WhatsApp Numaran (5XX XXX XX XX)"
+                        className="w-full bg-muted border border-border rounded-xl px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40"
+                        value={simPhone}
+                        onChange={(e) => setSimPhone(e.target.value)}
+                        required
+                      />
+                      <Button type="submit" className="w-full" size="lg">
+                        Raporu WhatsApp'tan Al
+                        <ChevronRight className="ml-2 h-4 w-4" />
+                      </Button>
+                      <p className="text-[10px] text-center text-muted-foreground">Bilgileriniz gizli tutulur · KVKK Uyumlu</p>
+                    </form>
+                  </div>
+                )}
+
+                {/* ADIM 4 — Konfeti Tebrik */}
+                {simStep === 4 && (
+                  <div className="text-center py-4">
+                    <div className="text-5xl mb-4">🎉</div>
+                    <h3 className="text-xl font-black text-foreground mb-3">Tebrikler!</h3>
+                    <div className="bg-primary/5 border border-primary/20 rounded-2xl p-5 mb-5 text-left">
+                      <p className="text-sm font-bold text-primary mb-2">Az önce neler oldu?</p>
+                      <ul className="space-y-2 text-sm text-muted-foreground">
+                        <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-primary mt-0.5 shrink-0" />Kurumunuza sıcak bir lead bıraktınız</li>
+                        <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-primary mt-0.5 shrink-0" />Kayıt-kabul ekibinin CRM'ine ve WhatsApp'ına bildirim düştü</li>
+                        <li className="flex items-start gap-2"><CheckCircle className="h-4 w-4 text-primary mt-0.5 shrink-0" />Velileriniz okulunuzun markasıyla tam böyle numaralarını bırakıyor</li>
+                      </ul>
+                    </div>
+                    <Link to="/iletisim">
+                      <Button className="w-full" size="lg">
+                        Okuluma Kur <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </Link>
+                    <button onClick={() => { setSimStep(0); setSimAnswers([]); setSimPhone(""); }} className="mt-3 text-xs text-muted-foreground hover:text-foreground transition-colors block w-full">
+                      Baştan dene
+                    </button>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
@@ -154,67 +349,154 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ROI Hesaplayıcı */}
-      <section id="roi-hesapla" className="py-16 lg:py-24 bg-background">
+      {/* AI Growth Engine (Gelişmiş ROI Hesaplayıcı) */}
+      <section id="roi-hesapla" className="py-20 lg:py-32 bg-background relative overflow-hidden">
+        {/* Dekoratif Işıklar */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] -z-10" />
+
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-12">
-            <Badge className="mb-4 bg-primary/10 text-primary border-primary/20 hover:bg-primary/10">
-              <Calculator className="h-3 w-3 mr-1 inline" /> Kendini Amorti Eden Yatırım
+          <div className="text-center mb-16">
+            <Badge className="mb-4 bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 px-4 py-1.5 rounded-full">
+              <Calculator className="h-4 w-4 mr-2 inline" /> AI Finansal Projeksiyon
             </Badge>
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-              ROI Hesaplayıcı
+            <h2 className="text-4xl md:text-5xl font-black text-foreground tracking-tight mb-6">
+              Büyüme <span className="text-primary italic">Motorunuzu</span> Test Edin
             </h2>
-            <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-              Okulunuzun ortalama yıllık kayıt ücretini seçin — kaç öğrenci kaydı yatırımı amorti ettiğini görün.
+            <p className="mt-4 text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Edusonex AI altyapısının okulunuzun kârlılığını nasıl artırdığını finansal verilerle karşılaştırın.
             </p>
           </div>
 
-          <div className="max-w-2xl mx-auto bg-card border border-border/50 rounded-2xl p-8 shadow-lg">
-            <div className="mb-8">
-              <div className="flex justify-between items-center mb-4">
-                <label className="text-sm font-semibold text-foreground">
-                  Ortalama Yıllık Kayıt Ücreti
-                </label>
-                <span className="text-xl font-bold text-primary">
-                  {(annualFee / 1000).toFixed(0)}.000 TL
-                </span>
+          <div className="grid lg:grid-cols-12 gap-12 items-start max-w-7xl mx-auto">
+            
+            {/* Sol Panel: Parametreler */}
+            <div className="lg:col-span-5 space-y-10 bg-card/50 backdrop-blur-xl border border-border/50 rounded-[32px] p-8 md:p-10 shadow-2xl">
+              
+              <div>
+                <div className="flex justify-between items-center mb-6">
+                  <div className="space-y-1">
+                    <label className="text-base font-bold text-foreground">Yıllık Kayıt Ücreti</label>
+                    <p className="text-xs text-muted-foreground">Ortalama eğitim + yemek ücreti</p>
+                  </div>
+                  <span className="text-2xl font-black text-primary">{(annualFee / 1000).toFixed(0)}k TL</span>
+                </div>
+                <Slider value={[annualFee]} onValueChange={(val) => setRoiValue(val)} min={100000} max={600000} step={10000} className="py-4" />
+                <div className="flex justify-between text-[10px] font-medium text-muted-foreground uppercase tracking-wider mt-2">
+                  <span>100k TL</span>
+                  <span>600k TL</span>
+                </div>
               </div>
-              <Slider
-                value={roiValue}
-                onValueChange={setRoiValue}
-                min={100000}
-                max={600000}
-                step={25000}
-                className="mb-3"
-              />
-              <div className="flex justify-between text-xs text-muted-foreground">
-                <span>100.000 TL</span>
-                <span>600.000 TL</span>
+
+              <div className="pt-4 border-t border-border/30">
+                <div className="flex justify-between items-center mb-6">
+                  <div className="space-y-1">
+                    <label className="text-base font-bold text-foreground">Aylık Reklam Bütçesi</label>
+                    <p className="text-xs text-muted-foreground">Billboard, Meta, Google harcamaları</p>
+                  </div>
+                  <span className="text-2xl font-black text-secondary">35k TL</span>
+                </div>
+                <Slider defaultValue={[35000]} min={10000} max={200000} step={5000} className="py-4 cursor-not-allowed opacity-50" />
+                <div className="flex justify-between text-[10px] font-medium text-muted-foreground uppercase tracking-wider mt-2">
+                  <span>Geleneksel Reklam Harcaması (Sabitlenmiş)</span>
+                </div>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-primary/5 border border-primary/10">
+                <h4 className="text-sm font-bold flex items-center gap-2 mb-2">
+                  <Sparkles className="h-4 w-4 text-primary" /> Stratejik Not:
+                </h4>
+                <p className="text-xs leading-relaxed text-muted-foreground">
+                    Edusonex, reklam bütçenizi %60'a kadar azaltırken, oluşturduğu "Kanca Sistem" ile organik aday veri akışını 3 kat artırır.
+                </p>
               </div>
             </div>
 
-            {/* Sonuç Kutusu */}
-            <div className="bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20 rounded-xl p-6 text-center">
-              <p className="text-sm text-muted-foreground mb-2">Enterprise Paketi Yıllık Maliyet</p>
-              <p className="text-lg font-bold text-foreground mb-4">597.000 TL / yıl</p>
-              <div className="w-px h-6 bg-border mx-auto mb-4" />
-              <p className="text-sm text-muted-foreground mb-1">Yatırımı amorti etmek için gereken kayıt sayısı</p>
-              <p className="text-5xl font-black text-primary my-3">
-                {studentsNeeded.toFixed(1)}
-              </p>
-              <p className="text-sm font-semibold text-foreground">yeni öğrenci kaydı</p>
-              <p className="text-xs text-muted-foreground mt-4 max-w-sm mx-auto">
-                Bu kaydın üzerindeki <strong>tüm yeni öğrenciler</strong> kurumunuzun doğrudan net kârı olarak yazılır.
-              </p>
-            </div>
+            {/* Sağ Panel: Sonuçlar */}
+            <div className="lg:col-span-7 grid gap-6">
+              
+              <div className="grid md:grid-cols-2 gap-6">
+                <Card className="bg-card border-border/50 overflow-hidden group hover:border-primary/30 transition-all duration-500">
+                  <CardContent className="p-8">
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                        <TrendingUp className="h-5 w-5 text-primary" />
+                      </div>
+                      <span className="text-sm font-bold text-muted-foreground">Aylık Yatırım</span>
+                    </div>
+                    <div className="flex items-end gap-3 mb-2">
+                      <span className="text-4xl font-black text-foreground">49.750 TL</span>
+                    </div>
+                    <p className="text-xs text-muted-foreground uppercase tracking-widest font-bold">Enterprise AI Paketi</p>
+                  </CardContent>
+                </Card>
 
-            <div className="mt-6 text-center">
-              <Link to="/iletisim">
-                <Button size="lg" className="w-full sm:w-auto px-8">
-                  Ücretsiz Büyüme Analizi Al <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
+                <Card className="bg-primary text-primary-foreground overflow-hidden relative group">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-bl-full -mr-8 -mt-8" />
+                  <CardContent className="p-8">
+                    <div className="flex items-center gap-3 mb-6 text-primary-foreground/80">
+                      <div className="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center">
+                        <Users className="h-5 w-5 text-white" />
+                      </div>
+                      <span className="text-sm font-bold">Amorti Eşiği</span>
+                    </div>
+                    <div className="flex items-end gap-3 mb-2">
+                      <span className="text-5xl font-black tracking-tighter">{studentsNeeded.toFixed(1)}</span>
+                      <span className="text-lg font-bold mb-1">Kayıt / Yıl</span>
+                    </div>
+                    <p className="text-xs text-primary-foreground/70 uppercase tracking-widest font-bold">Yıllık Gider Karşılığı</p>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Büyük Karşılaştırma Kartı */}
+              <Card className="bg-card/30 border-primary/20 backdrop-blur overflow-hidden group h-full">
+                <CardHeader className="p-8 pb-4">
+                  <CardTitle className="text-xl font-black flex items-center gap-3 text-foreground">
+                    <BarChart3 className="h-6 w-6 text-primary" />
+                    Büyüme Analizi
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="p-8 pt-4">
+                  <div className="space-y-6">
+                    <div>
+                      <div className="flex justify-between text-xs font-bold mb-2">
+                        <span className="text-muted-foreground">Geleneksel Reklam Kaybı</span>
+                        <span className="text-destructive">-165.000 TL / Ay</span>
+                      </div>
+                      <div className="h-2 w-full bg-border/50 rounded-full overflow-hidden">
+                        <div className="h-full bg-destructive/60 w-[40%] rounded-full opacity-70" />
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <div className="flex justify-between text-xs font-bold mb-2">
+                        <span className="text-foreground">Edusonex AI Kazancı</span>
+                        <span className="text-primary">+{(annualFee * 3 / 1000).toFixed(0)}k TL / Ay (Tahmin)</span>
+                      </div>
+                      <div className="h-3 w-full bg-primary/10 rounded-full overflow-hidden p-0.5">
+                        <div className="h-full bg-primary w-[85%] rounded-full shadow-[0_0_15px_rgba(var(--primary),0.5)]" />
+                      </div>
+                    </div>
+
+                    <div className="pt-4 border-t border-border/50 mt-6">
+                        <p className="text-[13px] text-muted-foreground leading-relaxed italic">
+                          "Tüm yıllık maliyetiniz sadece <strong>{studentsNeeded.toFixed(1)}</strong> öğrenci kaydıyla sıfırlanır. Sonraki her kayıt okulunuzun büyüme sermayesine dönüşür."
+                        </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
             </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link to="/iletisim">
+              <Button size="lg" className="h-12 px-10 text-base rounded-full shadow-lg shadow-primary/20 group">
+                AI Büyüme Analizini Başlat
+                <ArrowRight className="ml-3 h-5 w-5 transition-transform group-hover:translate-x-2" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -590,6 +872,31 @@ const Index = () => {
                   {item.q}
                 </h3>
                 <p className="text-muted-foreground text-sm leading-relaxed pl-5">{item.a}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 🛡️ GÜVEN KALKANI */}
+      <section className="py-14 bg-muted/20 border-t border-border/50">
+        <div className="container mx-auto px-4 lg:px-8">
+          <p className="text-center text-xs font-bold text-muted-foreground uppercase tracking-widest mb-8">Hukuki & Teknik Güvenceler</p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+            {[
+              { icon: Shield, title: "%100 KVKK Uyumlu", desc: "Açık rıza ve aydınlatma metni süreçleri sisteme entegredir.", color: "text-green-600", bg: "bg-green-500/10" },
+              { icon: CheckCircle, title: "İYS Entegrasyonu", desc: "Topladığınız veli verilerine güvenle SMS kampanyaları düzenleyin.", color: "text-blue-600", bg: "bg-blue-500/10" },
+              { icon: Zap, title: "IT Ekibine Gerek Yok", desc: "Anahtar teslim bulut altyapısı. Kurulum ve bakım bizden.", color: "text-orange-600", bg: "bg-orange-500/10" },
+              { icon: Lock, title: "Veriler Türkiye'de", desc: "Öğrenci verileri yurt dışında değil, Türkiye'deki izole alanlarda saklanır.", color: "text-purple-600", bg: "bg-purple-500/10" },
+            ].map((item, i) => (
+              <div key={i} className="flex gap-4 items-start p-5 bg-card rounded-2xl border border-border/40 hover:border-primary/20 hover:shadow-sm transition-all">
+                <div className={`w-10 h-10 rounded-xl ${item.bg} flex items-center justify-center shrink-0 mt-0.5`}>
+                  <item.icon className={`h-5 w-5 ${item.color}`} />
+                </div>
+                <div>
+                  <p className="font-bold text-foreground text-sm">{item.title}</p>
+                  <p className="text-xs text-muted-foreground mt-1 leading-relaxed">{item.desc}</p>
+                </div>
               </div>
             ))}
           </div>

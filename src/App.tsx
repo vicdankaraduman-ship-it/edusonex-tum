@@ -22,6 +22,9 @@ import Kommo from "./pages/Kommo";
 import Paradigm from "./pages/Paradigm";
 
 import { ThemeProvider } from "@/components/theme-provider";
+import ExitIntentPopup from "@/components/ExitIntentPopup";
+import SSS from "./pages/SSS";
+import RaporPage from "./pages/RaporPage";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +35,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+          <ExitIntentPopup />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/universe" element={<Universe />} />
@@ -50,6 +54,8 @@ const App = () => (
             <Route path="/features" element={<Products />} />
             <Route path="/gizlilik" element={<Privacy />} />
             <Route path="/kullanim-sartlari" element={<Terms />} />
+            <Route path="/sss" element={<SSS />} />
+            <Route path="/rapor/2026" element={<RaporPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

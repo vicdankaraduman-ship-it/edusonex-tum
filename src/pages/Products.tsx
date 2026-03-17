@@ -201,6 +201,48 @@ const Products = () => {
         </div>
       </section>
 
+      {/* Karşılaştırma Tablosu - Yeni Kimlik Bölümü */}
+      <section className="py-16 lg:py-24 border-t border-border/50">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center mb-16">
+            <Badge className="mb-4 bg-orange-500/10 text-orange-600 border-orange-500/20">
+              ⚖️ Neden Altyapı?
+            </Badge>
+            <h2 className="text-3xl md:text-4xl font-bold">Geleneksel Yazılım mı, AI Altyapısı mı?</h2>
+            <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
+              Sadece bir program satın almıyorsunuz; okulunuzun dijital geleceğini kuruyorsunuz.
+            </p>
+          </div>
+
+          <div className="max-w-4xl mx-auto overflow-hidden rounded-2xl border border-border shadow-sm">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="bg-muted/50 border-b border-border">
+                  <th className="p-4 md:p-6 font-bold text-foreground">Özellik</th>
+                  <th className="p-4 md:p-6 font-bold text-muted-foreground">Eski Nesil (Legacy)</th>
+                  <th className="p-4 md:p-6 font-bold text-primary">Edusonex AI Altyapısı</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-border">
+                {[
+                  { feat: "Veri Sahipliği", old: "Hizmet sağlayıcıda", new: "Okulun kendi bulutunda (Self-Hosted)", highlight: true },
+                  { feat: "Zeka Katmanı", old: "Statik veri girişi", new: "Kendi verinizle eğitilmiş LLM", highlight: true },
+                  { feat: "Veli Algısı", old: "Dışarıdan bir araç", new: "%100 Okulun Kendi Markası", highlight: true },
+                  { feat: "Öğrenci Başı Maliyet", old: "Doğrusal artış (Pahalı)", new: "Kapasite Bazlı (Ekonomik)", highlight: true },
+                  { feat: "Entegrasyon", old: "Kapalı ekosistem", new: "API öncelikli, her sisteme açık", highlight: false },
+                ].map((row, idx) => (
+                  <tr key={idx} className={row.highlight ? "bg-primary/5" : ""}>
+                    <td className="p-4 md:p-6 text-sm font-semibold">{row.feat}</td>
+                    <td className="p-4 md:p-6 text-sm text-muted-foreground">{row.old}</td>
+                    <td className="p-4 md:p-6 text-sm font-bold text-foreground">{row.new}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       {/* Fiyatlandırma */}
       <section id="fiyatlandirma" className="py-16 lg:py-24 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
@@ -256,6 +298,13 @@ const Products = () => {
                 </Link>
               </div>
             ))}
+          </div>
+
+          <div className="mt-12 p-6 rounded-2xl bg-orange-500/5 border border-orange-500/10 max-w-2xl mx-auto text-center">
+            <p className="text-sm text-muted-foreground italic leading-relaxed">
+              <Shield className="h-4 w-4 text-orange-600 inline mr-2" />
+              <strong>KVKK & Veri Güvenliği:</strong> Altyapımız %100 Türkiye uyumludur. Verileriniz yurt dışındaki sunucularda değil, okulunuza özel izole edilmiş alanlarda saklanır.
+            </p>
           </div>
 
           <p className="text-center text-sm text-muted-foreground mt-10">

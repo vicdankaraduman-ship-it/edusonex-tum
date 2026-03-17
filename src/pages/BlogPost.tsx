@@ -5,9 +5,23 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, CalendarDays, Clock, User, Share2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
+interface BlogPostData {
+  id: number;
+  title: string;
+  excerpt: string;
+  content: string;
+  category: string;
+  author: string;
+  date: string;
+  readTime: string;
+  image: string;
+  slug: string;
+}
+
 const BlogPost = () => {
   const { slug } = useParams();
-  const post = blogData.find((p) => p.slug === slug);
+  const posts = blogData as BlogPostData[];
+  const post = posts.find((p) => p.slug === slug);
 
   if (!post) {
     return (
@@ -78,12 +92,13 @@ const BlogPost = () => {
             {/* Content Area */}
             <div 
               className="prose prose-lg dark:prose-invert max-w-none 
-                prose-headings:font-bold prose-headings:tracking-tight 
+                prose-headings:text-foreground prose-headings:font-bold
                 prose-p:text-muted-foreground prose-p:leading-relaxed
-                prose-li:text-muted-foreground
-                prose-h4:text-primary prose-h4:mt-8 prose-h4:mb-4
+                prose-ul:list-disc prose-ul:pl-6
+                prose-li:text-muted-foreground prose-li:mb-2
+                prose-h4:text-primary prose-h4:text-2xl prose-h4:mt-12 prose-h4:mb-6
                 animate-fade-in-up"
-              dangerouslySetInnerHTML={{ __html: post.content || "Bu yazının içeriği henüz eklenmemiş." }}
+              dangerouslySetInnerHTML={{ __html: post.content || "" }}
             />
 
             {/* Footer / CTA */}

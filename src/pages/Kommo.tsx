@@ -46,9 +46,14 @@ const Kommo = () => {
                     </div>
 
                     <div className="container mx-auto px-4 relative z-10 text-center">
-                        <Badge variant="outline" className="mb-6 bg-blue-500/10 border-blue-500/20 text-blue-400 px-4 py-1.5 text-sm">
-                            Eğitim Kurumları İçin Büyüme CRM'i
-                        </Badge>
+                        <div className="flex justify-center gap-2 mb-6">
+                            <Badge variant="outline" className="bg-blue-500/10 border-blue-500/20 text-blue-400 px-4 py-1.5 text-sm">
+                                📊 Data & CRM Infrastructure Layer
+                            </Badge>
+                            <Badge variant="outline" className="bg-green-500/10 border-green-500/20 text-green-400 px-4 py-1.5 text-sm">
+                                Kommo Official Partner
+                            </Badge>
+                        </div>
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8 max-w-5xl mx-auto leading-tight">
                             Eğitim kurumunuzu yönetmenizi sağlayacak <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-600">

@@ -49,6 +49,16 @@ const Footer = () => {
                   Demo Talep Et
                 </Link>
               </li>
+              <li>
+                <Link to="/sss" className="hover:text-white transition-colors hover:translate-x-1 inline-block duration-200">
+                  Sık Sorulan Sorular
+                </Link>
+              </li>
+              <li>
+                <Link to="/rapor/2026" className="hover:text-white transition-colors hover:translate-x-1 inline-block duration-200">
+                  📊 Ücretsiz Rapor
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -83,6 +93,9 @@ const Footer = () => {
         <div className="mt-16 pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/60">
           <p>© 2026 Edusonex. Tüm hakları saklıdır.</p>
           <div className="flex items-center gap-6">
+            <Link to="/sss" className="hover:text-white transition-colors">
+              SSS
+            </Link>
             <Link to="/gizlilik" className="hover:text-white transition-colors">
               Gizlilik Politikası
             </Link>

@@ -7,7 +7,9 @@ import { useTheme } from "@/components/theme-provider";
 const navigation = [
   { name: "Çözümler", href: "/urunler" },
   { name: "Evren", href: "/universe" },
+  { name: "ROI Hesapla", href: "/#roi-hesapla" },
   { name: "Başarı Hikayeleri", href: "/referanslar" },
+  { name: "SSS", href: "/sss" },
   { name: "Blog", href: "/blog" },
   { name: "İletişim", href: "/iletisim" },
 ];
