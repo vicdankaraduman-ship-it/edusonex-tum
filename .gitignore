@@ -24,3 +24,8 @@ dist-ssr
 
 # Private reports
 .raporlar/
+
+# Secrets
+.env
+*.env
+.env.*

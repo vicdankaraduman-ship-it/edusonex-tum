@@ -5,74 +5,10 @@ import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
 import { CalendarDays, Clock, ArrowRight, User } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const posts = [
-    {
-        id: 1,
-        title: "Bir Özel Okul Öğrencisini Kayıt Ettirmenin Gerçek Maliyeti: 15.000 TL mi, 2.000 TL mi?",
-        excerpt: "Billboard, sosyal medya reklamı ve açık kapı gününün toplam maliyetini hesapladığınızda, her yeni kayıt için ödediğiniz tutar sizi şaşırtacak. AI kanca sistemi bu denklemi nasıl değiştiriyor?",
-        category: "Okul Yönetimi",
-        author: "Edusonex Ekibi",
-        date: "10 Mart 2026",
-        readTime: "6 dk",
-        image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=2011&auto=format&fit=crop",
-        slug: "ogrenci-kayit-maliyeti"
-    },
-    {
-        id: 2,
-        title: "Veliler Neden Billboard'a Körleşti? 2026'da Özel Okul Pazarlaması",
-        excerpt: "Geleneksel reklam yöntemleri artık eskisi kadar işe yaramıyor. Velilerin okulları nasıl seçtiği değişti — buna göre kayıt stratejinizi güncellemenin zamanı geldi.",
-        category: "Pazarlama",
-        author: "Edusonex Ekibi",
-        date: "5 Mart 2026",
-        readTime: "5 dk",
-        image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074&auto=format&fit=crop",
-        slug: "veli-reklam-korlesmesi"
-    },
-    {
-        id: 3,
-        title: "White-Label AI: \"Kendi Yazılımımız\" Demenin Okula Getirdiği Prestij Avantajı",
-        excerpt: "Veliler sistemi sizin kurumunuza ait sanırsa güven 3 kata çıkıyor. White-label modelin kayıt dönüşüm oranını nasıl etkilediğini açıkladık.",
-        category: "Strateji",
-        author: "Edusonex Ekibi",
-        date: "28 Şubat 2026",
-        readTime: "4 dk",
-        image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop",
-        slug: "white-label-prestij"
-    },
-    {
-        id: 4,
-        title: "Okul Kurucusu Rehberi: AI Sisteminiz PDR Zümresini Neden Karşısına Almamalı?",
-        excerpt: "\"Psikolojik analiz\" kavramı Türkiye'de güçlü bir lobiyle karşı karşıya. Sistemin dilini \"Akademik Potansiyel Haritası\" olarak değiştirerek bu riski nasıl sıfırlarsınız?",
-        category: "Hukuki & Etik",
-        author: "Edusonex Ekibi",
-        date: "20 Şubat 2026",
-        readTime: "7 dk",
-        image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop",
-        slug: "pdr-riski-yonetimi"
-    },
-    {
-        id: 5,
-        title: "Zincir Okul Anlaşması: Tek İmzayla 20 Kampüsü Nasıl Kazanırsınız?",
-        excerpt: "Türkiye'de Bahçeşehir, Doğa, Uğur gibi zincirlerin karar mekanizması nasıl işliyor? Genel müdürü ikna etmenin 3 adımı.",
-        category: "Satış Stratejisi",
-        author: "Edusonex Ekibi",
-        date: "15 Şubat 2026",
-        readTime: "8 dk",
-        image: "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?q=80&w=2074&auto=format&fit=crop",
-        slug: "zincir-okul-anlasma"
-    },
-    {
-        id: 6,
-        title: "ROI Analizi: 49.750 TL/ay Harcama Kaç Yeni Kayıtla Geri Döner?",
-        excerpt: "Gerçek bir hesaplama: Enterprise paketi alan bir okul, yıllık kaç öğrenci kaydında tüm yatırımını amorti eder? Farklı kayıt ücretlerine göre kırılım barları.",
-        category: "Finans & ROI",
-        author: "Edusonex Ekibi",
-        date: "8 Şubat 2026",
-        readTime: "5 dk",
-        image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2070&auto=format&fit=crop",
-        slug: "roi-analizi"
-    }
-];
+import blogData from "@/data/blog-posts.json";
+
+const posts = blogData;
+
 
 const Blog = () => {
     return (
