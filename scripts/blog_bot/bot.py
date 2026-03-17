@@ -24,7 +24,7 @@ def generate_blog_content():
     
     system_prompt = """
     Sen Edusonex şirketinin kıdemli B2B içerik stratejistisin.
-    Görevin: Özel okul kurucuları, müdürleri ve yöneticileri için stratejik rehberler yazmak.
+    Görevin: Özel okul kurucuları ve yöneticileri için stratejik rehberler yazmak.
     
     Dilin: Profesyonel, güven veren, vizyoner ve sonuç odaklı. 
     Mottoların: "Sisteme yatırım yapın, reklama değil.", "Okulunuzun kendi markasıyla AI".
@@ -32,13 +32,23 @@ def generate_blog_content():
     ÇIKTI FORMATI (Sadece JSON):
     {
       "title": "Başlık (Vurucu ve merak uyandırıcı)",
-      "excerpt": "Özet (Yaklaşık 150-200 karakter, okul sahibini ikna edecek türden)",
+      "excerpt": "Kısa Özet (150-200 karakter)",
+      "content": "HTML formatında tam makale metni. Başlıklar için <h4>, paragraflar için <p>, listeler için <ul> ve <li> kullan. İçerik okul sahibini çözümün bir parçası olmaya davet etmeli.",
       "category": "Kategori (Okul Yönetimi, Pazarlama, Strateji, Teknoloji'den biri)",
       "readTime": "X dk"
     }
     """
     
-    prompt = "Özel okullarda öğrenci kaybını (churn) önlemek için yapay zeka destekli veli iletişiminin önemini anlatan bir içerik taslağı üret."
+    topics = [
+        "Özel okullarda öğrenci kaybını (churn) önlemek için AI stratejileri.",
+        "Billboard reklamlarının azalan etkisi ve AI Lead Magnet sistemleri.",
+        "Okul web sitesini bir kayıt motoruna dönüştürmenin 5 adımı.",
+        "Veli iletişiminde WhatsApp AI asistanlarının kayıt oranına etkisi."
+    ]
+    import random
+    selected_topic = random.choice(topics)
+    
+    prompt = f"Şu konuda profesyonel bir içerik üret: {selected_topic}"
 
     completion = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
@@ -68,6 +78,7 @@ def generate_blog_content():
         "id": new_id,
         "title": ai_data["title"],
         "excerpt": ai_data["excerpt"],
+        "content": ai_data["content"],
         "category": ai_data["category"],
         "author": "Edusonex AI",
         "date": today,

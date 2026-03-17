@@ -17,6 +17,7 @@ import Universe from "./pages/Universe";
 import ProjectDetail from "./pages/ProjectDetail";
 import References from "./pages/References";
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import Kommo from "./pages/Kommo";
 import Paradigm from "./pages/Paradigm";
 
@@ -39,6 +40,7 @@ const App = () => (
             <Route path="/kommo" element={<Kommo />} />
             <Route path="/referanslar" element={<References />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/urunler" element={<Products />} />
             <Route path="/cozumler" element={<Solutions />} />
             <Route path="/hem-ai" element={<HemAI />} />

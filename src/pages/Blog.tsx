@@ -30,8 +30,9 @@ const Blog = () => {
                         </p>
                     </div>
 
-                    {/* Featured Post (Optional - Highlight the first one) */}
+                    {/* Featured Post */}
                     <div className="mb-16 hidden lg:block animate-fade-in">
+                        <Link to={`/blog/${posts[0].slug}`}>
                         <div className="group relative overflow-hidden rounded-3xl border border-border/50 bg-card shadow-xl hover:shadow-2xl transition-all duration-300">
                             <div className="grid md:grid-cols-2 gap-8 items-center">
                                 <div className="h-full overflow-hidden">
@@ -71,12 +72,14 @@ const Blog = () => {
                                 </div>
                             </div>
                         </div>
+                        </Link>
                     </div>
 
                     {/* Blog Grid */}
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {posts.slice(1).map((post) => (
-                            <Card key={post.id} className="group flex flex-col border-border/50 bg-card hover:shadow-lg hover:border-primary/30 transition-all duration-300 overflow-hidden">
+                            <Link key={post.id} to={`/blog/${post.slug}`} className="flex flex-col">
+                            <Card className="flex-1 group flex flex-col border-border/50 bg-card hover:shadow-lg hover:border-primary/30 transition-all duration-300 overflow-hidden">
                                 <div className="relative h-48 overflow-hidden">
                                     <Badge className="absolute top-4 right-4 z-10 bg-background/80 backdrop-blur text-foreground border-border/50 hover:bg-background/90">
                                         {post.category}
@@ -113,6 +116,7 @@ const Blog = () => {
                                     </div>
                                 </CardFooter>
                             </Card>
+                            </Link>
                         ))}
                     </div>
 
