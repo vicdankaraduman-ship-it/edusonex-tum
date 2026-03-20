@@ -612,25 +612,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* 4. HEM */}
-            <Card className="border-blue-500/30 hover:border-blue-500/50 transition-all hover:shadow-lg hover:shadow-blue-500/10 bg-gradient-to-br from-card to-blue-500/5 group">
-              <CardHeader>
-                <div className="flex items-start justify-between mb-4">
-                  <div className="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Archive className="h-6 w-6 text-blue-600" />
-                  </div>
-                  <Badge className="bg-blue-500/10 text-blue-600 border-blue-500/20">✅ Aktif</Badge>
-                </div>
-                <CardTitle className="text-xl mb-1">HEM</CardTitle>
-                <div className="text-xs text-muted-foreground mb-2 font-mono">hem.edusonex.com.tr</div>
-                <CardDescription>Halk Eğitim Merkezleri için dijital kurs ve içerik yönetimi.</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button variant="outline" className="w-full border-blue-500/20 hover:bg-blue-500/10 hover:text-blue-600 group-hover:border-blue-500/40" disabled>
-                  Yakında Yayında <ExternalLink className="ml-2 h-4 w-4" />
-                </Button>
-              </CardContent>
-            </Card>
+
 
             {/* HO - Hızlı Okuma */}
             <Card className="border-amber-500/30 hover:border-amber-500/50 transition-all hover:shadow-lg hover:shadow-amber-500/10 bg-gradient-to-br from-card to-amber-500/5 group">
@@ -775,17 +757,25 @@ const Index = () => {
             </Card>
 
             {/* 10. Akademi */}
-            <Card className="border-border/50 hover:border-primary/30 transition-colors group">
+            <Card className="border-indigo-500/30 hover:border-indigo-500/50 transition-all hover:shadow-lg hover:shadow-indigo-500/10 bg-gradient-to-br from-card to-indigo-500/5 group">
               <CardHeader>
                 <div className="flex items-start justify-between mb-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <GraduationCap className="h-6 w-6 text-primary" />
+                  <div className="w-12 h-12 rounded-lg bg-indigo-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <GraduationCap className="h-6 w-6 text-indigo-600" />
                   </div>
-                  <Badge variant="outline">Planlanıyor</Badge>
+                  <Badge className="bg-indigo-500/10 text-indigo-600 border-indigo-500/20">✅ Aktif</Badge>
                 </div>
                 <CardTitle className="text-xl mb-1">Edusonex Akademi</CardTitle>
+                <div className="text-xs text-muted-foreground mb-2 font-mono">akademi.edusonex.com.tr</div>
                 <CardDescription>Öğretmen ve veli eğitimleri, sertifika programları.</CardDescription>
               </CardHeader>
+              <CardContent>
+                <a href="https://akademi.edusonex.com.tr/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" className="w-full border-indigo-500/20 hover:bg-indigo-500/10 hover:text-indigo-600 group-hover:border-indigo-500/40">
+                    Projeye Git <ExternalLink className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
+              </CardContent>
             </Card>
 
             {/* 11. Network */}

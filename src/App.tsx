@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Products from "./pages/Products";
 import Solutions from "./pages/Solutions";
-import HemAI from "./pages/HemAI";
+
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
@@ -47,7 +47,7 @@ const App = () => (
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/urunler" element={<Products />} />
             <Route path="/cozumler" element={<Solutions />} />
-            <Route path="/hem-ai" element={<HemAI />} />
+
             <Route path="/hakkimizda" element={<About />} />
             <Route path="/iletisim" element={<Contact />} />
             <Route path="/contact" element={<Contact />} />
