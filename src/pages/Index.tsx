@@ -636,43 +636,27 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* 4. Anket */}
-            <Card className="border-purple-500/30 hover:border-purple-500/50 transition-all hover:shadow-lg hover:shadow-purple-500/10 bg-gradient-to-br from-card to-purple-500/5 group">
-              <CardHeader>
-                <div className="flex items-start justify-between mb-4">
-                  <div className="w-12 h-12 rounded-lg bg-purple-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <BarChart3 className="h-6 w-6 text-purple-600" />
-                  </div>
-                  <Badge className="bg-purple-500/10 text-purple-600 border-purple-500/20">✅ Aktif</Badge>
-                </div>
-                <CardTitle className="text-xl mb-1">Anket</CardTitle>
-                <div className="text-xs text-muted-foreground mb-2 font-mono">anket.edusonex.com.tr</div>
-                <CardDescription>Gerçek zamanlı oylama ve interaktif anket sistemi.</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <Button variant="outline" className="w-full border-purple-500/20 hover:bg-purple-500/10 hover:text-purple-600 group-hover:border-purple-500/40" disabled>
-                  Yakında Yayında <ExternalLink className="ml-2 h-4 w-4" />
-                </Button>
-              </CardContent>
-            </Card>
 
-            {/* 5. Sınav (Nebula) */}
+
+            {/* 5. Sınav Fabrikası */}
             <Card className="border-orange-500/30 hover:border-orange-500/50 transition-all hover:shadow-lg hover:shadow-orange-500/10 bg-gradient-to-br from-card to-orange-500/5 group">
               <CardHeader>
                 <div className="flex items-start justify-between mb-4">
                   <div className="w-12 h-12 rounded-lg bg-orange-500/10 flex items-center justify-center group-hover:scale-110 transition-transform">
                     <FileCheck className="h-6 w-6 text-orange-600" />
                   </div>
-                  <Badge className="bg-orange-500/10 text-orange-600 border-orange-500/20">🚧 Beta</Badge>
+                  <Badge className="bg-orange-500/10 text-orange-600 border-orange-500/20">✅ Aktif</Badge>
                 </div>
                 <CardTitle className="text-xl mb-1">Sınav Fabrikası</CardTitle>
-                <div className="text-xs text-muted-foreground mb-2 font-mono">sinav.edusonex.com.tr</div>
+                <div className="text-xs text-muted-foreground mb-2 font-mono">sf.edusonex.com.tr</div>
                 <CardDescription>Yapay zeka destekli sınırsız soru ve sınav üretim motoru.</CardDescription>
               </CardHeader>
               <CardContent>
-                <Button variant="outline" className="w-full border-orange-500/20 hover:bg-orange-500/10 hover:text-orange-600 group-hover:border-orange-500/40" disabled>
-                  Geliştiriliyor <ExternalLink className="ml-2 h-4 w-4" />
-                </Button>
+                <a href="https://sf.edusonex.com.tr/" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" className="w-full border-orange-500/20 hover:bg-orange-500/10 hover:text-orange-600 group-hover:border-orange-500/40">
+                    Projeye Git <ExternalLink className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
               </CardContent>
             </Card>
 
