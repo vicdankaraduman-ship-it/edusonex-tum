@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
 import { Badge } from "@/components/ui/badge";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { CalendarDays, Clock, ArrowRight, User } from "lucide-react";
@@ -13,6 +14,11 @@ const posts = blogData;
 const Blog = () => {
     return (
         <Layout>
+            <SEO 
+                title="Blog | Edusonex Özel Okul Kayıt ve AI Pazarlama" 
+                description="Öğrenci kayıtlarını artırma, okullar için yapay zeka stratejileri ve white-label EdTech çözümleri hakkında sektörel makaleler."
+                canonical="/blog"
+            />
             <div className="bg-background min-h-screen py-16 lg:py-24">
                 <div className="container mx-auto px-4">
 

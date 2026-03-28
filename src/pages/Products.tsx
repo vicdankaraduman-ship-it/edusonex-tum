@@ -3,6 +3,7 @@ import { ArrowRight, Target, Shield, Brain, Users, CheckCircle, Zap, TrendingUp,
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 const solutions = [
   {
@@ -106,6 +107,11 @@ const packages = [
 const Products = () => {
   return (
     <Layout>
+      <SEO 
+        title="Çözümler & Fiyatlar | Edusonex Eğitim Teknolojileri" 
+        description="Özel okullar için white-label AI öğrenci kazanım altyapısı çözümleri. Starter, Growth ve Enterprise fiyat seçenekleriyle kapasite bazlı büyüme."
+        canonical="/urunler"
+      />
       {/* Hero */}
       <section className="py-20 lg:py-28 bg-gradient-to-b from-muted/50 to-background relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none" />

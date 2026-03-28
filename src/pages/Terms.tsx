@@ -1,8 +1,14 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 const Terms = () => {
   return (
     <Layout>
+      <SEO 
+        title="Kullanım Şartları | Edusonex" 
+        description="Edusonex AI okul kayıt ve CRM altyapısı hizmet şartları ve kullanım koşulları sözleşmesi."
+        canonical="/kullanim-sartlari"
+      />
       <div className="container mx-auto px-4 py-16 md:py-24 max-w-4xl">
         <h1 className="text-4xl font-bold mb-4">Kullanım Şartları</h1>
         <p className="text-muted-foreground mb-12">Yürürlük Tarihi: 1 Ocak 2026</p>

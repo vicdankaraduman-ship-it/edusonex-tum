@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import SEO from "@/components/SEO";
 import {
   Quote, Star, Users, Globe, TrendingUp, Headphones,
   ExternalLink, CheckCircle2, ArrowRight, Zap, Rocket
@@ -61,6 +62,11 @@ const stats = [
 const References = () => {
   return (
     <Layout>
+      <SEO 
+        title="Başarı Hikayeleri & Ortaklıklar | Edusonex" 
+        description="Kommo Türkiye Resmi Partneri olarak eğitim kurumlarına sunduğumuz yapay zeka altyapısına güvenen referanslarımız ve global başarı hikayeleri."
+        canonical="/referanslar"
+      />
       {/* Hero */}
       <section className="py-20 lg:py-28 bg-gradient-to-b from-muted/50 to-background">
         <div className="container mx-auto px-4 lg:px-8">

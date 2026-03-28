@@ -3,6 +3,7 @@ import { ArrowRight, Brain, Cpu, Gamepad2, Globe, GraduationCap, Layers, Server,
 import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import SEO from "@/components/SEO";
 
 const tiers = [
     {
@@ -108,6 +109,11 @@ const tiers = [
 const Universe = () => {
     return (
         <Layout>
+            <SEO 
+                title="Platform Mimarisi | Edusonex AI Altyapısı" 
+                description="7 katmanlı AI okul kayıt ve CRM altyapımızı keşfedin. Lead generation, WhatsApp asistanı, Kommo entegrasyonu ve büyüme odaklı Edu-RaaS modeli."
+                canonical="/universe"
+            />
             <div className="min-h-screen bg-[#0a0a0F] text-white py-24 relative overflow-hidden">
                 {/* Background Gradients */}
                 <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">

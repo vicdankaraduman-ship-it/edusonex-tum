@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 const values = [
   {
@@ -33,6 +34,11 @@ const milestones = [
 const About = () => {
   return (
     <Layout>
+      <SEO 
+        title="Hakkımızda | Edusonex Eğitim Teknolojileri" 
+        description="Türkiye'de özel okul ve kurs merkezlerinin öğrenci kazanım maliyetini düşüren yapay zeka altyapısı şirketi Edusonex'i tanıyın."
+        canonical="/hakkimizda"
+      />
       {/* Hero */}
       <section className="py-20 lg:py-28 bg-gradient-to-b from-muted/50 to-background relative overflow-hidden">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl -translate-y-1/3 translate-x-1/4 pointer-events-none" />

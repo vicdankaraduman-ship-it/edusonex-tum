@@ -102,6 +102,9 @@ const Footer = () => {
             <Link to="/kullanim-sartlari" className="hover:text-white transition-colors">
               Kullanım Şartları
             </Link>
+            <Link to="/kvkk" className="hover:text-white transition-colors">
+              KVKK Aydınlatma Metni
+            </Link>
           </div>
         </div>
       </div>

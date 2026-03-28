@@ -1,8 +1,14 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 const Privacy = () => {
   return (
     <Layout>
+      <SEO 
+        title="Gizlilik Politikası | Edusonex" 
+        description="Edusonex Eğitim Teknolojileri'nin gizlilik politikası, veri güvenliği ve toplanan veli/öğrenci bilgilerinin korunma standartları."
+        canonical="/gizlilik"
+      />
       <div className="container mx-auto px-4 py-16 md:py-24 max-w-4xl">
         <h1 className="text-4xl font-bold mb-4">Gizlilik Politikası</h1>
         <p className="text-muted-foreground mb-12">Son Güncelleme: 1 Ocak 2026</p>

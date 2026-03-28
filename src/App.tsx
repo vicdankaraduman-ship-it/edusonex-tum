@@ -25,10 +25,13 @@ import { ThemeProvider } from "@/components/theme-provider";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
 import SSS from "./pages/SSS";
 import RaporPage from "./pages/RaporPage";
+import Kvkk from "./pages/Kvkk";
+import { HelmetProvider } from "react-helmet-async";
 
 const queryClient = new QueryClient();
 
 const App = () => (
+  <HelmetProvider>
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
@@ -54,6 +57,7 @@ const App = () => (
             <Route path="/features" element={<Products />} />
             <Route path="/gizlilik" element={<Privacy />} />
             <Route path="/kullanim-sartlari" element={<Terms />} />
+            <Route path="/kvkk" element={<Kvkk />} />
             <Route path="/sss" element={<SSS />} />
             <Route path="/rapor/2026" element={<RaporPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
@@ -63,6 +67,7 @@ const App = () => (
       </ThemeProvider>
     </TooltipProvider>
   </QueryClientProvider>
+  </HelmetProvider>
 );
 
 export default App;
