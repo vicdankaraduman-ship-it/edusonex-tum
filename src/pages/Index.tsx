@@ -726,19 +726,6 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* 9. Gamer */}
-            <Card className="border-border/50 hover:border-primary/30 transition-colors group">
-              <CardHeader>
-                <div className="flex items-start justify-between mb-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Gamepad2 className="h-6 w-6 text-primary" />
-                  </div>
-                  <Badge variant="outline">Planlanıyor</Badge>
-                </div>
-                <CardTitle className="text-xl mb-1">Edusonex Gamer</CardTitle>
-                <CardDescription>Eğitimde oyunlaştırma ve e-spor modülleri.</CardDescription>
-              </CardHeader>
-            </Card>
 
             {/* 10. Akademi */}
             <Card className="border-indigo-500/30 hover:border-indigo-500/50 transition-all hover:shadow-lg hover:shadow-indigo-500/10 bg-gradient-to-br from-card to-indigo-500/5 group">
@@ -762,33 +749,6 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            {/* 11. Network */}
-            <Card className="border-border/50 hover:border-primary/30 transition-colors group">
-              <CardHeader>
-                <div className="flex items-start justify-between mb-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Network className="h-6 w-6 text-primary" />
-                  </div>
-                  <Badge variant="outline">Planlanıyor</Badge>
-                </div>
-                <CardTitle className="text-xl mb-1">Edusonex Network</CardTitle>
-                <CardDescription>Eğitimciler ve okullar arası sosyal işbirliği ağı.</CardDescription>
-              </CardHeader>
-            </Card>
-
-            {/* 12. Metaverse */}
-            <Card className="border-border/50 hover:border-primary/30 transition-colors group">
-              <CardHeader>
-                <div className="flex items-start justify-between mb-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform">
-                    <Glasses className="h-6 w-6 text-primary" />
-                  </div>
-                  <Badge variant="outline">Planlanıyor</Badge>
-                </div>
-                <CardTitle className="text-xl mb-1">Edusonex Metaverse</CardTitle>
-                <CardDescription>Sanal gerçeklik tabanlı sürükleyici eğitim ortamları.</CardDescription>
-              </CardHeader>
-            </Card>
 
 
           </div>
