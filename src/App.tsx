@@ -1,31 +1,31 @@
+import { Suspense, lazy } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
-import Products from "./pages/Products";
-import Solutions from "./pages/Solutions";
 
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Privacy from "./pages/Privacy";
-import Terms from "./pages/Terms";
-import NotFound from "./pages/NotFound";
-
-import Universe from "./pages/Universe";
-import ProjectDetail from "./pages/ProjectDetail";
-import References from "./pages/References";
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
-import Kommo from "./pages/Kommo";
-import Paradigm from "./pages/Paradigm";
+const Products = lazy(() => import("./pages/Products"));
+const Solutions = lazy(() => import("./pages/Solutions"));
+const About = lazy(() => import("./pages/About"));
+const Contact = lazy(() => import("./pages/Contact"));
+const Privacy = lazy(() => import("./pages/Privacy"));
+const Terms = lazy(() => import("./pages/Terms"));
+const NotFound = lazy(() => import("./pages/NotFound"));
+const Universe = lazy(() => import("./pages/Universe"));
+const ProjectDetail = lazy(() => import("./pages/ProjectDetail"));
+const References = lazy(() => import("./pages/References"));
+const Blog = lazy(() => import("./pages/Blog"));
+const BlogPost = lazy(() => import("./pages/BlogPost"));
+const Kommo = lazy(() => import("./pages/Kommo"));
+const Paradigm = lazy(() => import("./pages/Paradigm"));
+const SSS = lazy(() => import("./pages/SSS"));
+const RaporPage = lazy(() => import("./pages/RaporPage"));
+const Kvkk = lazy(() => import("./pages/Kvkk"));
 
 import { ThemeProvider } from "@/components/theme-provider";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
-import SSS from "./pages/SSS";
-import RaporPage from "./pages/RaporPage";
-import Kvkk from "./pages/Kvkk";
 import { HelmetProvider } from "react-helmet-async";
 
 const queryClient = new QueryClient();
@@ -39,8 +39,9 @@ const App = () => (
         <Sonner />
         <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
           <ExitIntentPopup />
-          <Routes>
-            <Route path="/" element={<Index />} />
+          <Suspense fallback={<div className="min-h-screen flex items-center justify-center text-muted-foreground p-4">Yükleniyor...</div>}>
+            <Routes>
+              <Route path="/" element={<Index />} />
             <Route path="/universe" element={<Universe />} />
             <Route path="/universe/layer-7-paradigm" element={<Paradigm />} />
             <Route path="/universe/:projectId" element={<ProjectDetail />} />
@@ -63,6 +64,7 @@ const App = () => (
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
+          </Suspense>
         </BrowserRouter>
       </ThemeProvider>
     </TooltipProvider>

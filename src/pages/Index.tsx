@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Building2, FileText, GraduationCap, Sparkles, Brain, Gamepad2, Globe, Layers, Users, TrendingUp, ExternalLink, Shield, Archive, BarChart3, FileCheck, Fingerprint, Video, Network, Glasses, Files, FlaskConical, CheckCircle, XCircle, Calculator, Zap, Play, ChevronRight, AlertTriangle, Lock } from "lucide-react";
+import { ArrowRight, Building2, FileText, GraduationCap, Sparkles, Brain, Globe, Layers, Users, TrendingUp, ExternalLink, Shield, Archive, BarChart3, FileCheck, Fingerprint, Video, Files, FlaskConical, CheckCircle, XCircle, Calculator, Zap, Play, ChevronRight, AlertTriangle, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
