@@ -1,0 +1,48 @@
+name: Blog Auto-Publish Bot
+
+on:
+  schedule:
+    # Pazartesi ve Perşembe günleri 04:00 UTC'de (Türkiye saati ile sabah 07:00) çalışır
+    - cron: '0 4 * * 1,4'
+  workflow_dispatch: # Manuel olarak çalıştırabilmek için tetikleyici
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    
+    # Commit atabilmesi için yazma izni veriyoruz
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install groq python-dotenv requests
+
+      - name: Run AI Blog Generator Bot
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: |
+          # Botu çalıştırıyoruz. Bot içerisinden kendi verilerini indirecek.
+          python scripts/blog_bot/bot.py
+          
+      - name: Commit and Push Changes
+        run: |
+          # Git ayarları
+          git config --global user.name "Edusonex AI Bot"
+          git config --global user.email "bot@edusonex.com"
+          
+          # Değişiklik var mı kontrol et, varsa commit ve push yap
+          git add -A
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-publish: Yeni blog yazısı eklendi" && git push)

@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
+import { supabase } from "@/lib/supabase";
 
 const WHATSAPP_NUMBER = "905320674063";
 
@@ -13,13 +14,31 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [institution, setInstitution] = useState("");
 
-  const handleWhatsApp = (e: React.FormEvent) => {
+  const handleWhatsApp = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // 1. WhatsApp Mesajını Hazırla
     const message = encodeURIComponent(
       `Merhaba, ben ${name}${institution ? ` (${institution})` : ""}. Edusonex hakkında bilgi almak ve demo talep etmek istiyorum.`
     );
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank");
+    
+    try {
+      // 2. Supabase'e Kaydet (Sessizce, hata verse bile WhatsApp'ı engellemesin)
+      await supabase.from("leads").insert([
+        { 
+          name, 
+          school_name: institution, 
+          source: "iletisim_whatsapp" 
+        }
+      ]);
+    } catch (error) {
+      console.error("Lead kaydedilemedi:", error);
+    } finally {
+      // 3. Her halükarda WhatsApp'ı aç
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, "_blank");
+    }
   };
+
 
   return (
     <Layout>

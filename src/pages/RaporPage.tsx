@@ -1,8 +1,12 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
+import { supabase } from "@/lib/supabase";
+import { toast } from "sonner";
 import {
   TrendingUp, AlertTriangle, Target, CheckCircle, ArrowRight,
   BarChart3, Users, Zap, Shield, Building2
@@ -23,6 +27,32 @@ const competitors = [
 ];
 
 const RaporPage = () => {
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const handleDownloadForm = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    
+    try {
+      await supabase.from("leads").insert([
+        { 
+          name, 
+          email, 
+          source: "rapor_indirimi" 
+        }
+      ]);
+      setIsSubmitted(true);
+      toast.success("Rapor başarıyla e-postanıza gönderildi ve indirmeye hazır!");
+    } catch (error) {
+      toast.error("Bir sorun oluştu. Lütfen tekrar deneyin.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <Layout>
       <SEO 
@@ -57,10 +87,47 @@ const RaporPage = () => {
             öğrenci kayıt maliyetlerini köklü değiştiren yeni teknolojiler.
           </p>
 
-          <div className="flex items-center gap-2 text-sm text-muted-foreground">
+          <div className="flex items-center gap-2 text-sm text-muted-foreground mb-10">
             <Shield className="h-4 w-4 text-primary" />
             <span>Bu rapor Edusonex tarafından hazırlanmıştır. Tüm hakları saklıdır.</span>
           </div>
+
+          {!isSubmitted ? (
+            <div className="bg-card border border-border/50 rounded-2xl p-6 lg:p-8 max-w-2xl shadow-xl">
+              <h3 className="text-xl font-bold mb-2">Tam Raporu (PDF) Ücretsiz İndirin</h3>
+              <p className="text-sm text-muted-foreground mb-6">45 sayfalık detaylı rekabet analizi ve EdTech yatırım hesaplamalarını hemen indirin.</p>
+              
+              <form onSubmit={handleDownloadForm} className="flex flex-col sm:flex-row gap-3">
+                <Input 
+                  placeholder="Ad Soyad" 
+                  required 
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  className="h-12 flex-1"
+                />
+                <Input 
+                  type="email" 
+                  placeholder="E-posta Adresiniz" 
+                  required 
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="h-12 flex-1"
+                />
+                <Button type="submit" className="h-12 px-8" disabled={loading}>
+                  {loading ? "Gelen Kutusu Bekleniyor..." : "Raporu İndir"}
+                </Button>
+              </form>
+            </div>
+          ) : (
+            <div className="bg-green-500/10 border border-green-500/20 rounded-2xl p-6 lg:p-8 max-w-2xl text-center">
+              <CheckCircle className="h-12 w-12 text-green-500 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Harika! PDF İndirilmeye Hazır</h3>
+              <p className="text-sm text-muted-foreground mb-6">Ayrıca bir kopyasını da e-postanıza gönderdik.</p>
+              <Button onClick={() => window.open("/rapor-pdf-dummy.pdf", "_blank")} className="h-12 px-8 bg-green-600 hover:bg-green-700 text-white">
+                PDF Dosyasını Aç <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </div>
+          )}
         </div>
       </section>
 

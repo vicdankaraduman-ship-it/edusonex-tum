@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Building2, FileText, GraduationCap, Sparkles, Brain, Globe, Layers, Users, TrendingUp, ExternalLink, Shield, Archive, BarChart3, FileCheck, Fingerprint, Video, Files, FlaskConical, CheckCircle, XCircle, Calculator, Zap, Play, ChevronRight, AlertTriangle, Lock } from "lucide-react";
+import { ArrowRight, Building2, FileText, GraduationCap, Sparkles, Brain, Globe, Layers, Users, TrendingUp, ExternalLink, Shield, Archive, BarChart3, FileCheck, Fingerprint, Video, Files, FlaskConical, CheckCircle, XCircle, Calculator, Zap, Play, ChevronRight, AlertTriangle, Lock, Bot } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Slider } from "@/components/ui/slider";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
+import DemoChat from "@/components/DemoChat";
 
 const Index = () => {
   const [roiValue, setRoiValue] = useState([300000]);
@@ -148,6 +149,42 @@ const Index = () => {
               </div>
               <h3 className="font-semibold text-foreground">Okul Markası Güçlenir</h3>
               <p className="mt-2 text-sm text-muted-foreground">Okul markası ve alan adıyla çalışan sistemler ile dijital kimlik oluşur.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CANLI AI DEMO EKLENTISI */}
+      <section className="py-20 lg:py-28 bg-muted/10 border-y border-border/50 relative overflow-hidden">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div>
+              <Badge className="mb-4 bg-purple-500/10 text-purple-500 border-purple-500/20">
+                <Bot className="h-4 w-4 mr-2 inline" /> Deneyin
+              </Badge>
+              <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
+                Veli Asistanı <br/>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-primary">İş Başında</span>
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
+                Yapay zeka asistanınız okuyan, anlayan ve 7/24 ikna eden bir kayıt personeli gibi çalışır. Sağdaki ekrandan asistanımızla bir veli gibi konuşmayı deneyin.
+              </p>
+              <ul className="space-y-4 mb-8">
+                {[
+                  "Fiyat ve burs oranlarını sorabilirsiniz",
+                  "Yabancı dil eğitimini sorabilirsiniz",
+                  "Okulun konumu ve vizyonunu sorabilirsiniz",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3 text-foreground font-medium">
+                    <CheckCircle className="h-5 w-5 text-green-500 shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="relative">
+               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-purple-500/20 blur-3xl -z-10 rounded-full" />
+               <DemoChat />
             </div>
           </div>
         </div>
