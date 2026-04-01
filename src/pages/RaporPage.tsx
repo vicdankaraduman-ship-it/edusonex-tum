@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import {
   TrendingUp, AlertTriangle, Target, CheckCircle, ArrowRight,
   BarChart3, Users, Zap, Shield, Building2
@@ -24,6 +25,11 @@ const competitors = [
 const RaporPage = () => {
   return (
     <Layout>
+      <SEO 
+        title="2026 Türkiye EdTech Raporu | Edusonex" 
+        description="Özel okul pazarı, yapay zeka adaptasyon durumu ve öğrenci kazanım stratejileri hakkında 2026 sektör raporu."
+        canonical="/rapor/2026"
+      />
       {/* Hero */}
       <section className="py-16 lg:py-24 bg-gradient-to-b from-muted/60 to-background relative overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">

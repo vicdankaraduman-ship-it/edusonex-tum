@@ -23,6 +23,11 @@ const Contact = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="İletişim | Edusonex" 
+        description="Edusonex ekibine WhatsApp, telefon veya e-posta yoluyla ulaşın. Özel okulunuz için demo talep edin ve büyüme planınızı hazırlayalım."
+        canonical="/iletisim"
+      />
       {/* Hero */}
       <section className="py-20 lg:py-28 bg-gradient-to-b from-muted/50 to-background">
         <div className="container mx-auto px-4 lg:px-8">

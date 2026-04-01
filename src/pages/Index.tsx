@@ -6,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Slider } from "@/components/ui/slider";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 const Index = () => {
   const [roiValue, setRoiValue] = useState([300000]);
@@ -41,6 +42,30 @@ const Index = () => {
 
   return (
     <Layout>
+      <SEO 
+        title="Edusonex | Okullara AI Destekli Öğrenci Kazanım Motoru" 
+        description="Türkiye'nin AI okul altyapı şirketi. White-label yapay zeka sistemiyle okulunuza yeni öğrenci kaydı getiriyor. Kapasite bazlı sabit fiyat, sınırsız büyüme."
+        canonical="/"
+        aiSummary="Edusonex, Türkiye'deki özel okullar için white-label yapay zeka altyapısı sunan bir EdTech şirketidir. Okulun kendi markasıyla çalışan AI sistemi, velilerden veri toplayarak kayıt oranlarını artırır."
+        faq={[
+          {
+            question: "Edusonex ne işe yarar?",
+            answer: "Edusonex, özel okulların kendi markasıyla çalışan beyaz etiket yapay zeka altyapısı sunar. Veli adaylarından iletişim bilgisi toplayarak kayıt sürecini otomatikleştirir ve 7/24 WhatsApp veli asistanı sağlar.",
+          },
+          {
+            question: "Öğrenci başına ödeme yapılıyor mu?",
+            answer: "Hayır. Edusonex kapasite bazlı sabit aylık fiyat uygular: Starter (100 öğrenciye kadar), Growth (500'e kadar), Enterprise (1.000'e kadar). Öğrenci sayısı artsa bile fiyat sabit kalır.",
+          },
+          {
+            question: "Teknik kurulum gerekiyor mu?",
+            answer: "Hayır. Tüm kurulum, alan adı yapılandırması ve teknik yönetim Edusonex tarafından yapılır. Ortalama kurulum süresi 5–10 iş günüdür.",
+          },
+          {
+            question: "White-label ne demek?",
+            answer: "White-label, sistemin okulun kendi markası ve alan adıyla çalışması demektir. Veliler sistemi okula ait sanır, kurumsal güven artar.",
+          },
+        ]}
+      />
       {/* Hero Section */}
       <section className="relative pt-20 pb-16 lg:pt-32 lg:pb-24 overflow-hidden">
         <div className="container mx-auto px-4 lg:px-8 relative z-10">

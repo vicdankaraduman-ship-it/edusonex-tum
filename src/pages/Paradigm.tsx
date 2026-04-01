@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import SEO from "@/components/SEO";
 import {
     School,
     RefreshCw,
@@ -24,6 +25,11 @@ import {
 const Paradigm = () => {
     return (
         <Layout>
+            <SEO 
+                title="Dijital İkiz & Metaverse | Edusonex Paradigm" 
+                description="Okulunuzun metaverse'deki dijital ikizi. Gerçek zamanlı senkronizasyon, AI destekli simülasyon ve sanal okul yönetimi altyapısı."
+                canonical="/universe/layer-7-paradigm"
+            />
             <div className="min-h-screen bg-[#0a0a0F] text-white overflow-hidden relative">
                 {/* Background Gradients */}
                 <div className="absolute top-0 left-0 w-full h-full pointer-events-none">

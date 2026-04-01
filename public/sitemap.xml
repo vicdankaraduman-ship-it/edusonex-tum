@@ -90,4 +90,54 @@
     <priority>0.3</priority>
   </url>
 
+  <!-- Blog Yazıları -->
+  <url>
+    <loc>https://edusonex.com.tr/blog/veli-adaylarini-sicak-kanallardan-yakalamak-whatsapp-e-posta-ve-web-formlari-kar</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://edusonex.com.tr/blog/kurs-merkezi-mi-okul-mu-buyume-dinamikleri-karsilastirmasi</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://edusonex.com.tr/blog/olceklenebilir-okul-modeli-tek-kampusten-cok-subeli-yapiya-gecis-stratejisi</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://edusonex.com.tr/blog/kisisel-veri-guvenligi-ve-kvkk-uyumuna-iliskin-pratik-rehber</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://edusonex.com.tr/blog/okul-prestijini-artirmak-icin-white-label-yapay-zeka-altyapisi</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://edusonex.com.tr/blog/acik-hava-reklamlarinin-gerilemesi-ozel-okullar-icin-akilli-kanca-sistemi-altern</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://edusonex.com.tr/blog/ozel-okullarda-aday-veli-miknatisi-web-sitesi-psikolojisi-ve-ilk-7-saniyenin-one</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://edusonex.com.tr/blog/veli-reklam-korlesmesi</loc>
+    <lastmod>2026-03-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>

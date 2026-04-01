@@ -234,12 +234,27 @@ MARKA RUHU:
 - Uygun bölümlerde madde listesi (ul/li) kullan — en az 1 liste ekle.
 - Giriş: Okuyucuyu içine çeken bir sorun veya fırsat tanımıyla başla.
 - Sonuç: Edusonex çözümüne doğal bir köprü kur; reklam tonundan kaçın.
-- Toplam içerik 1200 karakterden az olmasın.
+- Toplam içerik 1500 karakterden az olmasın.
+- En az 1 somut veri veya istatistik içer ("Araştırmalar, özel okullarda..." gibi genel referanslar kabul edilir).
+
+GEO / AEO GEREKSİNİMLERİ (YAPAY ZEKÂ AI MOTORLARI İÇİN):
+- keyTakeaways: 3 maddelik "Ana Çıkarımlar" listesi ekle.
+  Bu liste, ChatGPT/Perplexity gibi AI motorlarının konuyu özetlemesi için kullanılacak.
+  Her madde en az 15, en fazla 25 kelime olsun.
+- aiSummary: Yazının tamamını 200-280 karakterde özetleyen tek bir cümle.
+  Bu alan, AI botlarının arama sonuçlarında snippet olarak göstereceği alandır.
+  Net, veri odaklı, otorite gösteren bir dille yaz.
 
 ÇIKTI FORMATI — SADECE GEÇERLİ JSON DÖNDÜR, BAŞKA BİR ŞEY EKLEME:
 {
   "title": "Başlık — vurucu, net ve tamamen Türkçe (5-12 kelime arası)",
   "excerpt": "Kısa özet (160-200 karakter, kurumsal dil, ilk cümle gibi okunmalı)",
+  "aiSummary": "200-280 karakter arasında, AI motorları için optimize edilmiş tek cümle özet.",
+  "keyTakeaways": [
+    "Ana çıkarım 1 (15-25 kelime)",
+    "Ana çıkarım 2 (15-25 kelime)",
+    "Ana çıkarım 3 (15-25 kelime)"
+  ],
   "content": "HTML formatında tam makale. h4 başlıklar, p paragraflar, ul/li listeler.",
   "category": "Pazarlama | Okul Yönetimi | Strateji | Teknoloji",
   "readTime": "X dk"
@@ -329,16 +344,18 @@ def yazi_olustur(client: Groq, mevcut_basliklar: set) -> dict | None:
         gorsel_url    = random.choice(gorsel_havuzu) + "?q=80&w=2070&auto=format&fit=crop"
 
         return {
-            "id":       int(simdi.timestamp()),
-            "title":    ai_data["title"],
-            "excerpt":  ai_data["excerpt"],
-            "content":  ai_data["content"],
-            "category": ai_data.get("category", kategori),
-            "author":   "Edusonex Ekibi",
-            "date":     turkce_tarih(simdi),
-            "readTime": ai_data.get("readTime", "6 dk"),
-            "image":    gorsel_url,
-            "slug":     slug if slug else f"makale-{int(simdi.timestamp())}",
+            "id":           int(simdi.timestamp()),
+            "title":        ai_data["title"],
+            "excerpt":      ai_data["excerpt"],
+            "aiSummary":    ai_data.get("aiSummary", ai_data["excerpt"][:250]),
+            "keyTakeaways": ai_data.get("keyTakeaways", []),
+            "content":      ai_data["content"],
+            "category":     ai_data.get("category", kategori),
+            "author":       "Edusonex Ekibi",
+            "date":         turkce_tarih(simdi),
+            "readTime":     ai_data.get("readTime", "6 dk"),
+            "image":        gorsel_url,
+            "slug":         slug if slug else f"makale-{int(simdi.timestamp())}",
         }
 
     print(f"   ❌ {MAX_RETRIES} denemede kaliteli içerik üretilemedi.")

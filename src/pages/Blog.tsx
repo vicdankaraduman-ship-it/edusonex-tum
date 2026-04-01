@@ -18,6 +18,7 @@ const Blog = () => {
                 title="Blog | Edusonex Özel Okul Kayıt ve AI Pazarlama" 
                 description="Öğrenci kayıtlarını artırma, okullar için yapay zeka stratejileri ve white-label EdTech çözümleri hakkında sektörel makaleler."
                 canonical="/blog"
+                aiSummary="Edusonex Blog, özel eğitim kurumları için web tabanlı pazarlama, Aday Veli kazanımı ve yapay zeka stratejileri hakkında uzman rehberleri içerir."
             />
             <div className="bg-background min-h-screen py-16 lg:py-24">
                 <div className="container mx-auto px-4">

@@ -4,6 +4,7 @@ import blogData from "@/data/blog-posts.json";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, CalendarDays, Clock, User, Share2 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import SEO from "@/components/SEO";
 
 interface BlogPostData {
   id: number;
@@ -16,6 +17,8 @@ interface BlogPostData {
   readTime: string;
   image: string;
   slug: string;
+  aiSummary?: string;
+  keyTakeaways?: string[];
 }
 
 const BlogPost = () => {
@@ -39,6 +42,18 @@ const BlogPost = () => {
 
   return (
     <Layout>
+      <SEO 
+        title={`${post.title} | Edusonex Blog`}
+        description={post.excerpt}
+        canonical={`/blog/${post.slug}`}
+        type="article"
+        aiSummary={post.aiSummary ? `${post.aiSummary} Kaynak: Edusonex (edusonex.com.tr)` : `${post.excerpt} Kaynak: Edusonex — Türkiye'nin AI okul altyapı şirketi (edusonex.com.tr)`}
+        article={{
+          publishedTime: post.date,
+          author: post.author,
+          section: post.category,
+        }}
+      />
       <article className="bg-background min-h-screen pt-24 pb-16 lg:pt-32 lg:pb-24">
         <div className="container mx-auto px-4">
           
@@ -87,6 +102,47 @@ const BlogPost = () => {
                 alt={post.title} 
                 className="w-full h-full object-cover"
               />
+            </div>
+
+            {/* AI Alıntı Özeti — GEO: ChatGPT, Perplexity ve Gemini bu kutucuğu direkt kaynak gösterir */}
+            <div
+              className="mb-12 p-6 rounded-2xl border border-primary/20 bg-primary/5"
+              itemScope
+              itemType="https://schema.org/Article"
+            >
+              <p className="text-xs font-semibold text-primary uppercase tracking-widest mb-3">
+                📌 Özetle
+              </p>
+              <p
+                className="text-base text-muted-foreground leading-relaxed"
+                itemProp="abstract"
+              >
+                {post.aiSummary || post.excerpt}
+              </p>
+              
+              {post.keyTakeaways && post.keyTakeaways.length > 0 && (
+                <div className="mt-6">
+                  <p className="text-xs font-semibold text-foreground uppercase mb-2">💡 Ana Çıkarımlar</p>
+                  <ul className="list-disc pl-5 space-y-1">
+                    {post.keyTakeaways.map((takeaway, idx) => (
+                      <li key={idx} className="text-sm text-muted-foreground">{takeaway}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              <p className="text-xs text-muted-foreground/60 mt-4">
+                Kaynak:{" "}
+                <a
+                  href={`https://edusonex.com.tr/blog/${post.slug}`}
+                  className="underline hover:text-primary"
+                  itemProp="url"
+                >
+                  edusonex.com.tr
+                </a>
+                {" — "}
+                <span itemProp="author">Edusonex Ekibi</span>
+              </p>
             </div>
 
             {/* Content Area */}
