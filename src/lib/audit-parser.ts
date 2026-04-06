@@ -1,5 +1,3 @@
-import auditData from "@/data/audit-data.json";
-
 export interface DashboardData {
   meta: {
     domain: string;
@@ -42,6 +40,27 @@ export interface DashboardData {
   };
 }
 
-export function getAuditData(): DashboardData {
-  return auditData as DashboardData;
+// Use Vite's glob import to read all tenant JSON files
+const rawReports = import.meta.glob('../../reports/*/audit-data.json', { eager: true });
+
+export const getAllTenants = (): Record<string, DashboardData> => {
+  const tenants: Record<string, DashboardData> = {};
+  for (const path in rawReports) {
+    // path looks like '../../reports/edusonex_com_tr/audit-data.json'
+    const parts = path.split('/');
+    const tenantId = parts[parts.length - 2]; 
+    tenants[tenantId] = (rawReports[path] as any).default || rawReports[path];
+  }
+  return tenants;
+};
+
+// Fallback to the first available tenant or static data if none
+const defaultData = Object.values(getAllTenants())[0];
+
+export function getAuditData(tenantId?: string): DashboardData {
+  if (tenantId) {
+    const tenants = getAllTenants();
+    return tenants[tenantId] || defaultData;
+  }
+  return defaultData;
 }
