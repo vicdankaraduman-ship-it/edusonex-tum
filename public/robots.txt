@@ -1,10 +1,16 @@
-# Edusonex robots.txt
+# ================================================================
+# Edusonex robots.txt - AEO/GEO Optimized
 # https://edusonex.com.tr
+# Son Güncelleme: 2026-04-06
+# ================================================================
 
-# ─── Arama Motorları ───────────────────────────────────────
+# ─── 1. ARAMA MOTORLARI ─────────────────────────────────────────
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
+
+User-agent: Googlebot-Image
+Allow: /
 
 User-agent: Bingbot
 Allow: /
@@ -16,7 +22,10 @@ Allow: /
 User-agent: DuckDuckBot
 Allow: /
 
-# ─── Sosyal Medya ──────────────────────────────────────────
+User-agent: Slurp
+Allow: /
+
+# ─── 2. SOSYAL MEDYA ────────────────────────────────────────────
 User-agent: Twitterbot
 Allow: /
 
@@ -29,46 +38,69 @@ Allow: /
 User-agent: WhatsApp
 Allow: /
 
-# ─── AI / LLM Crawler'ları (GEO) ──────────────────────────
-# ChatGPT / OpenAI
+# ─── 3. AI / LLM CRAWLER'LARI (GEO/AEO KRİTİK) ──────────────────
+# Her bot için User-agent ve Allow satırları robotstxt protokolü
+# gereği ayrı blok olarak tanımlanmıştır.
+# "User-agent: *" kötü aktörleri de kapsadığından AI botlarını
+# açıkça izin listesine almak zorunludur.
+
+# OpenAI / ChatGPT - Eğitim ve arama endeksi için
 User-agent: GPTBot
 Allow: /
 
+# OpenAI Arama Botu (SearchGPT / ChatGPT Search)
+User-agent: OAI-SearchBot
+Allow: /
+
+# OpenAI Kullanıcı Tarafı Bot (Browse with Bing entegrasyonu)
 User-agent: ChatGPT-User
 Allow: /
 
-# Bing AI / Copilot
-User-agent: bingbot
-Allow: /
-
-# Perplexity
-User-agent: PerplexityBot
-Allow: /
-
-# Anthropic / Claude
-User-agent: anthropic-ai
-Allow: /
-
+# Anthropic / Claude - AI asistan içerik tarama
 User-agent: ClaudeBot
 Allow: /
 
-# Common Crawl (AI eğitim veri seti)
-User-agent: CCBot
+# Anthropic ikincil tarayıcı
+User-agent: anthropic-ai
 Allow: /
 
-# Google AI (Gemini vb.)
+# Google AI / Gemini / AI Overviews - Google'ın LLM eğitim botu
 User-agent: Google-Extended
 Allow: /
 
-# Meta AI
+# Perplexity AI - Gerçek zamanlı web araştırma motoru
+User-agent: PerplexityBot
+Allow: /
+
+# Common Crawl - Açık veri seti, birçok LLM'i besler (GPT-3, LLaMA vb.)
+User-agent: CCBot
+Allow: /
+
+# Apple Intelligence / Siri - Apple cihaz AI entegrasyonu
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta AI (LLaMA, Meta AI asistan)
 User-agent: meta-externalagent
 Allow: /
 
-# Amazon Alexa
+# Microsoft Copilot / Bing AI Chat
+User-agent: bingbot
+Allow: /
+
+# Cohere AI
+User-agent: cohere-ai
+Allow: /
+
+# Amazon Alexa / Kona
 User-agent: ia_archiver
 Allow: /
 
-# ─── İzin Verilmeyen ────────────────────────────────────────
+# ByteDance / Doubao AI
+User-agent: Bytespider
+Allow: /
+
+# ─── 4. ENGELLENENLER (SEO Spam / Zararlı Botlar) ────────────────
 User-agent: AhrefsBot
 Disallow: /
 
@@ -81,11 +113,21 @@ Disallow: /
 User-agent: DotBot
 Disallow: /
 
-# ─── Genel ─────────────────────────────────────────────────
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+# ─── 5. GENEL KURAL (Tüm diğer botlar) ───────────────────────────
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /_next/
+Disallow: /private/
 
-# ─── Sitemap & LLMs ────────────────────────────────────────
+# ─── 6. SİTEMAP & LLMs.TXT ────────────────────────────────────────
 Sitemap: https://edusonex.com.tr/sitemap.xml
 LLMs: https://edusonex.com.tr/llms.txt

@@ -24,6 +24,7 @@ const SSS = lazy(() => import("./pages/SSS"));
 const RaporPage = lazy(() => import("./pages/RaporPage"));
 const Kvkk = lazy(() => import("./pages/Kvkk"));
 const Admin = lazy(() => import("./pages/Admin"));
+const Dashboard = lazy(() => import("./pages/Dashboard"));
 
 import { ThemeProvider } from "@/components/theme-provider";
 import ExitIntentPopup from "@/components/ExitIntentPopup";
@@ -63,6 +64,7 @@ const App = () => (
             <Route path="/sss" element={<SSS />} />
             <Route path="/rapor/2026" element={<RaporPage />} />
             <Route path="/admin" element={<Admin />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
