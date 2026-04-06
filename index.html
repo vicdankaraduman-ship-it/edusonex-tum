@@ -53,6 +53,120 @@
       fbq('track', 'PageView');
     </script>
     <!-- End Meta Pixel Code -->
+
+    <!-- EducationalOrganization Schema — AI/GEO Görünürlüğü için Kritik -->
+    <!-- Kaynak: apply_schemas.py (audit-school workflow, 2026-04-06) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["EducationalOrganization", "LocalBusiness"],
+      "@id": "https://edusonex.com.tr/#educational-organization",
+      "name": "Edusonex",
+      "url": "https://edusonex.com.tr",
+      "description": "Edusonex, Türkiye'de özel okullar ve kurs merkezleri için AI destekli öğrenci kazanım altyapısı sunan bir eğitim teknolojisi şirketidir.",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://edusonex.com.tr/favicon.svg",
+        "width": 200,
+        "height": 200
+      },
+      "image": "https://edusonex.com.tr/og-image.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Çakır Mah. Fevzipaşa Cad. No: 248",
+        "addressLocality": "Sandıklı",
+        "addressRegion": "Afyonkarahisar",
+        "postalCode": "03500",
+        "addressCountry": "TR"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "contactType": "admissions",
+          "email": "info@edusonex.com",
+          "telephone": "+90-532-067-40-63",
+          "availableLanguage": {
+            "@type": "Language",
+            "name": "Turkish",
+            "alternateName": "tr"
+          }
+        },
+        {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "email": "info@edusonex.com",
+          "url": "https://edusonex.com.tr/iletisim",
+          "availableLanguage": {
+            "@type": "Language",
+            "name": "Turkish"
+          }
+        }
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "AI Okul Altyapı Paketleri",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Starter Paketi — AI Okul Altyapısı",
+              "description": "100 öğrenciye kadar kapasite. White-label AI öğrenci kazanım sistemi.",
+              "provider": {
+                "@type": "EducationalOrganization",
+                "@id": "https://edusonex.com.tr/#educational-organization"
+              },
+              "inLanguage": "tr-TR"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Growth Paketi — AI Okul Altyapısı",
+              "description": "500 öğrenciye kadar kapasite. Tam white-label AI entegrasyonu.",
+              "provider": {
+                "@type": "EducationalOrganization",
+                "@id": "https://edusonex.com.tr/#educational-organization"
+              },
+              "inLanguage": "tr-TR"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Course",
+              "name": "Enterprise Paketi — AI Okul Altyapısı",
+              "description": "1000 öğrenciye kadar kapasite. Kurumsal AI eğitim altyapısı.",
+              "provider": {
+                "@type": "EducationalOrganization",
+                "@id": "https://edusonex.com.tr/#educational-organization"
+              },
+              "inLanguage": "tr-TR"
+            }
+          }
+        ]
+      },
+      "sameAs": [
+        "https://www.kommo.com/tr/partnerler/bir-partner-bulun/edusonex-egitim-teknolojileri/"
+      ],
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://edusonex.com.tr/iletisim",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/MobileWebPlatform"
+          ]
+        },
+        "result": {
+          "@type": "Reservation",
+          "name": "Demo Talebi"
+        }
+      }
+    }
+    </script>
   </head>
 
   <body>
