@@ -21,6 +21,7 @@ import {
     Zap
 } from "lucide-react";
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 const Kommo = () => {
     const [phone, setPhone] = useState("");
@@ -32,6 +33,21 @@ const Kommo = () => {
 
     return (
         <Layout>
+            <Helmet>
+                <title>Kommo CRM Türkiye Resmi Partneri | Edusonex – Okul CRM ve Öğrenci Kazanım Sistemi</title>
+                <meta name="description" content="Edusonex, Kommo CRM'in Türkiye resmi partneridir. Okullar için AI destekli CRM altyapısı, otomatik veli takibi ve çok kanallı pazarlama sistemi. 15 dakikada kurulum." />
+                <link rel="canonical" href="https://edusonex.com.tr/kommo" />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://edusonex.com.tr/kommo" />
+                <meta property="og:title" content="Kommo CRM Partneri | Edusonex – Okullar için CRM ve AI Sistemi" />
+                <meta property="og:description" content="Kommo CRM Türkiye resmi partneri Edusonex ile okulunuzu dijitalde yönetin. Öğrenci kazanımı, veli takibi ve reklam yönetimi tek sistemde." />
+                <meta property="og:image" content="https://edusonex.com.tr/og-image.png" />
+                <meta property="og:locale" content="tr_TR" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:url" content="https://edusonex.com.tr/kommo" />
+                <meta name="twitter:title" content="Kommo CRM Partneri | Edusonex – Okullar için CRM" />
+                <meta name="twitter:description" content="Kommo CRM Türkiye resmi partneri Edusonex. AI destekli veli takibi, çok kanallı otomasyon ve okul CRM altyapısı." />
+            </Helmet>
             <div className="min-h-screen bg-[#0a0a0F] text-white overflow-hidden relative">
 
                 {/* 1. Hero Section */}
