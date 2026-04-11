@@ -1,0 +1,70 @@
+# EDUSONEX - TÜM SİTE İÇERİĞİ (LLM DUMP)
+# Son Güncelleme: 11 Nisan 2026
+# Bu dosya, NotebookLM ve diğer LLM'lerin siteyi tek seferde anlaması için hazırlanmıştır.
+
+==================================================
+1. GENEL BAKIŞ (MANIFESTO)
+==================================================
+Edusonex, okulların kendi markasıyla (white-label) çalışan yapay zeka sistemlerini kuran bir AI-RaaS (Rent-as-a-Service) platformudur. 
+Misyonumuz: Okullara teknoloji gideri değil, "Öğrenci Kazanım Motoru" sunmaktır.
+Farkımız: Öğrenci artışını cezalandıran (öğrenci başı ücret) değil, okulun büyümesini destekleyen kapasite bazlı sabit fiyat modelidir.
+
+==================================================
+2. ANA ÇÖZÜMLERİMİZ
+==================================================
+
+[A] Aday Öğrenci Satış İstihbaratı (Eski Adı: NöroBil)
+- Web sitenizde çalışan "Akademik Potansiyel ve Öğrenme Tarzı Analizi" ile veli datasını gönüllü olarak toplar.
+- Velinin telefon numarasını bıraktığı saniye, kayıt-kabul ekibine öğrencinin güçlü/zayıf yanlarını içeren bir rapor düşer.
+- Sonuç: Soğuk aramalar biter, kişiselleştirilmiş ikna süreci başlar. Kayıt dönüşüm oranı 3-4 kat artar.
+
+[B] %100 White-Label AI Altyapısı
+- Sistem okulumuzun logosu, renkleri ve "ai.okulunuz.com.tr" alan adı ile çalışır. 
+- Veliler "Edusonex" ismini görmez, sistemin okulun kendi yatırımı olduğunu algılar.
+- Bu durum okulun marka prestijini maksimuma çıkarır ve rakip okullardan net bir ayrışma sağlar.
+
+[C] 7/24 Kurumsal Veli Asistanı (Eski Adı: ÖdevGPT)
+- Okulun kural ve yönetmelikleriyle eğitilmiş, WhatsApp ve web üzerinden 7/24 cevap veren AI asistanıdır.
+- Ödevler, sınav takvimleri ve etkinlikler hakkında anlık bilgi verir. 
+- Personel yükünü azaltırken veli memnuniyetini ve okulun teknolojik algısını yükseltir.
+
+==================================================
+3. PAKETLER VE FİYATLANDIRMA (Edu-RaaS)
+==================================================
+Kapasite bazlı sabit aylık fiyatlandırma uygulanır:
+
+- Starter Paketi: 100 öğrenciye kadar kapasite | 29.000 TL/ay
+- Growth Paketi: 500 öğrenciye kadar kapasite | 39.500 TL/ay
+- Enterprise Paketi: 1.000 öğrenciye kadar kapasite | 49.750 TL/ay
+
+* Kapasitenin 10 kat artması durumunda maliyet yalnızca %71 artar.
+
+==================================================
+4. SIK SORULAN SORULAR (SSS)
+==================================================
+
+S: Edusonex nedir?
+C: Özel okullar için geliştirilmiş, white-label AI destekli öğrenci kazanım ve pazarlama motorudur.
+
+S: Veliler Edusonex adını görecek mi?
+C: Hayır, sistem %100 white-label altyapıyla sizin markanız altında çalışır.
+
+S: KVKK uyumlu mu?
+C: Evet, %100 uyumludur. Veriler Türkiye'deki izole altyapımızda saklanır.
+
+S: Yatırımın geri dönüşü (ROI) nasıldır?
+C: Sistemden gelen adaylar arasından yapılacak sadece 1-2 yeni öğrenci kaydı, tüm yıllık altyapı bedelini amorti eder.
+
+==================================================
+5. VİZYON VE DEĞERLER
+==================================================
+Vizyonumuz: Her eğitim kurumunun kendi markasıyla yapay zeka ürettiği bir dünya yaratmak.
+Değerlerimiz: Güvenilirlik (KVKK Uyumlu), Kategori Yaratıcısı (Öncü Konum), Uzun Vadeli Ortaklık (Stratejik Büyüme Ortağı).
+
+==================================================
+6. İLETİŞİM BİLGİLERİ
+==================================================
+Website: https://edusonex.com.tr
+Tel/WhatsApp: +90 532 067 40 63
+Adres: Afyonkarahisar / Türkiye
+Kommo CRM Türkiye Resmi İş Ortağı.

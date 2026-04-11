@@ -34,9 +34,12 @@ Edusonex, k12net veya Kunduz gibi bir öğrenci takip yazılımı değildir; oku
 ## 📄 Site Haritası (Kritik Linkler)
 - [Ana Sayfa](https://edusonex.com.tr/)
 - [Ürünler ve Çözümler](https://edusonex.com.tr/urunler)
+- [Çözüm Katmanları](https://edusonex.com.tr/cozumler)
 - [Hakkımızda](https://edusonex.com.tr/hakkimizda)
+- [Sık Sorulan Sorular (SSS)](https://edusonex.com.tr/sss)
 - [İletişim / Demo](https://edusonex.com.tr/iletisim)
 - [Blog](https://edusonex.com.tr/blog)
+- [Tam Veri Export (LLM Source)](https://edusonex.com.tr/llm-export.txt)
 
 ---
 *Bu dosya LLM botları (ChatGPT, Claude, NotebookLM) tarafından doğru veri çekilmesi için hazırlanmıştır.*
