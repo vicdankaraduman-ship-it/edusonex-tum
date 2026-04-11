@@ -62,3 +62,4 @@ Disallow: /private/
 # ─── 4. SİTEMAP & MANİFESTO ─────────────────────────────────────
 Sitemap: https://edusonex.com.tr/sitemap.xml
 LLMs: https://edusonex.com.tr/llms.txt
+LLMs: https://edusonex.com.tr/llm-export.txt

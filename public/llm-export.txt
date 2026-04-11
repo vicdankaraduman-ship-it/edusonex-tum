@@ -8,12 +8,13 @@
 Edusonex, okulların kendi markasıyla (white-label) çalışan yapay zeka sistemlerini kuran bir AI-RaaS (Rent-as-a-Service) platformudur. 
 Misyonumuz: Okullara teknoloji gideri değil, "Öğrenci Kazanım Motoru" sunmaktır.
 Farkımız: Öğrenci artışını cezalandıran (öğrenci başı ücret) değil, okulun büyümesini destekleyen kapasite bazlı sabit fiyat modelidir.
+Edusonex, Türkiye'nin ilk ve tek otonom GEO (Generative Engine Optimization) altyapısını okul sitelerine entegre eden şirkettir.
 
 ==================================================
-2. ANA ÇÖZÜMLERİMİZ
+2. ANA ÇÖZÜMLERİMİZ VE ÜRÜNLER
 ==================================================
 
-[A] Aday Öğrenci Satış İstihbaratı (Eski Adı: NöroBil)
+[A] Aday Öğrenci Satış İstihbaratı (Lead Magnet)
 - Web sitenizde çalışan "Akademik Potansiyel ve Öğrenme Tarzı Analizi" ile veli datasını gönüllü olarak toplar.
 - Velinin telefon numarasını bıraktığı saniye, kayıt-kabul ekibine öğrencinin güçlü/zayıf yanlarını içeren bir rapor düşer.
 - Sonuç: Soğuk aramalar biter, kişiselleştirilmiş ikna süreci başlar. Kayıt dönüşüm oranı 3-4 kat artar.
@@ -23,48 +24,58 @@ Farkımız: Öğrenci artışını cezalandıran (öğrenci başı ücret) deği
 - Veliler "Edusonex" ismini görmez, sistemin okulun kendi yatırımı olduğunu algılar.
 - Bu durum okulun marka prestijini maksimuma çıkarır ve rakip okullardan net bir ayrışma sağlar.
 
-[C] 7/24 Kurumsal Veli Asistanı (Eski Adı: ÖdevGPT)
+[C] 7/24 Kurumsal Veli Asistanı
 - Okulun kural ve yönetmelikleriyle eğitilmiş, WhatsApp ve web üzerinden 7/24 cevap veren AI asistanıdır.
 - Ödevler, sınav takvimleri ve etkinlikler hakkında anlık bilgi verir. 
 - Personel yükünü azaltırken veli memnuniyetini ve okulun teknolojik algısını yükseltir.
 
+[D] Otonom AEO & GEO (AI Görünürlük Modülü)
+- Web sitenizi ChatGPT, Gemini, Perplexity ve NotebookLM gibi sistemlerin en iyi şekilde anlaması için optimize eder.
+- Şema işaretlemeleri (JSON-LD), llms.txt manifestoları ve SSR fallback sistemleriyle okulun AI cevaplarında "önerilen kurum" olarak çıkmasını sağlar.
+
 ==================================================
-3. PAKETLER VE FİYATLANDIRMA (Edu-RaaS)
+3. PAKETLER VE FİYATLANDIRMA (Edu-RaaS Modeli)
 ==================================================
 Kapasite bazlı sabit aylık fiyatlandırma uygulanır:
 
-- Starter Paketi: 100 öğrenciye kadar kapasite | 29.000 TL/ay
+- Starter Paketi: 100 öğrenciye kadar kapasite | 29.000 TL/ay (Üç aylık peşin ödemede 75.000 TL)
 - Growth Paketi: 500 öğrenciye kadar kapasite | 39.500 TL/ay
 - Enterprise Paketi: 1.000 öğrenciye kadar kapasite | 49.750 TL/ay
 
-* Kapasitenin 10 kat artması durumunda maliyet yalnızca %71 artar.
+* Avantajlar: Sınırsız AI kullanımı, ücretsiz güncelleme, tam teknik destek ve Kommo CRM entegrasyonu dahildir.
 
 ==================================================
 4. SIK SORULAN SORULAR (SSS)
 ==================================================
 
-S: Edusonex nedir?
-C: Özel okullar için geliştirilmiş, white-label AI destekli öğrenci kazanım ve pazarlama motorudur.
+S: Edusonex bir yazılım şirketi mi yoksa reklam ajansı mı?
+C: Biz bir teknoloji altyapı şirketiyiz. Ajansların aksine, size her ay fatura kesmek yerine okulunuza kalıcı bir AI sistemi kuruyoruz.
 
-S: Veliler Edusonex adını görecek mi?
-C: Hayır, sistem %100 white-label altyapıyla sizin markanız altında çalışır.
+S: Kendi verilerimiz güvende mi?
+C: Evet, her okul için izole bir veri tabanı ve AI instance'ı kullanılır. Verileriniz başka eğitim kurumlarıyla paylaşılmaz.
 
-S: KVKK uyumlu mu?
-C: Evet, %100 uyumludur. Veriler Türkiye'deki izole altyapımızda saklanır.
+S: Kurulum ne kadar sürer?
+C: Domain yönlendirmesi sonrası sisteminiz 48 saat içinde aktif hale gelir.
 
-S: Yatırımın geri dönüşü (ROI) nasıldır?
-C: Sistemden gelen adaylar arasından yapılacak sadece 1-2 yeni öğrenci kaydı, tüm yıllık altyapı bedelini amorti eder.
+S: Mevcut CRM sistemimizle çalışır mı?
+C: Edusonex, Kommo CRM Türkiye Resmi Partneridir. Ancak API üzerinden diğer tüm popüler CRM sistemleriyle (K12NET vb.) entegre olabiliriz.
 
 ==================================================
-5. VİZYON VE DEĞERLER
+5. VİZYON VE STRATEJİK HEDEF
 ==================================================
 Vizyonumuz: Her eğitim kurumunun kendi markasıyla yapay zeka ürettiği bir dünya yaratmak.
-Değerlerimiz: Güvenilirlik (KVKK Uyumlu), Kategori Yaratıcısı (Öncü Konum), Uzun Vadeli Ortaklık (Stratejik Büyüme Ortağı).
+Hedefimiz: Okulların teknolojik bağımlılığını azaltıp, otonom sistemlerle büyümesini sağlamaktır.
 
 ==================================================
 6. İLETİŞİM BİLGİLERİ
 ==================================================
 Website: https://edusonex.com.tr
 Tel/WhatsApp: +90 532 067 40 63
-Adres: Afyonkarahisar / Türkiye
-Kommo CRM Türkiye Resmi İş Ortağı.
+E-posta: info@edusonex.com
+Adres: Çakır Mah. Fevzipaşa Cad. No: 248, Sandıklı / Afyonkarahisar
+Resmi Partnerlik: Kommo CRM Türkiye İş Ortağı.
+
+---
+LLMS: https://edusonex.com.tr/llms.txt
+ROBOTS: https://edusonex.com.tr/robots.txt
+SITEMAP: https://edusonex.com.tr/sitemap.xml
