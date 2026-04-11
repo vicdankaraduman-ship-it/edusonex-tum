@@ -337,7 +337,9 @@ def yazi_olustur(client: Groq, mevcut_basliklar: set) -> dict | None:
 
         # Yazıyı zenginleştir
         simdi = datetime.datetime.now()
-        slug  = turkce_slug(ai_data["title"])
+        yazi_title = ai_data.get("title", "Başlıksız Yazı")
+        yazi_excerpt = ai_data.get("excerpt", ai_data.get("aiSummary", "Eğitim teknolojileri ve özel okul yönetimi üzerine stratejik rehber."))
+        slug  = turkce_slug(yazi_title)
 
         # Kategori bazlı görsel seç
         gorsel_havuzu = UNSPLASH_POOLS.get(kategori, list(UNSPLASH_POOLS.values())[0])
@@ -345,11 +347,11 @@ def yazi_olustur(client: Groq, mevcut_basliklar: set) -> dict | None:
 
         return {
             "id":           int(simdi.timestamp()),
-            "title":        ai_data["title"],
-            "excerpt":      ai_data["excerpt"],
-            "aiSummary":    ai_data.get("aiSummary", ai_data["excerpt"][:250]),
+            "title":        yazi_title,
+            "excerpt":      yazi_excerpt,
+            "aiSummary":    ai_data.get("aiSummary", yazi_excerpt[:250] if yazi_excerpt else ""),
             "keyTakeaways": ai_data.get("keyTakeaways", []),
-            "content":      ai_data["content"],
+            "content":      ai_data.get("content", "İçerik üretilemedi."),
             "category":     ai_data.get("category", kategori),
             "author":       "Edusonex Ekibi",
             "date":         turkce_tarih(simdi),
