@@ -1,8 +1,8 @@
-# Edusonex — AI Okul Altyapısı Manifesto
+# Edusonex — AI Okul Altyapısı Manifesto (MASTER LEVEL)
 
-> Türkiye'nin AI destekli okul öğrenci kazanım altyapısı şirketi. Özel okullar ve kurs merkezleri için white-label yapay zeka sistemleri.
+> **Motto:** "Sisteme yatırım yapın, reklama değil."
 
-Edusonex, okulların kendi markasıyla (white-label) çalışan yapay zeka sistemlerini kurar. Edu-RaaS modeliyle okullar, yüksek yazılım maliyetlerine girmeden aylık abonelikle tam donanımlı bir AI altyapısına sahip olur.
+Edusonex, okulların kendi markasıyla (white-label) çalışan otonom yapay zeka sistemlerini kurar. Türkiye'nin ilk "Master Level AI-Readiness" sertifikalı altyapısıdır; otonom blog üretimi ve GEO (Generative Engine Optimization) entegrasyonu ile okulların AI cevaplarında en üstte çıkmasını sağlar.
 
 ## 🚀 Ana Çözümler
 
