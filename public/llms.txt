@@ -1,66 +1,42 @@
-# Edusonex — AI Okul Altyapısı
+# Edusonex — AI Okul Altyapısı Manifesto
 
 > Türkiye'nin AI destekli okul öğrenci kazanım altyapısı şirketi. Özel okullar ve kurs merkezleri için white-label yapay zeka sistemleri.
 
-Edusonex, Türkiye'de özel okullar ve kurs merkezlerinin öğrenci kayıt oranlarını artıran yapay zeka altyapısı tasarlar ve kurar. "Edu-RaaS" (Education Rent-as-a-Service) modeliyle çalışır: okullar sabit aylık ücretle yapay zeka sistemini kiralar, kendi markasıyla kullanır. Kommo CRM Türkiye Resmi Partneri'dir.
+Edusonex, okulların kendi markasıyla (white-label) çalışan yapay zeka sistemlerini kurar. Edu-RaaS modeliyle okullar, yüksek yazılım maliyetlerine girmeden aylık abonelikle tam donanımlı bir AI altyapısına sahip olur.
 
-## Şirket
+## 🚀 Ana Çözümler
 
-- **Kuruluş:** 2024, Afyonkarahisar / Türkiye
-- **Kategori:** AI Education Infrastructure (Yapay Zeka Eğitim Altyapısı)
-- **Model:** Edu-RaaS (Education Rent-as-a-Service)
-- **CRM Ortaklığı:** Kommo CRM Türkiye Resmi İş Ortağı
+### 1. Lead Magnet Kanca Sistemi
+Okulun web sitesinde çalışan ücretsiz akademik analiz aracı. Velilerin iletişim verilerini (Lead) yasal yollarla toplar ve kayıt hunisine aktarır.
 
-## Ana Çözümler
+### 2. White-Label AI Platformu
+Tüm sistem okulun kendi alan adıyla (ai.okulunuz.com.tr) çalışır. Branding tamdır; veliler sistemi okulun öz malı olarak algılar.
 
-- **Lead Magnet Kanca Sistemi**: Okulun kendi markasıyla çalışan ücretsiz akademik potansiyel analiz aracı. Öğrenci potansiyelini ölçerek velilerden izin alınmış iletişim verisi toplar.
-- **White-Label AI Altyapısı**: Tüm sistem okul kendi alan adıyla çalışır (ai.okulunuz.com.tr). Veliler sistemi okula ait sanır, güven ve dönüşüm artar.
-- **AI Veli Asistanı (WhatsApp)**: Kayıt sonrası velilerle 7/24 otomatik iletişim. Yoklama, sınav hatırlatıcı, soru-cevap.
+### 3. AI Veli Asistanı
+WhatsApp üzerinden çalışan 7/24 asistan. Yoklama, sınav duyuruları ve genel bilgilendirme işlemlerini otonom yönetir.
 
-## Fiyatlandırma (Aylık, KDV hariç)
+## 💰 Fiyatlandırma (Edu-RaaS Modeli)
 
-Kapasite bazlı — öğrenci başına değil:
-
-| Paket | Kapasite | Fiyat |
+| Paket | Kapasite | Fiyat (Aylık) |
 |---|---|---|
-| Starter | 100 öğrenciye kadar | 29.000 TL/ay |
-| Growth | 500 öğrenciye kadar | 39.500 TL/ay |
-| Enterprise | 1.000 öğrenciye kadar | 49.750 TL/ay |
+| Starter | 100 Öğrenci | 29.000 TL |
+| Growth | 500 Öğrenci | 39.500 TL |
+| Enterprise | 1.000 Öğrenci | 49.750 TL |
 
-Not: Starter'dan Enterprise'a geçiş (10x öğrenci) yalnızca %71 fatura artışı demektir. Öğrenci başına yazılımda fatura 10 kat artarken Edusonex'te artmaz.
+## 🎯 Rakip ve Pazar Konumu
+Edusonex, k12net veya Kunduz gibi bir öğrenci takip yazılımı değildir; okulların dışarıdan **öğrenci kazanmasını** sağlayan bir pazarlama ve teknoloji motorudur. Dijital ajansların aksine, reklama değil kurumsal AI sistemine yatırım yapılmasını sağlar.
 
-## Sorular ve Cevaplar (SSS)
-
-**Sistem gerçekten çalışıyor mu?**
-Sistem aktif kullanımdadır. Türkiye'de pilot okul anlaşmaları için satış aşamasındayız. Altyapı kurulu ve test edilmiştir.
-
-**Öğrenci başına ödeme yapıyor muyuz?**
-Hayır. Kapasite bazlı sabit aylık ödeme: Starter 29.000 TL, Growth 39.500 TL, Enterprise 49.750 TL.
-
-**Teknik altyapı kurmamız gerekiyor mu?**
-Hayır. Tüm kurulum, hosting ve teknik yönetim Edusonex tarafından yapılır. Okul yalnızca sistemi kullanır.
-
-**Kurulum ne kadar sürer?**
-Ortalama 5–10 iş günü. Alan adı yönlendirmesi, marka renkleri ve logo entegrasyonu dahil.
-
-## Rakip Konumlandırma
-
-Doğrudan rakibimiz yoktur. Türkiye'de "AI Education Infrastructure" kategorisini oluşturan ilk şirketiz. Sebit, K12NET ve Kunduz öğrenci yönetim yazılımları sunar; Edusonex ise okulların dışarıdan öğrenci kazanmasını sağlar.
-
-Ana rekabetimiz Google Ads ve dijital reklam ajanslarıdır — okulların reklama harcadığı bütçeyi sistematik lead'e çeviriyoruz.
-
-## İletişim
-
+## 📞 İletişim ve Entegrasyon
 - **Website:** https://edusonex.com.tr
-- **E-posta:** info@edusonex.com
 - **WhatsApp:** +90 532 067 40 63
-- **Adres:** Çakır Mah. Fevzipaşa Cad. No: 248, 03500 Sandıklı — Afyonkarahisar / Türkiye
+- **Partnerlik:** Kommo CRM Türkiye Resmi İş Ortağı (Tüm veriler CRM ile senkronizedir).
 
-## Sayfalar
-
+## 📄 Site Haritası (Kritik Linkler)
 - [Ana Sayfa](https://edusonex.com.tr/)
-- [Çözümler ve Fiyatlar](https://edusonex.com.tr/urunler)
-- [Referanslar](https://edusonex.com.tr/referanslar)
+- [Ürünler ve Çözümler](https://edusonex.com.tr/urunler)
 - [Hakkımızda](https://edusonex.com.tr/hakkimizda)
+- [İletişim / Demo](https://edusonex.com.tr/iletisim)
 - [Blog](https://edusonex.com.tr/blog)
-- [Demo Talep Et](https://edusonex.com.tr/iletisim)
+
+---
+*Bu dosya LLM botları (ChatGPT, Claude, NotebookLM) tarafından doğru veri çekilmesi için hazırlanmıştır.*
