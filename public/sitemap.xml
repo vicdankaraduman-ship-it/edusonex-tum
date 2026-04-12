@@ -101,6 +101,24 @@
 
   <!-- Blog Yazıları -->
   <url>
+    <loc>https://edusonex.com.tr/blog/edusonex-feam-isbirligi-yasal-yapay-zeka</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://edusonex.com.tr/blog/norobil-eu-ai-act-uyumu</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://edusonex.com.tr/blog/veri-egemenligi-kvkk-gdpr-uyumu</loc>
+    <lastmod>2026-04-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://edusonex.com.tr/blog/veli-adaylarini-sicak-kanallardan-yakalamak-whatsapp-e-posta-ve-web-formlari-kar</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
