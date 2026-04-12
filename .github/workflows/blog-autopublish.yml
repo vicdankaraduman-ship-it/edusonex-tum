@@ -2,8 +2,8 @@ name: Blog Auto-Publish Bot
 
 on:
   schedule:
-    # Pazartesi ve Perşembe günleri 04:00 UTC'de (Türkiye saati ile sabah 07:00) çalışır
-    - cron: '0 4 * * 1,4'
+    # Her gün 04:00 UTC'de (Türkiye saati ile sabah 07:00) çalışır
+    - cron: '0 4 * * *'
   workflow_dispatch: # Manuel olarak çalıştırabilmek için tetikleyici
 
 jobs:
@@ -46,3 +46,8 @@ jobs:
           # Değişiklik var mı kontrol et, varsa commit ve push yap
           git add -A
           git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-publish: Yeni blog yazısı eklendi" && git pull --rebase origin main && git push)
+
+      - name: Ping Google Sitemap
+        run: |
+          # Google'a sitemap'in güncellendiğini bildir
+          curl -G https://www.google.com/ping --data-urlencode "sitemap=https://edusonex.com.tr/sitemap.xml"

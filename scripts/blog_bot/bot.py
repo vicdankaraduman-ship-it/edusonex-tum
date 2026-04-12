@@ -31,6 +31,9 @@ BLOG_JSON_PATH = os.path.abspath(
 ARCHIVE_JSON_PATH = os.path.abspath(
     os.path.join(os.path.dirname(__file__), "../../src/data/blog-archive.json")
 )
+SITEMAP_PATH = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), "../../public/sitemap.xml")
+)
 
 GROQ_API_KEY    = os.getenv("GROQ_API_KEY")
 MAX_POSTS       = 20          # Canlı JSON'da tutulacak maksimum yazı sayısı
@@ -53,6 +56,8 @@ TOPICS = {
         "Referans pazarlaması: Mevcut velileri markanızın en güçlü sözcüsüne dönüştürün.",
         "Özel okul web sitelerinde güven unsurları: Hangi rozet ve sertifikalar kayıt kararını etkiler?",
         "Rakam konuşsun: Kayıt dönüşüm oranını artıran açılış sayfası tasarımı.",
+        "Eğitimde 'Dark UX' tehlikesi: Dürüst ve şeffaf kayıt sayfası tasarımı.",
+        "Sosyal kanıtın gücü: Velilerin yüzde kaçı mezun yorumlarına bakıyor?",
     ],
     "Okul Yönetimi": [
         "Öğrenci kaybını erkenden tespit etmenin sistematik yolu: Veli memnuniyet sinyalleri.",
@@ -61,6 +66,8 @@ TOPICS = {
         "Sezon dışı dönemde okul yönetiminin yapması gereken 7 stratejik hamle.",
         "Orta yıl kayıt iptalleri: Nedenleri, erken uyarı işaretleri ve önleme protokolleri.",
         "Özel okullarda kadro maliyeti optimizasyonu: Teknolojiyle insan kaynağını dengeleyin.",
+        "Bursluluk sınavlarının gizli maliyeti: Neden 'kanca sistemi' daha kârlı?",
+        "İdari işlerde zaman hırsızları: Okul asistanlarının verimini %40 artıran araçlar.",
     ],
     "Strateji": [
         "White-label yapay zeka altyapısının okul prestijine katkısı: Kurumsal güven inşası.",
@@ -69,6 +76,8 @@ TOPICS = {
         "Ölçeklenebilir okul modeli: Tek kampüsten çok şubeli yapıya geçiş stratejisi.",
         "Eğitim alanında B2B ortaklıkların gücü: Kurumsal müşteri getiren stratejik ittifaklar.",
         "Özel okullar için yatırım geri dönüş analizi: Hangi teknoloji harcamaları gerçekten kazandırır?",
+        "Yapay zeka yasası (EU AI Act) ile uyumlu eğitim yazılımı kullanmanın önemi.",
+        "Veri egemenliği (Data Sovereignty): Eğitim verilerini neden yerel sunucularda tutmalıyız?",
     ],
     "Teknoloji": [
         "Yapay zeka asistanlarının veli iletişimine etkisi: 7/24 kurumsal yanıt sisteminin gücü.",
@@ -77,6 +86,8 @@ TOPICS = {
         "Kişisel veri güvenliği ve KVKK uyumu: Veli verilerini korumanın pratik rehberi.",
         "Özel okul mobil uygulaması: Gerekli mi, yoksa bütçe tuzağı mı?",
         "Eğitimde veri analitiği: Öğrenci başarısını tahmin eden modeller nasıl çalışır?",
+        "Okullarda nöro-eğitim: Öğrenci akademik potansiyelinin AI ile çözümlenmesi.",
+        "Aday veli iletişiminde 1ms altında denetleme: Güvenli yanıt filtreleri ve FEAM.co altyapısı.",
     ],
 }
 
@@ -426,6 +437,71 @@ def json_guncelle(yeni_yazılar: list) -> None:
     print(f"\n✅ Blog JSON güncellendi — Toplam: {len(posts)} yazı.")
 
 
+# ─── Sitemap Güncelleme ────────────────────────────────────────────────────────
+
+def sitemap_guncelle(yeni_yazilar: list) -> None:
+    """Yeni blog yazılarını sitemap.xml dosyasına ekler."""
+    if not yeni_yazilar or not os.path.exists(SITEMAP_PATH):
+        return
+
+    try:
+        import xml.etree.ElementTree as ET
+        
+        # XML namespace'lerini korumak için
+        ET.register_namespace('', "http://www.sitemaps.org/schemas/sitemap/0.9")
+        ET.register_namespace('xhtml', "http://www.w3.org/1999/xhtml")
+        
+        tree = ET.parse(SITEMAP_PATH)
+        root = tree.getroot()
+        ns = {"ns": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+
+        mevcut_loclar = {url.find("ns:loc", ns).text for url in root.findall("ns:url", ns)}
+        
+        degisiklik = False
+        bugun = datetime.datetime.now().strftime("%Y-%m-%d")
+
+        for yazi in yeni_yazilar:
+            url_loc = f"https://edusonex.com.tr/blog/{yazi['slug']}"
+            
+            if url_loc not in mevcut_loclar:
+                # Yeni URL elementi oluştur
+                url_elem = ET.SubElement(root, "{http://www.sitemaps.org/schemas/sitemap/0.9}url")
+                
+                loc = ET.SubElement(url_elem, "{http://www.sitemaps.org/schemas/sitemap/0.9}loc")
+                loc.text = url_loc
+                
+                lastmod = ET.SubElement(url_elem, "{http://www.sitemaps.org/schemas/sitemap/0.9}lastmod")
+                lastmod.text = bugun
+                
+                changefreq = ET.SubElement(url_elem, "{http://www.sitemaps.org/schemas/sitemap/0.9}changefreq")
+                changefreq.text = "monthly"
+                
+                priority = ET.SubElement(url_elem, "{http://www.sitemaps.org/schemas/sitemap/0.9}priority")
+                priority.text = "0.8"
+                
+                print(f"🔗 Sitemap'e yeni URL eklendi: {url_loc}")
+                degisiklik = True
+
+        if degisiklik:
+            # Pretty print ve kaydet
+            from xml.dom import minidom
+            xml_str = ET.tostring(root, encoding='utf-8')
+            pretty_xml = minidom.parseString(xml_str).toprettyxml(indent="  ", encoding='utf-8')
+            
+            # minidom bazen fazladan boş satır ekleyebilir, temizleyelim
+            pretty_xml = b"\n".join([line for line in pretty_xml.splitlines() if line.strip()])
+            
+            with open(SITEMAP_PATH, "wb") as f:
+                f.write(b'<?xml version="1.0" encoding="UTF-8"?>\n')
+                f.write(pretty_xml.replace(b'<?xml version="1.0" encoding="UTF-8"?>', b'').strip())
+                f.write(b'\n')
+            
+            print(f"✅ {SITEMAP_PATH} başarıyla güncellendi.")
+            
+    except Exception as e:
+        print(f"⚠️  Sitemap güncelleme hatası: {e}")
+
+
 # ─── CLI Arayüzü ──────────────────────────────────────────────────────────────
 
 def konulari_listele():
@@ -519,6 +595,7 @@ def main():
 
     if uretilen:
         json_guncelle(uretilen)
+        sitemap_guncelle(uretilen)
     else:
         print("⚠️  Hiçbir yazı üretilemedi, JSON güncellenmedi.")
 
