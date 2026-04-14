@@ -7,7 +7,7 @@ const Privacy = () => {
       <SEO 
         title="Gizlilik Politikası | Edusonex" 
         description="Edusonex Eğitim Teknolojileri'nin gizlilik politikası, veri güvenliği ve toplanan veli/öğrenci bilgilerinin korunma standartları."
-        canonical="/gizlilik"
+        canonical="/gizlilik-politikasi"
       />
       <div className="container mx-auto px-4 py-16 md:py-24 max-w-4xl">
         <h1 className="text-4xl font-bold mb-4">Gizlilik Politikası</h1>
@@ -77,7 +77,22 @@ const Privacy = () => {
           </section>
 
           <section>
-            <h2 className="text-2xl font-semibold mb-4 text-primary">7. İletişim</h2>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">7. Facebook Veri Silme Talimatları</h2>
+            <p className="leading-relaxed mb-4">
+              Edusonex, Facebook (Meta) Login entegrasyonu kullanan kullanıcıların veri gizliliğine saygı duyar. 
+              Eğer platformumuza Facebook üzerinden kayıt olduysanız ve Edusonex ile paylaştığınız verilerinizin silinmesini istiyorsanız, 
+              Facebook verilerinizi silmek için aşağıdaki adımları takip edebilirsiniz:
+            </p>
+            <ol className="list-decimal pl-6 space-y-2 marker:text-primary">
+              <li>Facebook hesabınızın "Ayarlar ve Gizlilik" bölümüne gidin.</li>
+              <li>"Uygulamalar ve Web Siteleri" seçeneğine tıklayın.</li>
+              <li>Edusonex uygulamasını bulun ve yanındaki "Kaldır" butonuna tıklayın.</li>
+              <li>Alternatif olarak, <strong>info@edusonex.com</strong> adresine "Facebook Veri Silme Talebi" konulu bir e-posta göndererek verilerinizin sistemimizden tamamen temizlenmesini talep edebilirsiniz.</li>
+            </ol>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">8. İletişim</h2>
             <p className="leading-relaxed">
               Gizlilik politikamız veya veri işleme süreçlerimizle ilgili sorularınız için aşağıdaki kanallardan bize ulaşabilirsiniz:
             </p>

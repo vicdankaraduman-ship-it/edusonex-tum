@@ -5,9 +5,9 @@ const Terms = () => {
   return (
     <Layout>
       <SEO 
-        title="Kullanım Şartları | Edusonex" 
+        title="Kullanım Koşulları | Edusonex" 
         description="Edusonex AI okul kayıt ve CRM altyapısı hizmet şartları ve kullanım koşulları sözleşmesi."
-        canonical="/kullanim-sartlari"
+        canonical="/kullanim-kosullari"
       />
       <div className="container mx-auto px-4 py-16 md:py-24 max-w-4xl">
         <h1 className="text-4xl font-bold mb-4">Kullanım Şartları</h1>

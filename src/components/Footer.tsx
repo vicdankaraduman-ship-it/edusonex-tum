@@ -96,11 +96,11 @@ const Footer = () => {
             <Link to="/sss" className="hover:text-white transition-colors">
               SSS
             </Link>
-            <Link to="/gizlilik" className="hover:text-white transition-colors">
+            <Link to="/gizlilik-politikasi" className="hover:text-white transition-colors">
               Gizlilik Politikası
             </Link>
-            <Link to="/kullanim-sartlari" className="hover:text-white transition-colors">
-              Kullanım Şartları
+            <Link to="/kullanim-kosullari" className="hover:text-white transition-colors">
+              Kullanım Koşulları
             </Link>
             <Link to="/kvkk" className="hover:text-white transition-colors">
               KVKK Aydınlatma Metni
