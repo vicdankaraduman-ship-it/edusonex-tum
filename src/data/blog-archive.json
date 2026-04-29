@@ -1,5 +1,23 @@
 [
   {
+    "id": 1775951701,
+    "title": "Edusonex ve FEAM.co'dan Stratejik İşbirliği: Eğitimde %100 Yasal ve Güvenli Yapay Zeka Dönemi",
+    "excerpt": "Edusonex, FEAM.co ile yaptığı stratejik işbirliği sayesinde eğitim kurumlarına EU AI Act uyumlu, 1ms altında çalışan güvenli bir yapay zeka altyapısı sunuyor.",
+    "aiSummary": "Edusonex ve FEAM.co işbirliği, eğitimde yapay zeka kullanımını EU AI Act ve KVKK sınırları içinde %100 güvenli hale getirerek okulları hukuki risklerden koruyan deterministik bir güvenlik duvarı sunmaktadır.",
+    "keyTakeaways": [
+      "Edusonex, FEAM.co güvenlik duvarı entegrasyonu ile yapay zeka çıktılarını 1 milisaniyenin altında hızla denetler.",
+      "EU AI Act uyumlu altyapı sayesinde eğitim kurumları 35 milyon Euro'ya varan ağır para cezası risklerinden korunur.",
+      "Prompt injection gibi siber saldırılar ve zararlı içerikler velilere ulaşmadan otomatik olarak engellenir."
+    ],
+    "content": "<h4>Stratejik Güvenlik İşbirliği</h4><p>Eğitim kurumları için yapay zeka destekli büyüme motoru olan Edusonex, yapay zeka sistemlerinin yasal ve etik denetimini sağlayan 'Yapay Zeka Çıktı Uyum Güvenlik Duvarı' FEAM.co ile stratejik bir pilot işbirliğine imza attı. Bu işbirliği, okulların yapay zeka teknolojilerini endişesiz bir şekilde kullanmasını sağlıyor.</p><h4>Tam Koruma Sağlayan Altyapı</h4><p>Okullar için sunduğumuz 7/24 çalışan 'Yapay Zeka Veli Asistanı' ve öğrencilere yönelik 'ÖdevGPT' modüllerimiz, artık FEAM'in aktif blokaj sistemi ile korunmaktadır. FEAM'in milisaniyenin altında (<1ms) çalışan deterministik motoru sayesinde, yapay zekanın ürettiği her yanıt veliye veya öğrenciye ulaşmadan hemen önce güvenlik taramasından geçirilir. Kötü niyetli kullanıcıların sistemimizi manipüle etmeye çalışacağı 'prompt injection' saldırıları veya zararlı çıktılar anında engellenir (BLOCK) veya uyarılır (WARN).</p><h4>Hukuki Güvence ve EU AI Act</h4><p>Bu işbirliği ile Edusonex kullanan okullar, Avrupa Birliği Yapay Zeka Yasası (EU AI Act) kapsamındaki 35 milyon Euro'ya varan ağır para cezası risklerinden tamamen korunarak güvenli bir teknoloji altyapısına kavuşmaktadır. Edusonex, teknolojiyi sadece hızlandırmakla kalmıyor, aynı zamanda hukuki olarak da en yüksek standartlarda koruyor.</p>",
+    "category": "Teknoloji",
+    "author": "Edusonex Ekibi",
+    "date": "12 Nisan 2026",
+    "readTime": "5 dk",
+    "image": "/images/blog/edusonex-feam-partnership.png",
+    "slug": "edusonex-feam-isbirligi-yasal-yapay-zeka"
+  },
+  {
     "id": 1775950692,
     "title": "Eğitimde Veri Çözümlemesi: Öğrenci Başarısını Tahmin Eden Modeller",
     "excerpt": "Özel okullar, öğrenci verilerini kullanarak gelecekteki başarıları tahmin edebilir mi? Eğitimde veri çözümlemesi nasıl çalışır?",
