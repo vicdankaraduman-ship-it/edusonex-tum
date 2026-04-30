@@ -1,5 +1,23 @@
 [
   {
+    "id": 1775951702,
+    "title": "NöroBil Platformumuz EU AI Act Sınırlarında Nasıl Güvenle Çalışıyor?",
+    "excerpt": "NöroBil, Avrupa Birliği Yapay Zeka Yasası kapsamında yasaklanan duygu tanıma ve sosyal puanlama gibi süreçlerden arındırılmış, %100 yasal akademik bir analiz sistemidir.",
+    "aiSummary": "Edusonex'in NöroBil platformu, EU AI Act Madde 5'teki yasaklı duygu tanıma sınırlarına girmeden, FEAM.co denetimiyle sadece akademik potansiyel analizi yaparak okullara yasal güvence sağlamaktadır.",
+    "keyTakeaways": [
+      "Yapay zeka yasası kapsamında yasaklanan duygusal analiz ve profilleme süreçleri NöroBil altyapısında bulunmaz.",
+      "FEAM.co entegrasyonu, sistemin yasal sınırları aşmasını deterministik kurallarla otomatik olarak engeller.",
+      "Okullar, öğrenci verilerini hukuki ihlal riski taşımadan akademik rehberlik amacıyla güvenle kullanabilir."
+    ],
+    "content": "<h4>Hukuki Sınırlar ve AI Etiği</h4><p>Yapay zeka teknolojileri eğitimde devrim yaratırken, hukuki sınırlar juga giderek netleşiyor. Avrupa Birliği Yapay Zeka Yasası (EU AI Act) Madde 5 kapsamında, eğitim alanında öğrencilerin duygularını analiz eden 'Duygu Tanıma' (Emotion Recognition) ve davranışlarına göre onları sınıflandıran 'Sosyal Puanlama' (Social Scoring) sistemlerinin kullanılması kesinlikle yasaktır. Öğrencilerin psikolojik zaaflarını analiz eden veya profilleme yapan araçlar ağır yaptırımlarla karşılaşmaktadır.</p><h4>Akademik Potansiyel ve Güvenlik</h4><p>Edusonex olarak, öğrencilerimizin akademik potansiyelini analiz eden NöroBil platformumuzu FEAM.co entegrasyonu ile koruma altına aldık. FEAM altyapısı, NöroBil'in bu yasaklı psikolojik analiz sınırlarına girmesini deterministik kurallarla otomatik olarak engeller. NöroBil, bir duygu tanıma veya psikolojik teşhis aracı değil; yalnızca öğrencilerin verdiği metin tabanlı yanıtlara odaklanarak %100 yasal sınırlar içinde çalışan bir 'Akademik Potansiyel Analizi' sistemi olarak hizmet verir.</p><h4>Geleceğin Güvenli Eğitimi</h4><p>Böylece okullarımız, öğrencilerine herhangi bir yasal ihlal riski taşımadan güvenle rehberlik edebilir. Edusonex, teknolojinin etik ve yasal temeller üzerinde yükselmesi gerektiğine inanarak tüm modüllerini bu vizyonla geliştirmeye devam etmektedir.</p>",
+    "category": "Strateji",
+    "author": "Edusonex Ekibi",
+    "date": "12 Nisan 2026",
+    "readTime": "6 dk",
+    "image": "/images/blog/eu-ai-act-compliance.png",
+    "slug": "norobil-eu-ai-act-uyumu"
+  },
+  {
     "id": 1775951701,
     "title": "Edusonex ve FEAM.co'dan Stratejik İşbirliği: Eğitimde %100 Yasal ve Güvenli Yapay Zeka Dönemi",
     "excerpt": "Edusonex, FEAM.co ile yaptığı stratejik işbirliği sayesinde eğitim kurumlarına EU AI Act uyumlu, 1ms altında çalışan güvenli bir yapay zeka altyapısı sunuyor.",

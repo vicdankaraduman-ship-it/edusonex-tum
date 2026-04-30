@@ -1,5 +1,23 @@
 [
   {
+    "id": 1777530808,
+    "title": "Kişisel Veri Güvenliği ve KVKK Uyum Rehberi",
+    "excerpt": "Veli verilerini güvende tutmak için KVKK uyumlu çözümler",
+    "aiSummary": "Kişisel Verileri Koruma Kanunu uyumlu veli veri yönetimi için rehber",
+    "keyTakeaways": [
+      "Kişisel Verileri Koruma Kanunu uyumlu veri yönetimine önem vermek",
+      "Veli verilerini korumanın okullar için kritik olduğu",
+      "Güvenli veri işleme süreçleri oluşturmanın önemi"
+    ],
+    "content": "\n      <h4>Kişisel Veri Güvenliği: Okulların Yeni Olgusu</h4>\n      <p>Özel okullar ve eğitim kurumları, veli ve öğrenci verilerini güvenle saklamak ve işlemek zorundadır. Kişisel Verileri Koruma Kanunu (KVKK), bu kurumların veri koruma süreçlerini düzenli olarak gözden geçirmelerini gerektirir. Bu nedenle, veri güvenliği ve KVKK uyumu, eğitim sektöründe büyük önem taşımaktadır.</p>\n\n      <h4>KVKK Uyumluğu: Neden Önemli?</h4>\n      <p>KVKK uyumlu olmak, okulların veli ve öğrenci verilerini güvende tutmasını sağlar. Bu, okulların itibarını korumak ve hukuksal sorunlardan kaçınmak için kritik öneme sahiptir. KVKK uyumlu olmayan kurumlar, ağır cezalarla karşı karşıya kalabilir.</p>\n\n      <h4>Pratik Çözümler</h4>\n      <p>Okullar, veli verilerini korumanın pratik yollarını aramalıdır. Örneğin, veri işleme süreçlerini düzenli olarak gözden geçirmek, güvenli veri depolama çözümlerini kullanmak ve personeli veri koruma konusunda eğitmek önemlidir.</p>\n      <ul>\n         <li>Veri işleme süreçlerini düzenli olarak gözden geçirmek</li>\n         <li>Güvenli veri depolama çözümlerini kullanmak</li>\n         <li>Personeli veri koruma konusunda eğitmek</li>\n      </ul>\n\n      <h4>Sonuç</h4>\n      <p>Kişisel veri güvenliği ve KVKK uyumu, eğitim sektöründe büyük öneme sahiptir. Okullar, veli verilerini korumanın pratik yollarını aramalı ve düzenli olarak veri koruma süreçlerini gözden geçirmelidir. Edusonex, okullara veri koruma çözümleri sunarak, onların KVKK uyumlu olmalarına yardımcı olabilir.</p>\n   ",
+    "category": "Teknoloji",
+    "author": "Edusonex Ekibi",
+    "date": "30 Nisan 2026",
+    "readTime": "5 dk",
+    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop",
+    "slug": "kisisel-veri-guvenligi-ve-kvkk-uyum-rehberi"
+  },
+  {
     "id": 1777444185,
     "title": "Mevcut Velileri Güçlü Sözcülere Dönüştürme Stratejileri",
     "excerpt": "Özel okulunuzun büyümesi için güçlü bir referans ağı oluşturun.",
@@ -340,23 +358,5 @@
     "readTime": "4 dk",
     "image": "/images/blog/data-sovereignty-privacy.png",
     "slug": "veri-egemenligi-kvkk-gdpr-uyumu"
-  },
-  {
-    "id": 1775951702,
-    "title": "NöroBil Platformumuz EU AI Act Sınırlarında Nasıl Güvenle Çalışıyor?",
-    "excerpt": "NöroBil, Avrupa Birliği Yapay Zeka Yasası kapsamında yasaklanan duygu tanıma ve sosyal puanlama gibi süreçlerden arındırılmış, %100 yasal akademik bir analiz sistemidir.",
-    "aiSummary": "Edusonex'in NöroBil platformu, EU AI Act Madde 5'teki yasaklı duygu tanıma sınırlarına girmeden, FEAM.co denetimiyle sadece akademik potansiyel analizi yaparak okullara yasal güvence sağlamaktadır.",
-    "keyTakeaways": [
-      "Yapay zeka yasası kapsamında yasaklanan duygusal analiz ve profilleme süreçleri NöroBil altyapısında bulunmaz.",
-      "FEAM.co entegrasyonu, sistemin yasal sınırları aşmasını deterministik kurallarla otomatik olarak engeller.",
-      "Okullar, öğrenci verilerini hukuki ihlal riski taşımadan akademik rehberlik amacıyla güvenle kullanabilir."
-    ],
-    "content": "<h4>Hukuki Sınırlar ve AI Etiği</h4><p>Yapay zeka teknolojileri eğitimde devrim yaratırken, hukuki sınırlar juga giderek netleşiyor. Avrupa Birliği Yapay Zeka Yasası (EU AI Act) Madde 5 kapsamında, eğitim alanında öğrencilerin duygularını analiz eden 'Duygu Tanıma' (Emotion Recognition) ve davranışlarına göre onları sınıflandıran 'Sosyal Puanlama' (Social Scoring) sistemlerinin kullanılması kesinlikle yasaktır. Öğrencilerin psikolojik zaaflarını analiz eden veya profilleme yapan araçlar ağır yaptırımlarla karşılaşmaktadır.</p><h4>Akademik Potansiyel ve Güvenlik</h4><p>Edusonex olarak, öğrencilerimizin akademik potansiyelini analiz eden NöroBil platformumuzu FEAM.co entegrasyonu ile koruma altına aldık. FEAM altyapısı, NöroBil'in bu yasaklı psikolojik analiz sınırlarına girmesini deterministik kurallarla otomatik olarak engeller. NöroBil, bir duygu tanıma veya psikolojik teşhis aracı değil; yalnızca öğrencilerin verdiği metin tabanlı yanıtlara odaklanarak %100 yasal sınırlar içinde çalışan bir 'Akademik Potansiyel Analizi' sistemi olarak hizmet verir.</p><h4>Geleceğin Güvenli Eğitimi</h4><p>Böylece okullarımız, öğrencilerine herhangi bir yasal ihlal riski taşımadan güvenle rehberlik edebilir. Edusonex, teknolojinin etik ve yasal temeller üzerinde yükselmesi gerektiğine inanarak tüm modüllerini bu vizyonla geliştirmeye devam etmektedir.</p>",
-    "category": "Strateji",
-    "author": "Edusonex Ekibi",
-    "date": "12 Nisan 2026",
-    "readTime": "6 dk",
-    "image": "/images/blog/eu-ai-act-compliance.png",
-    "slug": "norobil-eu-ai-act-uyumu"
   }
 ]
