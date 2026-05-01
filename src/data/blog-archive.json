@@ -1,5 +1,23 @@
 [
   {
+    "id": 1775951703,
+    "title": "Okulunuzda Veri Egemenliği: KVKK ve GDPR'a Uyumlu 'Tasarımda Gizlilik' İlkesi",
+    "excerpt": "Edusonex, veri egemenliği ilkesi ve WitnessChain teknolojisi ile veli görüşmelerini kriptografik olarak mühürler ve kişisel verileri asla buluta sızdırmaz.",
+    "aiSummary": "Edusonex, 'Tasarımda Gizlilik' ilkesi ve WitnessChain SHA-256 mühürleme teknolojisi ile okul verilerinin egemenliğini korurken, bulut modellere veri sızdırmadan tam KVKK/GDPR uyumu sunar.",
+    "keyTakeaways": [
+      "Veri egemenliği ilkesi gereği, veli ve öğrenci verileri Türkiye'deki izole sunucularda saklanarak KVKK uyumu sağlanır.",
+      "WitnessChain teknolojisiyle yapay zeka görüşmeleri kriptografik olarak mühürlenerek hukuki delil niteliği kazanır.",
+      "Kullanılan 'Geçici Bellek' prensibi sayesinde ham sohbet verileri işlem biter bitmez RAM'den kalıcı olarak silinir."
+    ],
+    "content": "<h4>Veri Güvenliğinde Yeni Standartlar</h4><p>Eğitim kurumları için aday veli ve öğrenci verilerinin güvenliği en büyük önceliktir. Edusonex üzerinden toplanan sıcak müşteri verileri Türkiye'deki izole sunucularda saklanarak tam KVKK uyumu sağlar. FEAM.co işbirliğimiz sayesinde veri güvenliğimizi bir adım öteye taşıyor ve 'Tasarımda Gizlilik' (Data Sovereignty) ilkesini uyguluyoruz.</p><h4>Kriptografik Şahitlik: WitnessChain</h4><p>Edusonex bünyesindeki yapay zeka asistanlarının denetlediği ham sohbet metinleri veritabanında asla saklanmaz. Geçici Bellek (Ephemeral Memory) prensibiyle işlem biter bitmez veriler RAM'den anında silinir ve geriye sadece işlemin yasal ispatı olan kriptografik hash kodu kalır. Dışarıdaki bulut yapay zeka modellerine (OpenAI, Google vb.) hiçbir veri sızdırılmaz ve kişisel veriler, IP adresleri loglanmadan yerel olarak analiz edilir.</p><h4>Hukuki Koruma</h4><p>Ayrıca, FEAM'in 'WitnessChain' (Şahitlik Zinciri) teknolojisi ile AI Veli Asistanı'nın velilere sunduğu burs oranları veya fiyatlandırmalar, SHA-256 kriptografik mühürleriyle değiştirilemez bir şekilde kaydedilir. Olası bir anlaşmazlıkta okul yönetimleri, saniyeler içinde kesin bir dijital delil sunarak kendilerini hukuki olarak garanti altına alırlar.</p>",
+    "category": "Okul Yönetimi",
+    "author": "Edusonex Ekibi",
+    "date": "12 Nisan 2026",
+    "readTime": "4 dk",
+    "image": "/images/blog/data-sovereignty-privacy.png",
+    "slug": "veri-egemenligi-kvkk-gdpr-uyumu"
+  },
+  {
     "id": 1775951702,
     "title": "NöroBil Platformumuz EU AI Act Sınırlarında Nasıl Güvenle Çalışıyor?",
     "excerpt": "NöroBil, Avrupa Birliği Yapay Zeka Yasası kapsamında yasaklanan duygu tanıma ve sosyal puanlama gibi süreçlerden arındırılmış, %100 yasal akademik bir analiz sistemidir.",

@@ -1,5 +1,23 @@
 [
   {
+    "id": 1777617695,
+    "title": "Veli Adaylarını Sıcak Kanallardan Yakalamak: WhatsApp, E-Posta ve Web formlarının Karşılaştırması",
+    "excerpt": "Özel okulunuzun veli adaylarını etkili bir şekilde nasıl yakalayacağınızı öğrenin. WhatsApp, e-posta ve web formlarının karşılaştırmasını keşfedin.",
+    "aiSummary": "Veli adaylarını sıcak kanallardan yakalamak için WhatsApp, e-posta ve web formlarının karşılaştırmasını yaparak en etkili yöntemi belirleyebilirsiniz.",
+    "keyTakeaways": [
+      "WhatsApp, e-posta ve web formları gibi sıcak kanallar veli adaylarını yakalamak için önemlidir.",
+      "Her kanalların farklı avantajları ve dezavantajları vardır, dolayısıyla doğru seçim önemlidir.",
+      "Veri odaklı bir yaklaşım, en etkili kanalları belirlemenize yardımcı olabilir."
+    ],
+    "content": "\n   <h4>Giriş</h4>\n   <p>Özel okulunuzun başarısı, veli adaylarını etkili bir şekilde yakalamanıza bağlıdır. Ancak, bu adayları nasıl yakalayacağınızı bilmek önemlidir.WhatsApp, e-posta ve web formları gibi sıcak kanallar, veli adaylarını yakalamak için önemlidir. Bu kanalların hangisinin en etkili olduğu ise farklıdır.</p>\n   \n   <h4>Kanalların Karşılaştırması</h4>\n   <p>Her kanalların farklı avantajları ve dezavantajları vardır. WhatsApp, hızlı ve kişisel bir iletişim sağlar ancak bazı adaylar tarafından rahatsız edici bulunabilir. E-posta, daha resmi bir iletişim sağlar ancak bazı adaylar tarafından görmezden gelinebilir. Web formları, adayların kolayca bilgi bırakmalarını sağlar ancak bazı adaylar tarafından uzun veya zor bulunabilir.</p>\n   <ul>\n       <li>WhatsApp: Hızlı ve kişisel, ancak bazı adaylar tarafından rahatsız edici bulunabilir.</li>\n       <li>E-Posta: Daha resmi, ancak bazı adaylar tarafından görmezden gelinebilir.</li>\n       <li>Web formları: Adayların kolayca bilgi bırakmalarını sağlar, ancak bazı adaylar tarafından uzun veya zor bulunabilir.</li>\n   </ul>\n   \n   <h4>Veri Odaklı Yaklaşım</h4>\n   <p>En etkili kanalları belirlemek için veri odaklı bir yaklaşım önemlidir. Hangi kanalların daha fazla aday yakaladığını, hangi kanalların daha fazla dönüşüm sağladığını analiz etmek gerekir. Bu analizler, kanalların hangisinin en etkili olduğunu belirlemenize yardımcı olabilir.</p>\n   \n   <h4>Sonuç</h4>\n   <p>Veli adaylarını sıcak kanallardan yakalamak için en etkili yöntemi belirlemek önemlidir. WhatsApp, e-posta ve web formlarının karşılaştırmasını yaparak, en etkili kanalları belirleyebilirsiniz. Edusonex, sizlere bu kanalları en etkili şekilde kullanmanız için gerekli araçları sağlar. Sistemimize yatırım yaparak, reklama değil, geleceğinize yatırım yapmış olursunuz.</p>\n   ",
+    "category": "Pazarlama",
+    "author": "Edusonex Ekibi",
+    "date": "1 Mayıs 2026",
+    "readTime": "5 dk",
+    "image": "https://images.unsplash.com/photo-1533750349088-cd871a92f312?q=80&w=2070&auto=format&fit=crop",
+    "slug": "veli-adaylarini-sicak-kanallardan-yakalamak-whatsapp-e-posta-ve-web-formlarinin-"
+  },
+  {
     "id": 1777530808,
     "title": "Kişisel Veri Güvenliği ve KVKK Uyum Rehberi",
     "excerpt": "Veli verilerini güvende tutmak için KVKK uyumlu çözümler",
@@ -340,23 +358,5 @@
     "readTime": "4 dk",
     "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop",
     "slug": "aday-veli-iletisiminde-1ms-altinda-denetleme-guvenli-yanit-filtreleri-ve-feamco-"
-  },
-  {
-    "id": 1775951703,
-    "title": "Okulunuzda Veri Egemenliği: KVKK ve GDPR'a Uyumlu 'Tasarımda Gizlilik' İlkesi",
-    "excerpt": "Edusonex, veri egemenliği ilkesi ve WitnessChain teknolojisi ile veli görüşmelerini kriptografik olarak mühürler ve kişisel verileri asla buluta sızdırmaz.",
-    "aiSummary": "Edusonex, 'Tasarımda Gizlilik' ilkesi ve WitnessChain SHA-256 mühürleme teknolojisi ile okul verilerinin egemenliğini korurken, bulut modellere veri sızdırmadan tam KVKK/GDPR uyumu sunar.",
-    "keyTakeaways": [
-      "Veri egemenliği ilkesi gereği, veli ve öğrenci verileri Türkiye'deki izole sunucularda saklanarak KVKK uyumu sağlanır.",
-      "WitnessChain teknolojisiyle yapay zeka görüşmeleri kriptografik olarak mühürlenerek hukuki delil niteliği kazanır.",
-      "Kullanılan 'Geçici Bellek' prensibi sayesinde ham sohbet verileri işlem biter bitmez RAM'den kalıcı olarak silinir."
-    ],
-    "content": "<h4>Veri Güvenliğinde Yeni Standartlar</h4><p>Eğitim kurumları için aday veli ve öğrenci verilerinin güvenliği en büyük önceliktir. Edusonex üzerinden toplanan sıcak müşteri verileri Türkiye'deki izole sunucularda saklanarak tam KVKK uyumu sağlar. FEAM.co işbirliğimiz sayesinde veri güvenliğimizi bir adım öteye taşıyor ve 'Tasarımda Gizlilik' (Data Sovereignty) ilkesini uyguluyoruz.</p><h4>Kriptografik Şahitlik: WitnessChain</h4><p>Edusonex bünyesindeki yapay zeka asistanlarının denetlediği ham sohbet metinleri veritabanında asla saklanmaz. Geçici Bellek (Ephemeral Memory) prensibiyle işlem biter bitmez veriler RAM'den anında silinir ve geriye sadece işlemin yasal ispatı olan kriptografik hash kodu kalır. Dışarıdaki bulut yapay zeka modellerine (OpenAI, Google vb.) hiçbir veri sızdırılmaz ve kişisel veriler, IP adresleri loglanmadan yerel olarak analiz edilir.</p><h4>Hukuki Koruma</h4><p>Ayrıca, FEAM'in 'WitnessChain' (Şahitlik Zinciri) teknolojisi ile AI Veli Asistanı'nın velilere sunduğu burs oranları veya fiyatlandırmalar, SHA-256 kriptografik mühürleriyle değiştirilemez bir şekilde kaydedilir. Olası bir anlaşmazlıkta okul yönetimleri, saniyeler içinde kesin bir dijital delil sunarak kendilerini hukuki olarak garanti altına alırlar.</p>",
-    "category": "Okul Yönetimi",
-    "author": "Edusonex Ekibi",
-    "date": "12 Nisan 2026",
-    "readTime": "4 dk",
-    "image": "/images/blog/data-sovereignty-privacy.png",
-    "slug": "veri-egemenligi-kvkk-gdpr-uyumu"
   }
 ]
