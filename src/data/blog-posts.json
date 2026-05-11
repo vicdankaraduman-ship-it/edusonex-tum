@@ -1,5 +1,23 @@
 [
   {
+    "id": 1778485840,
+    "title": "Eğitimde Veri Çözümlemesi: Öğrenci Başarısını Tahmin Eden Modeller",
+    "excerpt": "Eğitimde veri çözümlemesi, öğrenci başarısını tahmin eden modellerle daha iyi eğitim sonuçları elde edilebilir.",
+    "aiSummary": "Eğitimde veri çözümlemesi, öğrenci başarısını tahmin eden modellerle daha iyi eğitim sonuçları elde edilebilir ve okul yönetimleri öğrencilere daha iyi hizmet verebilir.",
+    "keyTakeaways": [
+      "Veri çözümlemesi, öğrenci başarısını tahmin etmek için kullanılır.",
+      "Öğrenci başarısını tahmin eden modeller, öğrencilerin güçlü ve zayıf yönlerini belirlemeye yardımcı olur.",
+      "Eğitim kurumları, veri çözümlemesi kullanarak öğrencilere daha iyi hizmet verebilir."
+    ],
+    "content": "<h4>Eğitimde Veri Çözümlemesi</h4><p>Eğitimde veri çözümlemesi, öğrenci başarısını tahmin eden modellerle daha iyi eğitim sonuçları elde edilebilir. Bu modeller, öğrencilerin güçlü ve zayıf yönlerini belirlemeye yardımcı olur ve eğitim kurumlarına öğrencilere daha iyi hizmet verebilmeleri için değerli bilgiler sağlar.</p><h4>Öğrenci Başarısını Tahmin Eden Modeller</h4><p>Öğrenci başarısını tahmin eden modeller, öğrencilerin akademik performansını analiz ederek gelecekteki başarılarını tahmin eder. Bu modeller, öğrencilerin ders notları, katılım oranları, sınav sonuçları gibi çeşitli verilere dayanır. Örneğin, bir okul öğrencilerin ders notlarını ve katılım oranlarını analiz ederek, hangi öğrencilerin gelecek sınavlarda zorluk çekebileceğini tahmin edebilir.</p><h4>Veri Çözümlemesi Nasıl Çalışır?</h4><p>Veri çözümlemesi, büyük miktarda veriyi analiz ederek anlamlı bilgiler elde etmeyi amaçlar. Eğitimde veri çözümlemesi, öğrenci verilerini analiz ederek eğitim kurumlarına öğrencilere daha iyi hizmet verebilmeleri için değerli bilgiler sağlar. Örneğin, bir okul öğrencilerin ders notlarını analiz ederek, hangi derslerde öğrencilerin zorluk çekebileceğini belirleyebilir ve bu derslere özel destek programları oluşturabilir.</p><ul><li>Öğrenci verilerini toplama</li><li>Verileri analiz etme</li><li>Anlamlı bilgiler elde etme</li></ul><h4>Sonuç</h4><p>Eğitimde veri çözümlemesi, öğrenci başarısını tahmin eden modellerle daha iyi eğitim sonuçları elde edilebilir. Eğitim kurumları, veri çözümlemesi kullanarak öğrencilere daha iyi hizmet verebilir ve öğrencilerin akademik başarılarını artırabilir. Edusonex, eğitim kurumlarına veri çözümlemesi hizmetleri sunarak öğrenci başarısını artırma konusunda yardımcı olabilir.</p>",
+    "category": "Teknoloji",
+    "author": "Edusonex Ekibi",
+    "date": "11 Mayıs 2026",
+    "readTime": "5 dk",
+    "image": "https://images.unsplash.com/photo-1488229297570-58520851e868?q=80&w=2070&auto=format&fit=crop",
+    "slug": "egitimde-veri-cozumlemesi-ogrenci-basarisini-tahmin-eden-modeller"
+  },
+  {
     "id": 1778395130,
     "title": "Ölçeklenebilir Okul Modeli: Çok Şubeli Yapıya Geçiş Stratejisi",
     "excerpt": "Okulunuzun büyümesiyle birlikte, tek kampüsten çok şubeli yapıya geçiş stratejilerini keşfedin.",
@@ -340,23 +358,5 @@
     "readTime": "10 dk",
     "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=2070&auto=format&fit=crop",
     "slug": "ogretmen-memnuniyeti-ile-ogrenci-kaybi-arasindaki-gizli-baglanti"
-  },
-  {
-    "id": 1776491088,
-    "title": "Yapay Zeka Asistanları: Veli İletişimine Yeni Bir Boyut",
-    "excerpt": "Özel okullarda veli iletişimini güçlendirmek için teknolojiye yatırım yapmak",
-    "aiSummary": "Yapay zeka asistanları, özel okulların 7/24 kurumsal yanıt sistemini güçlendiriyor ve veli iletişimini iyileştirmek için kritik bir araç olarak öne çıkıyor.",
-    "keyTakeaways": [
-      "Yapay zeka asistanları, özel okulların 7/24 kesintisiz iletişim sağlamalarına yardımcı oluyor",
-      "Veli iletişiminde cevap verme hızını artırmak, müşteri memnuniyetini artırıyor",
-      "Tecrübe kazanan yapay zeka sistemleri, okulların daha etkili bir şekilde velilerle bağ kurmalarına yardımcı oluyor"
-    ],
-    "content": "<h4>Özel Okullarda Veli İletişimine Yeni Bir Bakış</h4><p>Özel okulların başarısı, sadece öğrencilerin akademik başarılarına değil, aynı zamanda velilerle kurulan güçlü iletişime de bağlıdır. Günümüzde, teknolojinin hızlı gelişimi, okulların velilerle iletişim kurma şeklini değiştirdi. Özellikle yapay zeka asistanlarının ortaya çıkışı, bu alanda yeni bir boyut açtı.</p><h4>7/24 Kurumsal Yanıt Sisteminin Gücü</h4><p>Araştırmalar gösteriyor ki, özel okullarda veli iletişimi, okul yönetimlerinin en önemli önceliklerinden biridir. Ancak, günün her saatinde, her an velilere cevap vermek ve onların soru veya sorunlarına yanıt olmak, okul yönetimlerinin zorlu bir görevi olabilir. İşte bu noktada, yapay zeka asistanları devreye giriyor. Bu sistemler, 7/24 kesintisiz olarak çalışabiliyor ve velilerin sorularına anında yanıt veriyor.</p><h4>Yapay Zeka Asistanlarının Avantajları</h4><ul><li>Veli iletişimini güçlendiriyor</li><li>Cevap verme hızını artırıyor</li><li>Okul yönetimlerinin iş yükünü azaltıyor</li></ul><p>Yapay zeka asistanları, sadece hızlı cevap vermekle kalmıyor, aynı zamanda velilerin sorularını理解 ederek, onlara en uygun yanıtları sunabiliyor. Ayrıca, bu sistemler, zaman içinde tecrübe kazandıkça, daha da etkili bir şekilde çalışabiliyor.</p><h4>Sonuç</h4><p>Yapay zeka asistanları, özel okulların veli iletişimini güçlendirmek için kritik bir araç olarak ortaya çıkıyor. 7/24 kurumsal yanıt sistemi, okul yönetimlerinin iş yükünü azaltırken, velilerin memnuniyetini artırıyor. Edusonex olarak, okulların bu teknolojiden yararlanarak, daha güçlü bir veli iletişimi kurmalarına yardımcı olmak için çalışıyoruz.</p>",
-    "category": "Teknoloji",
-    "author": "Edusonex Ekibi",
-    "date": "18 Nisan 2026",
-    "readTime": "4 dk",
-    "image": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop",
-    "slug": "yapay-zeka-asistanlari-veli-iletisimine-yeni-bir-boyut"
   }
 ]
